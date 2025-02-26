@@ -10,7 +10,7 @@ export default function Page() {
   useEffect(() => { AOS.init(); }, []);
 
   return (
-    <div className="max-w-[435px]">
+    <div className="max-w-[435px] overflow-hidden">
       <section className="content relative flex items-center justify-center z-[20] max-w-[435px]">
         <SnowEffect />
         <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504884/257A6873_m1d4b9.jpg" width={500} height={700} alt="Wedding" />
@@ -72,16 +72,17 @@ export default function Page() {
       </section>
 
       <section className="py-6 mt-2">
-        <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Album Hình Cưới</h2>
-        <div className="grid grid-cols-2 px-2 gap-4">
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505458/257A7238_rmrz7d.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505438/257A7288_ivhhnv.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505417/257A7203_bh9p5k.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
+        <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade-down" data-aos-duration="1000">Album Hình Cưới</h2>
+        <div className="grid grid-cols-2 px-2 gap-3">
+          <Image className="rounded-md" data-aos="zoom-in" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
+          <Image className="rounded-md" data-aos="fade-right" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
+          <Image className="rounded-md" data-aos="fade-left" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505458/257A7238_rmrz7d.jpg" width={250} height={400} alt="Wedding" />
+          <Image className="rounded-md" data-aos="flip-up" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505438/257A7288_ivhhnv.jpg" width={250} height={400} alt="Wedding" />
+          <Image className="rounded-md" data-aos="zoom-out" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505417/257A7203_bh9p5k.jpg" width={250} height={400} alt="Wedding" />
+          <Image className="rounded-md" data-aos="fade-up" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
         </div>
       </section>
+
     </div>
   );
 }
