@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import SnowEffect from "@/components/SnowEffect";
 import CountdownTimer from "@/components/CountdownTimer";
+import Guestbook from "@/components/Guestbook";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
@@ -88,6 +89,10 @@ export default function Page() {
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545311/257A6748_p6jdoh.jpg" width={250} height={350} alt="Wedding" />
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
         </div>
+      </section>
+      <section className="py-6 mt-2">
+        <h2 className="text-center font-medium text-[26px] mb-6">Sổ Lưu Bút</h2>
+        <Guestbook/>
       </section>
 
       <section className="py-6 mt-2">
