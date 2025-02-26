@@ -27,11 +27,11 @@ const SnowEffect = () => {
                     background: { color: "" },
                     fpsLimit: 120,
                     particles: {
-                        number: { value: 80 },
+                        number: { value: 60 },
                         color: { value: "#fff" },
                         shape: { type: "circle" },
-                        opacity: { value: 0.8 },
-                        size: { value: { min: 2, max: 4 }, random: true },
+                        opacity: { value: 0.6 },
+                        size: { value: { min: 2, max: 3 }, random: true },
                         move: {
                             enable: true,
                             speed: 2,
