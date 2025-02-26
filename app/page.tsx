@@ -76,7 +76,7 @@ export default function Page() {
       <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Cùng Đếm Ngược Thời Gian</h2>
         <div className="rounded-br-[36px] rounded-tl-[36px] w-[80%] bg-red-500 h-[250px] mx-auto flex items-center justify-center">
-        <CountdownTimer date="2025-03-08T07:30:00" />
+          <CountdownTimer date="2025-03-08T07:30:00" />
         </div>
       </section>
 
