@@ -75,8 +75,11 @@ export default function Page() {
 
       <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Cùng Đếm Ngược Thời Gian</h2>
+        <div className="rounded-br-[36px] rounded-tl-[36px] w-[80%] bg-red-500 h-[250px] mx-auto flex items-center justify-center">
         <CountdownTimer date="2025-03-08T07:30:00" />
+        </div>
       </section>
+
       <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Album Hình Cưới</h2>
         <div className="px-2 columns-2 gap-3 [&>*:not(:first-child)]:mt-3">
@@ -90,9 +93,10 @@ export default function Page() {
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
         </div>
       </section>
-      <section className="py-6 mt-2">
+
+      <section className="py-6 mt-2 px-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Sổ Lưu Bút</h2>
-        <Guestbook/>
+        <Guestbook />
       </section>
 
       <section className="py-6 mt-2">
