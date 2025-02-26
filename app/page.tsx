@@ -15,8 +15,9 @@ export default function Page() {
     <div className="max-w-[435px] overflow-hidden">
       <section className="content relative flex items-center justify-center z-[20] max-w-[435px]">
         <SnowEffect />
-        <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504884/257A6873_m1d4b9.jpg" width={500} height={700} alt="Wedding" />
-        <div className="absolute flex flex-col justify-center items-center text-center gap-6">
+        <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={500} height={700} alt="Wedding" />
+        {/* <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504884/257A6873_m1d4b9.jpg" width={500} height={700} alt="Wedding" /> */}
+        {/* <div className="absolute flex flex-col justify-center items-center text-center gap-6">
           <h2 data-aos="fade-down" data-aos-duration="1000" className="text-white text-[28px]" style={{ textShadow: "4px 4px 5px rgba(0, 0, 0, 0.5)" }}>
             -SAVE THE DATE-
           </h2>
@@ -30,11 +31,12 @@ export default function Page() {
           <p data-aos="fade-up" data-aos-duration="1000" className="font-dancing text-white text-[16px]" style={{ textShadow: "4px 4px 5px rgba(0, 0, 0, 0.5)" }}>
             (Tức Ngày 10 Tháng 02 Năm Ất Tỵ)
           </p>
-        </div>
+        </div> */}
       </section>
 
-      <section className="py-6 ">
-        <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Một hành trình mới bắt đầu</h2>
+      <section className="">
+      <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565962/3_q65hsl.svg" width={500} height={700} alt="Wedding" />
+        {/* <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Một hành trình mới bắt đầu</h2>
         <div className="grid grid-cols-2 px-2">
           <div className="flex flex-col justify-center items-center text-center" data-aos="fade-down-right" data-aos-duration="1000">
             <h5 className="font-extrabold text-[15px] leading-8">Nhà Gái <br /> Ông Nguyễn Danh Hào <br /> Bà Nguyễn Thị Phương</h5>
@@ -50,7 +52,7 @@ export default function Page() {
             <h5 className="font-extrabold text-[15px] leading-8">Nhà Trai <br /> Ông Nguyễn Hữu Cầu <br /> Bà Nguyễn Thị Kế</h5>
             <p className="text-sm mt-2 leading-8">Thôn Đạo Tú - Quảng Phú Cầu - Ứng Hoà - Hà Nội</p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="py-5 my-2">
@@ -105,6 +107,11 @@ export default function Page() {
           <Image className="w-full rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545270/055ef0877716c9489007_faj05b.jpg" width={250} height={400} alt="Wedding" />
           <Image className="w-full rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545149/aad15f11c3877dd92496_shlso1.jpg" width={250} height={400} alt="Wedding" />
         </div>
+      </section>
+
+      <section>
+      <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565969/10_yawgmq.svg" width={500} height={700} alt="Wedding" />
+
       </section>
 
     </div>
