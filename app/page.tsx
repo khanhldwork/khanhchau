@@ -74,12 +74,12 @@ export default function Page() {
       <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade" data-aos-duration="1000">Album Hình Cưới</h2>
         <div className="grid grid-cols-2 px-2 gap-4">
+          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
           <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
-          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
+          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505458/257A7238_rmrz7d.jpg" width={250} height={400} alt="Wedding" />
+          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505438/257A7288_ivhhnv.jpg" width={250} height={400} alt="Wedding" />
+          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505417/257A7203_bh9p5k.jpg" width={250} height={400} alt="Wedding" />
+          <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
         </div>
       </section>
     </div>
