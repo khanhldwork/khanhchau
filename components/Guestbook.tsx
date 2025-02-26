@@ -73,7 +73,7 @@ const Guestbook: React.FC = () => {
         ></textarea>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 disabled:opacity-50"
+          className="px-10 py-4 bg-red-500 mt-6 mb-5 text-white rounded-2xl w-full"
           disabled={loading}
         >
           {loading ? "Đang gửi..." : "Gửi lời chúc"}

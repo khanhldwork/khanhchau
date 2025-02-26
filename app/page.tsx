@@ -12,10 +12,10 @@ export default function Page() {
   useEffect(() => { AOS.init(); }, []);
 
   return (
-    <div className="max-w-[435px] overflow-hidden">
+    <div className="max-w-[435px] overflow-hidden bg-[#FDF7F3] text-[#69431C]">
       <section className="content relative flex items-center justify-center z-[20] max-w-[435px]">
         <SnowEffect />
-        <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={500} height={700} alt="Wedding" />
+        <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
         {/* <Image src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504884/257A6873_m1d4b9.jpg" width={500} height={700} alt="Wedding" /> */}
         {/* <div className="absolute flex flex-col justify-center items-center text-center gap-6">
           <h2 data-aos="fade-down" data-aos-duration="1000" className="text-white text-[28px]" style={{ textShadow: "4px 4px 5px rgba(0, 0, 0, 0.5)" }}>
@@ -70,15 +70,9 @@ export default function Page() {
           <h6 className="mb-5">NGÀY TỔ CHỨC TIỆC</h6>
           <h6 className="mb-1">THỨ 7 | 15H30</h6>
           <h3 className="text-[32px] font-extrabold">09 . 03 . 2025</h3>
-          <p className="font-dancing font-medium text-[14px] mt-4">(Tức Ngày 10 Tháng 02 Năm Ất Tỵ)</p>
-          <button className="px-10 py-4 bg-red-500 mt-6 text-white rounded-2xl">Gửi Mừng Cưới</button>
-        </div>
-      </section>
-
-      <section className="py-6 mt-2">
-        <h2 className="text-center font-medium text-[26px] mb-6">Cùng Đếm Ngược Thời Gian</h2>
-        <div className="rounded-br-[36px] rounded-tl-[36px] w-[80%] bg-red-500 h-[250px] mx-auto flex items-center justify-center">
+          <p className="font-dancing font-medium text-[14px] mt-4 mb-7">(Tức Ngày 10 Tháng 02 Năm Ất Tỵ)</p>
           <CountdownTimer date="2025-03-08T07:30:00" />
+          {/* <button className="px-10 py-4 bg-red-500 mt-6 mb-5 text-white rounded-2xl">Gửi Mừng Cưới</button> */}
         </div>
       </section>
 
