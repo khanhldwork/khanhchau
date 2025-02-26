@@ -86,10 +86,10 @@ export default function Page() {
       </section>
 
       <section className="py-6 mt-2">
-        <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade-down" data-aos-duration="1000">Hộp Mừng Cưới</h2>
-        <div className="grid grid-cols-1 px-2 gap-3">
-          <Image className="rounded-md" data-aos="zoom-in" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
-          <Image className="rounded-md" data-aos="fade-right" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
+        <h2 className="text-center font-medium text-[26px] mb-6">Hộp Mừng Cưới</h2>
+        <div className="grid grid-cols-2 px-2 gap-3">
+          <Image className="w-full rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545270/055ef0877716c9489007_faj05b.jpg" width={250} height={400} alt="Wedding" />
+          <Image className="w-full rounded-md"  src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545149/aad15f11c3877dd92496_shlso1.jpg" width={250} height={400} alt="Wedding" />
         </div>
       </section>
 
