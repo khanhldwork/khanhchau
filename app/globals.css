@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,6 +11,7 @@ body {
   /* font-family: "Nunito", sans-serif;
   font-family: "Pacifico", serif; */
   font-family: "Libre Baskerville", serif;
+  font-family: "Playwrite IT Moderna", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
