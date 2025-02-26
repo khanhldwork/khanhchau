@@ -73,13 +73,23 @@ export default function Page() {
 
       <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade-down" data-aos-duration="1000">Album Hình Cưới</h2>
-        <div className="grid grid-cols-2 px-2 gap-3">
+        <div className="px-2 columns-2 gap-3 [&>*:not(:first-child)]:mt-3">
+          <Image className="rounded-md object-cover w-full" data-aos="fade-right" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545310/257A6643_aj4knn.jpg" width={250} height={300} alt="Wedding" />
+          <Image className="rounded-md object-cover w-full" data-aos="zoom-in" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={500} alt="Wedding" />
+          <Image className="rounded-md object-cover w-full" data-aos="fade-up" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
+          <Image className="rounded-md object-cover w-full" data-aos="fade-left" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505458/257A7238_rmrz7d.jpg" width={250} height={400} alt="Wedding" />
+          <Image className="rounded-md object-cover w-full" data-aos="zoom-out" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505417/257A7203_bh9p5k.jpg" width={250} height={350} alt="Wedding" />
+          <Image className="rounded-md object-cover w-full" data-aos="flip-up" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545311/257A6705_skzcgj.jpg" width={250} height={600} alt="Wedding" />
+          <Image className="rounded-md object-cover w-full" data-aos="zoom-out" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545311/257A6748_p6jdoh.jpg" width={250} height={350} alt="Wedding" />
+          <Image className="rounded-md object-cover w-full" data-aos="fade-up" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
+        </div>
+      </section>
+
+      <section className="py-6 mt-2">
+        <h2 className="text-center font-medium text-[26px] mb-6" data-aos="fade-down" data-aos-duration="1000">Hộp Mừng Cưới</h2>
+        <div className="grid grid-cols-1 px-2 gap-3">
           <Image className="rounded-md" data-aos="zoom-in" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
           <Image className="rounded-md" data-aos="fade-right" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505226/257A6945_xfkcni.jpg" width={250} height={400} alt="Wedding" />
-          <Image className="rounded-md" data-aos="fade-left" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505458/257A7238_rmrz7d.jpg" width={250} height={400} alt="Wedding" />
-          <Image className="rounded-md" data-aos="flip-up" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505438/257A7288_ivhhnv.jpg" width={250} height={400} alt="Wedding" />
-          <Image className="rounded-md" data-aos="zoom-out" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505417/257A7203_bh9p5k.jpg" width={250} height={400} alt="Wedding" />
-          <Image className="rounded-md" data-aos="fade-up" data-aos-duration="1000" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={400} alt="Wedding" />
         </div>
       </section>
 
