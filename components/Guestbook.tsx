@@ -54,9 +54,9 @@ const Guestbook: React.FC = () => {
 
       <div className="max-w-[90%] mx-auto p-6 bg-[#DBE3E2] rounded-md">
         <form onSubmit={handleSubmit} className="grid gap-4">
-          <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên của bạn" className="bg-white py-4 text-[15px]" required />
-          <Input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập số điện thoại của bạn" className="bg-white py-4 text-[15px]" required />
-          <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Nhập lời chúc của bạn" className="bg-white py-2.5 h-[100px] text-[15px]" required />
+          <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên của bạn" className="bg-white py-5 text-[15px]" required />
+          <Input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập số điện thoại của bạn" className="bg-white py-5 text-[15px]" required />
+          <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Nhập lời chúc của bạn" className="bg-white py-2.5 h-[120px] text-[15px]" required />
           <Button type="submit" disabled={loading} className="py-5 bg-red-500  text-white rounded-2xl w-full mt-1 text-[15px]">{loading ? "Đang gửi..." : "Gửi lời chúc"}</Button>
         </form>
         {submitted && <p className="text-green-600 mb-4">Cảm ơn bạn đã gửi lời chúc!</p>}

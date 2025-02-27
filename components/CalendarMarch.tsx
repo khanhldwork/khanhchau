@@ -1,24 +1,39 @@
 import React from "react";
 
 const CalendarMarch = () => {
-  const daysInMarch = 31;
-  const days = Array.from({ length: daysInMarch }, (_, i) => i + 1);
+    const year = 2025;
+    const month = 2; 
+    const firstDayOfMonth = new Date(year, month, 1).getDay(); 
+    const daysInMonth = new Date(year, month + 1, 0).getDate(); 
 
-  return (
-    <div className="w-80 p-4 border rounded-lg shadow-md text-center">
-      <h2 className="text-lg font-bold mb-2">Tháng 03 năm 2025</h2>
-      <div className="grid grid-cols-7 gap-2">
-        {days.map((day) => (
-          <div
-            key={day}
-            className={`p-2 border rounded ${day === 9 ? "bg-red-500 text-white" : "bg-gray-100"}`}
-          >
-            {day}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+    const weekdays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+    const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
+    const emptyCells = Array.from({ length: (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1) }, () => null);
+
+    return (
+        <section className="text-center py-5">
+            <h2 className="text-lg font-bold mb-1">SAVE THE DATE</h2>
+            <h2 className="text-lg font-bold mb-2">Tháng 03 năm 2025</h2>
+            <div className="grid grid-cols-7 gap-2 text-[13px] items-center h-[30px] rounded font-bold bg-blue-500 text-white px-2">
+                {weekdays.map((day, index) => (
+                    <div key={index} className="px-2">{day}</div>
+                ))}
+            </div>
+            <div className="grid grid-cols-7 gap-2 gap-y-3 mt-1.5 px-2 text-[14px] font-semibold">
+                {emptyCells.map((_, index) => (
+                    <div key={"empty-" + index} className="h-[30px] flex justify-center items-center"></div>
+                ))}
+                {days.map((day) => (
+                    <div
+                        key={day}
+                        className={`h-[30px] flex justify-center items-center rounded ${day === 9 ? "bg-red-500 text-white" : ""}`}
+                    >
+                        {day}
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
 };
 
 export default CalendarMarch;

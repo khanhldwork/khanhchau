@@ -13,15 +13,15 @@ export default function Page() {
   useEffect(() => { AOS.init(); }, []);
 
   return (
-    <div className="max-w-[435px] overflow-hidden bg-[#FDF7F3] text-[#69431C]">
-      <section className="content relative flex items-center justify-center z-[20]">
+    <div className="max-w-[435px] overflow-hidden flex flex-col items-center px-5">
+      {/* <section className="content relative flex items-center justify-center z-[20]">
         <SnowEffect />
         <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
-      </section>
-
+      </section> */}
+      {/* 
       <section>
         <Image className=" w-[90%] mx-auto" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565962/3_q65hsl.svg" width={200} height={400} alt="Wedding" />
-      </section>
+      </section> */}
 
       {/* <section className="py-5 my-2">
         <div className="w-[180px] h-[3px] bg-black rounded mx-auto mb-3"></div>
@@ -37,7 +37,7 @@ export default function Page() {
         <CalendarMarch />
       </section>
 
-      <section className="py-9">
+      {/* <section className="py-9">
         <div className="border bg-white border-black px-6 w-[90%] mx-auto rounded-xl flex flex-col items-center py-8">
           <h6 className="mb-5">NGÀY TỔ CHỨC TIỆC</h6>
           <h6 className="mb-1">THỨ 7 | 15H30</h6>
@@ -45,14 +45,14 @@ export default function Page() {
           <p className="font-dancing font-medium text-[14px] mt-4 mb-7">(Tức Ngày 10 Tháng 02 Năm Ất Tỵ)</p>
           <CountdownTimer date="2025-03-08T07:30:00" />
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-[#fff] py-8">
         <div className="w-[90%] mx-auto">
           <h2 className="text-center font-medium text-[26px]">Album Hình Cưới</h2>
           <p className="text-center text-[15px] mb-6 mt-2">Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.</p>
         </div>
-        <div className="w-[90%] mx-auto columns-2 gap-3 [&>*:not(:first-child)]:mt-3">
+        <div className="columns-2 gap-3 [&>*:not(:first-child)]:mt-3">
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545310/257A6643_aj4knn.jpg" width={250} height={300} alt="Wedding" />
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={500} alt="Wedding" />
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
@@ -63,8 +63,9 @@ export default function Page() {
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
         </div>
       </section>
+      <Guestbook />
 
-      <section className="bg-[#F3F3F1] py-8">
+      {/* <section className="bg-[#F3F3F1] py-8">
         <div className="mx-auto w-[90%]">
           <h3 className="text-center text-2xl font-extrabold">Tiệc Cưới và Lễ Thành Hôn</h3>
         </div>
@@ -85,24 +86,22 @@ export default function Page() {
             <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Tử Dương, Cao Thành, Ứng Hoà, Hà Nội</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
-      <section className="">
-        <Guestbook />
-      </section>
 
-      <section className="py-6 mt-2">
+
+      {/* <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Hộp Mừng Cưới</h2>
         <div className="grid grid-cols-2 px-2 gap-3 w-[90%] mx-auto">
           <Image className="w-full rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545270/055ef0877716c9489007_faj05b.jpg" width={250} height={400} alt="Wedding" />
           <Image className="w-full rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545149/aad15f11c3877dd92496_shlso1.jpg" width={250} height={400} alt="Wedding" />
         </div>
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
         <Image className=" w-[90%] mx-auto" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565969/10_yawgmq.svg" width={500} height={700} alt="Wedding" />
-      </section>
+      </section> */}
 
     </div>
   );
