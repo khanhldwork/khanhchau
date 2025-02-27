@@ -1,4 +1,5 @@
 import React from "react";
+import CountdownTimer from "./CountdownTimer";
 
 const CalendarMarch = () => {
     const year = 2025;
@@ -11,15 +12,16 @@ const CalendarMarch = () => {
     const emptyCells = Array.from({ length: (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1) }, () => null);
 
     return (
-        <section className="text-center py-9 px-8 w-full">
-            <h2 className="text-[20px] font-playwrite font-bold">SAVE THE DATE</h2>
+        <section className="text-center py-9 px-7 w-full">
+          <div className="border-4 border-gray-300 p-4">
+          <h2 className="text-[20px] font-playwrite font-bold">SAVE THE DATE</h2>
             <h2 className="text-lg font-playwrite mb-4 font-semibold">THÁNG 3 - 2025</h2>
             <div className="grid grid-cols-7 gap-2 text-[13px] items-center h-[36px] rounded-sm font-bold bg-blue-500 text-white px-2">
                 {weekdays.map((day, index) => (
                     <div key={index} className="px-2">{day}</div>
                 ))}
             </div>
-            <div className="grid grid-cols-7 gap-2 gap-y-3 mt-2 px-2 text-[14px] font-semibold">
+            <div className="grid grid-cols-7 gap-2 gap-y-3 mt-2 px-2 text-[14px] font-semibold border-b mb-5 pb-4">
                 {emptyCells.map((_, index) => (
                     <div key={"empty-" + index} className="h-[36px] flex justify-center items-center"></div>
                 ))}
@@ -32,6 +34,8 @@ const CalendarMarch = () => {
                     </div>
                 ))}
             </div>
+          <CountdownTimer date="2025-03-08T07:30:00" />
+          </div>
         </section>
     );
 };
