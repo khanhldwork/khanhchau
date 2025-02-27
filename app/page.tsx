@@ -13,7 +13,7 @@ export default function Page() {
   useEffect(() => { AOS.init(); }, []);
 
   return (
-    <div className="max-w-[435px] overflow-hidden flex flex-col items-center px-6">
+    <div className="max-w-[435px] overflow-hidden">
       <section className="content relative flex items-center justify-center z-[20]">
         <SnowEffect />
         <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
@@ -46,7 +46,7 @@ export default function Page() {
         </div>
       </section> */}
 
-      <section className="bg-[#fff] py-8">
+      <section className="bg-[#fff] py-8 px-6">
         <div className="w-[90%] mx-auto">
           <h2 className="text-center font-medium text-[26px]">Album Hình Cưới</h2>
           <p className="text-center text-[15px] mb-6 mt-2">Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.</p>
