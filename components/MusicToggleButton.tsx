@@ -12,15 +12,23 @@ const MusicToggleButton = () => {
     }, []);
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handlePlayMusic = () => {
             if (audioRef.current && audioRef.current.paused) {
                 audioRef.current.play();
                 setIsPlaying(true);
             }
         };
 
-        window.addEventListener("scroll", handleScroll, { once: true });
-        return () => window.removeEventListener("scroll", handleScroll);
+        // Phát nhạc khi người dùng scroll, click hoặc chạm vào màn hình
+        window.addEventListener("scroll", handlePlayMusic, { once: true });
+        document.addEventListener("click", handlePlayMusic, { once: true });
+        document.addEventListener("touchstart", handlePlayMusic, { once: true });
+
+        return () => {
+            window.removeEventListener("scroll", handlePlayMusic);
+            document.removeEventListener("click", handlePlayMusic);
+            document.removeEventListener("touchstart", handlePlayMusic);
+        };
     }, []);
 
     const togglePlay = () => {
