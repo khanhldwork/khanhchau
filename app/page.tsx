@@ -67,9 +67,9 @@ export default function Page() {
           <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
             <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
             <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Tử Dương, Cao Thành, Ứng Hoà, Hà Nội</p>
           </div>
-          <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
+          <div className="relative rounded-sm bg-[url(https://w.ladicdn.com/s450x400/5c728619c417ab07e5194baa/22-20240427063945-kdhmq.jpg)] p-5 text-white">
             <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
             <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
             <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
@@ -79,31 +79,13 @@ export default function Page() {
             <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
             <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
           </div>
-          {/* <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
-            <div className="w-[60%]">
-              <h3 className="text-[20px] font-bold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
-              <p className="mt-2 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
-              <p className="mt-2 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
-            </div>
-            <img className="absolute top-[-25px] right-0 z-6 w-[135px] rounded" src="https://w.ladicdn.com/s450x400/5c728619c417ab07e5194baa/22-20240427063945-kdhmq.jpg" alt="" />
-          </div> */}
         </div>
       </section>
 
-
-      <section className="py-6 mt-2 bg-white">
-        <h2 className="text-center font-medium text-[26px] mb-6">Tiệc cưới và lễ thành thôn</h2>
-        <p>Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
-        <div className="grid grid-cols-1 px-2 gap-3 w-[90%] mx-auto">
-          nọid ung
-        </div>
-      </section>
 
       <section className="">
         <Guestbook />
       </section>
-
-
 
       <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Hộp Mừng Cưới</h2>
