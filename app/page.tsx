@@ -25,11 +25,17 @@ export default function Page() {
         <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
 
-      <section>
-        <Image className=" w-[90%] mx-auto" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565962/3_q65hsl.svg" width={200} height={400} alt="Wedding" />
+      <section className="py-6 px-7 text-center">
+          <h2 className="font-semibold text-[20px] font-Lobster mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
+        <div className="grid grid-cols-2">
+          <div className="h-[200px] border"></div>
+          <div className="h-[200px] border"></div>
+          <div className="h-[200px] border"></div>
+          <div className="h-[200px] border"></div>
+        </div>
       </section>
 
-      <section className="py-6 text-center">
+      <section className="py-8 text-center bg-[#f2f5f4]">
         <div className="mx-5">
           <div className="w-[100px] h-[2px] bg-black rounded mx-auto mb-1"></div>
           <h2 className=" font-medium text-[26px]  text-black font-Lobster">Thư Mời</h2>
@@ -47,7 +53,6 @@ export default function Page() {
           <h3>09 . 03 . 2025</h3>
           <h3>Tại Tư Gia Nhà Trai</h3>
           <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
-          <button>Gửi mừng cưới</button>
         </div>
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-4 rounded-2xl py-5 px-5 bg-blue-300">
           <h3 className="font-bold">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
@@ -55,22 +60,10 @@ export default function Page() {
           <h3 className="font-bold">09 . 03 . 2025</h3>
           <h3 className="font-bold">Tại Tư Gia Nhà Trai</h3>
           <p className="font-bold mb-3">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
-          {/* <button className="py-5 bg-red-500  text-white rounded-2xl w-full mt-1 text-[15px]">Gửi mừng cưới</button> */}
         </div>
       </section>
 
       <CalendarMarch />
-
-
-      {/* <section className="py-9">
-        <div className="border bg-white border-black px-6 w-[90%] mx-auto rounded-xl flex flex-col items-center py-8">
-          <h6 className="mb-5">NGÀY TỔ CHỨC TIỆC</h6>
-          <h6 className="mb-1">THỨ 7 | 15H30</h6>
-          <h3 className="text-[32px] font-extrabold">09 . 03 . 2025</h3>
-          <p className="font-dancing font-medium text-[14px] mt-4 mb-7">(Tức Ngày 10 Tháng 02 Năm Ất Tỵ)</p>
-          <CountdownTimer date="2025-03-08T07:30:00" />
-        </div>
-      </section> */}
 
       <section className="bg-[#f2f5f4] py-8 px-6">
         <div className="w-[90%] mx-auto">
@@ -89,32 +82,6 @@ export default function Page() {
         </div>
       </section>
       <Guestbook />
-
-      {/* <section className="bg-[#F3F3F1] py-8">
-        <div className="mx-auto w-[90%]">
-          <h3 className="text-center text-2xl font-extrabold">Tiệc Cưới và Lễ Thành Hôn</h3>
-        </div>
-        <div className="mx-auto mt-6 grid w-[90%] grid-cols-1 gap-6">
-          <div className="relative rounded-sm bg-[#83858A] px-5 py-6 text-white">
-            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">09h30 Chủ Nhật, ngày 09/03/2025</p>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Đạo tú, Quảng Phú Cầu, Ứng Hoà, Hà Nội</p>
-          </div>
-          <div className="relative rounded-sm bg-[#83858A] px-5 py-6 text-white">
-            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Gái</h3>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">09h30 Chủ Nhật, ngày 09/03/2025</p>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Tử Dương, Cao Thành, Ứng Hoà, Hà Nội</p>
-          </div>
-          <div className="relative rounded-sm bg-[#83858A] px-5 py-6 text-white">
-            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Gái</h3>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">09h30 Chủ Nhật, ngày 09/03/2025</p>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Tử Dương, Cao Thành, Ứng Hoà, Hà Nội</p>
-          </div>
-        </div>
-      </section> */}
-
-
-
 
       {/* <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Hộp Mừng Cưới</h2>

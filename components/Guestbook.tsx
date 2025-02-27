@@ -46,7 +46,7 @@ const Guestbook: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#f2f5f4] pt-8 pb- px-7">
+    <section className="py-8 px-7">
       <div className="">
         <h2 className="text-center font-medium text-[26px]">Sổ Lưu Bút</h2>
         <p className="text-center text-[15px] mt-2 mb-6">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
