@@ -8,6 +8,8 @@ import SnowEffect from "@/components/SnowEffect";
 import CountdownTimer from "@/components/CountdownTimer";
 import Guestbook from "@/components/Guestbook";
 import CalendarMarch from "@/components/CalendarMarch";
+import { DrawerDemo } from "@/components/DrawerDemo";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
@@ -53,13 +55,17 @@ export default function Page() {
           <h3>09 . 03 . 2025</h3>
           <h3>Tại Tư Gia Nhà Trai</h3>
           <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+          <Button className="mb-1 mt-2">Xác nhận tham dự</Button>
+          <DrawerDemo />
         </div>
-        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-4 rounded-2xl py-5 px-5 bg-blue-300">
-          <h3 className="font-bold">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
-          <h4 className="font-bold">CHỦ NHẬT</h4>
-          <h3 className="font-bold">09 . 03 . 2025</h3>
-          <h3 className="font-bold">Tại Tư Gia Nhà Trai</h3>
-          <p className="font-bold mb-3">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-2xl py-5 px-5 bg-blue-300">
+          <h3>TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
+          <h4>CHỦ NHẬT</h4>
+          <h3>09 . 03 . 2025</h3>
+          <h3>Tại Tư Gia Nhà Trai</h3>
+          <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+          <Button className="mb-1 mt-2">Xác nhận tham dự</Button>
+          <DrawerDemo />
         </div>
       </section>
 
@@ -82,19 +88,6 @@ export default function Page() {
         </div>
       </section>
       <Guestbook />
-
-      {/* <section className="py-6 mt-2">
-        <h2 className="text-center font-medium text-[26px] mb-6">Hộp Mừng Cưới</h2>
-        <div className="grid grid-cols-2 px-2 gap-3 w-[90%] mx-auto">
-          <Image className="w-full rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545270/055ef0877716c9489007_faj05b.jpg" width={250} height={400} alt="Wedding" />
-          <Image className="w-full rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545149/aad15f11c3877dd92496_shlso1.jpg" width={250} height={400} alt="Wedding" />
-        </div>
-      </section> */}
-
-      {/* <section>
-        <Image className=" w-[90%] mx-auto" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565969/10_yawgmq.svg" width={500} height={700} alt="Wedding" />
-      </section> */}
-
     </div>
   );
 }
