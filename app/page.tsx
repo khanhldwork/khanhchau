@@ -44,8 +44,8 @@ export default function Page() {
 
       <section className="bg-[#fff] py-8">
         <div className="w-[90%] mx-auto">
-        <h2 className="text-center font-medium text-[26px]">Album Hình Cưới</h2>
-        <p className="text-center text-[15px] mb-6 mt-2">Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.</p>
+          <h2 className="text-center font-medium text-[26px]">Album Hình Cưới</h2>
+          <p className="text-center text-[15px] mb-6 mt-2">Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.</p>
         </div>
         <div className="w-[90%] mx-auto columns-2 gap-3 [&>*:not(:first-child)]:mt-3">
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545310/257A6643_aj4knn.jpg" width={250} height={300} alt="Wedding" />
@@ -59,17 +59,51 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="bg-[#F3F3F1] py-8">
+        <div className="mx-auto w-[90%]">
+          <h3 className="text-center text-2xl font-extrabold">Tiệc Cưới và Lễ Thành Hôn</h3>
+        </div>
+        <div className="mx-auto mt-6 grid w-[90%] grid-cols-1 gap-6">
+          <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
+            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
+          </div>
+          <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
+            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
+          </div>
+          <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
+            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
+          </div>
+          {/* <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
+            <div className="w-[60%]">
+              <h3 className="text-[20px] font-bold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
+              <p className="mt-2 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
+              <p className="mt-2 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
+            </div>
+            <img className="absolute top-[-25px] right-0 z-6 w-[135px] rounded" src="https://w.ladicdn.com/s450x400/5c728619c417ab07e5194baa/22-20240427063945-kdhmq.jpg" alt="" />
+          </div> */}
+        </div>
+      </section>
+
+
+      <section className="py-6 mt-2 bg-white">
+        <h2 className="text-center font-medium text-[26px] mb-6">Tiệc cưới và lễ thành thôn</h2>
+        <p>Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
+        <div className="grid grid-cols-1 px-2 gap-3 w-[90%] mx-auto">
+          nọid ung
+        </div>
+      </section>
+
       <section className="">
         <Guestbook />
       </section>
 
-      <section className="py-6 mt-2">
-        <h2 className="text-center font-medium text-[26px] mb-6">Sự Kiện Cưới</h2>
-        <p>Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
-        <div className="grid grid-cols-1 px-2 gap-3 w-[90%] mx-auto">
-          
-        </div>
-      </section>
+
 
       <section className="py-6 mt-2">
         <h2 className="text-center font-medium text-[26px] mb-6">Hộp Mừng Cưới</h2>
