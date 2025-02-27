@@ -11,10 +11,10 @@ const CalendarMarch = () => {
     const emptyCells = Array.from({ length: (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1) }, () => null);
 
     return (
-        <section className="text-center py-8 px-7 w-full">
+        <section className="text-center py-8 bg-[#f2f5f4] px-8 w-full">
             <h2 className="text-[20px] font-playwrite font-bold">SAVE THE DATE</h2>
-            <h2 className="text-lg font-playwrite mb-3 font-semibold">THÁNG 3 - 2025</h2>
-            <div className="grid grid-cols-7 gap-2 text-[13px] items-center h-[35px] rounded-sm font-bold bg-blue-500 text-white px-2">
+            <h2 className="text-lg font-playwrite mb-4 font-semibold">THÁNG 3 - 2025</h2>
+            <div className="grid grid-cols-7 gap-2 text-[13px] items-center h-[36px] rounded-sm font-bold bg-blue-500 text-white px-2">
                 {weekdays.map((day, index) => (
                     <div key={index} className="px-2">{day}</div>
                 ))}

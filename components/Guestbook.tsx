@@ -46,13 +46,13 @@ const Guestbook: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#F0F5F3] pt-8 pb-10">
-      <div className="max-w-[90%] mx-auto">
+    <section className="bg-[#f2f5f4] pt-8 pb- px-7">
+      <div className="">
         <h2 className="text-center font-medium text-[26px]">Sổ Lưu Bút</h2>
         <p className="text-center text-[15px] mt-2 mb-6">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
       </div>
 
-      <div className="max-w-[90%] mx-auto p-6 bg-[#DBE3E2] rounded-md">
+      <div className="p-6 bg-[#DBE3E2] rounded-md">
         <form onSubmit={handleSubmit} className="grid gap-4">
           <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên của bạn" className="bg-white py-5 text-[15px]" required />
           <Input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập số điện thoại của bạn" className="bg-white py-5 text-[15px]" required />
