@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
 
 const Guestbook: React.FC = () => {
   const [name, setName] = useState("");
@@ -43,43 +46,23 @@ const Guestbook: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-xl font-semibold mb-4">Sổ Lưu Bút</h2>
-      {submitted && <p className="text-green-600 mb-4">Cảm ơn bạn đã gửi lời chúc!</p>}
-      {error && <p className="text-red-600 mb-4">{error}</p>}
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Tên người gửi"
-          className="w-full p-2 border rounded"
-          required
-        />
-        <input
-          type="tel"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          placeholder="Số điện thoại"
-          className="w-full p-2 border rounded"
-          required
-        />
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Nhập lời chúc..."
-          className="w-full p-2 border rounded"
-          required
-        ></textarea>
-        <button
-          type="submit"
-          className="px-10 py-4 bg-red-500 mt-6 mb-5 text-white rounded-2xl w-full"
-          disabled={loading}
-        >
-          {loading ? "Đang gửi..." : "Gửi lời chúc"}
-        </button>
-      </form>
-    </div>
+    <section className="bg-[#F0F5F3] py-10">
+      <div className="max-w-[90%] mx-auto">
+        <h2 className="text-center font-medium text-[26px]">Sổ Lưu Bút</h2>
+        <p className="text-center text-[15px] mt-2 mb-6">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
+      </div>
+
+      <div className="max-w-[90%] mx-auto p-6 bg-[#DBE3E2] rounded-md">
+        <form onSubmit={handleSubmit} className="grid gap-4">
+          <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên của bạn" className="bg-white py-4 text-[15px]" required />
+          <Input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập số điện thoại của bạn" className="bg-white py-4 text-[15px]" required />
+          <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Nhập lời chúc của bạn" className="bg-white py-2.5 h-[100px] text-[15px]" required />
+          <Button type="submit" disabled={loading} className="py-5 bg-red-500  text-white rounded-2xl w-full mt-1 text-[15px]">{loading ? "Đang gửi..." : "Gửi lời chúc"}</Button>
+        </form>
+        {submitted && <p className="text-green-600 mb-4">Cảm ơn bạn đã gửi lời chúc!</p>}
+        {error && <p className="text-red-600 mb-4">{error}</p>}
+      </div>
+    </section>
   );
 };
 
