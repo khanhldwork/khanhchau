@@ -64,20 +64,20 @@ export default function Page() {
           <h3 className="text-center text-2xl font-extrabold">Tiệc Cưới và Lễ Thành Hôn</h3>
         </div>
         <div className="mx-auto mt-6 grid w-[90%] grid-cols-1 gap-6">
-          <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
+          <div className="relative rounded-sm bg-[#83858A] px-5 py-6 text-white">
             <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">09h30 Chủ Nhật, ngày 09/03/2025</p>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Đạo tú, Quảng Phú Cầu, Ứng Hoà, Hà Nội</p>
+          </div>
+          <div className="relative rounded-sm bg-[#83858A] px-5 py-6 text-white">
+            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Gái</h3>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">09h30 Chủ Nhật, ngày 09/03/2025</p>
             <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Tử Dương, Cao Thành, Ứng Hoà, Hà Nội</p>
           </div>
-          <div className="relative rounded-sm bg-[url(https://w.ladicdn.com/s450x400/5c728619c417ab07e5194baa/22-20240427063945-kdhmq.jpg)] p-5 text-white">
-            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
-          </div>
-          <div className="relative rounded-sm bg-[#83858A] p-5 text-white">
-            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Trai</h3>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">11h00 Chủ Nhật, ngày 19/01/2025</p>
-            <p className="mt-3 flex items-center gap-2 text-[13px]">Xóm Gò, Hải Minh, Hải Hậu, Nam Định</p>
+          <div className="relative rounded-sm bg-[#83858A] px-5 py-6 text-white">
+            <h3 className="text-[17px] font-extrabold text-yellow-400">Tiệc Cưới Nhà Gái</h3>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">09h30 Chủ Nhật, ngày 09/03/2025</p>
+            <p className="mt-3 flex items-center gap-2 text-[13px]">Thôn Tử Dương, Cao Thành, Ứng Hoà, Hà Nội</p>
           </div>
         </div>
       </section>

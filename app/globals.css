@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,7 @@ body {
   font-family: "Pacifico", serif; 
   font-family: "Libre Baskerville", serif;
   font-family: "Nunito", sans-serif; 
+  /* font-family: "Luxurious Script", serif; */
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
