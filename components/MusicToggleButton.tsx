@@ -3,11 +3,17 @@ import { useEffect, useRef, useState } from "react";
 
 const MusicToggleButton = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(new Audio("/baihat.mp3"));
+    const audioRef = useRef<HTMLAudioElement | null>(null);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            audioRef.current = new Audio("/baihat.mp3");
+        }
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (audioRef.current.paused) {
+            if (audioRef.current && audioRef.current.paused) {
                 audioRef.current.play();
                 setIsPlaying(true);
             }
@@ -18,12 +24,14 @@ const MusicToggleButton = () => {
     }, []);
 
     const togglePlay = () => {
-        if (audioRef.current.paused) {
-            audioRef.current.play();
-            setIsPlaying(true);
-        } else {
-            audioRef.current.pause();
-            setIsPlaying(false);
+        if (audioRef.current) {
+            if (audioRef.current.paused) {
+                audioRef.current.play();
+                setIsPlaying(true);
+            } else {
+                audioRef.current.pause();
+                setIsPlaying(false);
+            }
         }
     };
 
