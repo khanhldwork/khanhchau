@@ -33,9 +33,8 @@ export default function Page() {
         </div>
       </section> */}
 
-      <section>
         <CalendarMarch />
-      </section>
+    
 
       {/* <section className="py-9">
         <div className="border bg-white border-black px-6 w-[90%] mx-auto rounded-xl flex flex-col items-center py-8">
