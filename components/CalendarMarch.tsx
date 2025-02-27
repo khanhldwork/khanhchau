@@ -2,9 +2,9 @@ import React from "react";
 
 const CalendarMarch = () => {
     const year = 2025;
-    const month = 2; 
-    const firstDayOfMonth = new Date(year, month, 1).getDay(); 
-    const daysInMonth = new Date(year, month + 1, 0).getDate(); 
+    const month = 2;
+    const firstDayOfMonth = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
 
     const weekdays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
     const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
