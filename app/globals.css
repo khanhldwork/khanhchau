@@ -208,6 +208,10 @@ html {
   animation: zoomEffect 1.5s infinite ease-in-out;
 }
 
+.pulse{
+  animation: zoomEffect 1.5s infinite ease-in-out;
+}
+
 
 /* sửa lại */
 
@@ -224,6 +228,23 @@ html {
       transform: scale(1);
   }
 }
+
+@keyframes pulse-rotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.rotate {
+  animation: pulse-rotate 1s infinite ease-in-out;
+}
+
 
 .music-button {
   width: 45px;

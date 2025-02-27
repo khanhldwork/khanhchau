@@ -25,9 +25,9 @@ export default function Page() {
         <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
 
-      {/* <section>
+      <section>
         <Image className=" w-[90%] mx-auto" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565962/3_q65hsl.svg" width={200} height={400} alt="Wedding" />
-      </section> */}
+      </section>
 
       <section className="py-6 text-center">
         <div className="mx-5">
@@ -56,7 +56,6 @@ export default function Page() {
           <h3 className="font-bold">Tại Tư Gia Nhà Trai</h3>
           <p className="font-bold mb-3">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
           {/* <button className="py-5 bg-red-500  text-white rounded-2xl w-full mt-1 text-[15px]">Gửi mừng cưới</button> */}
-          <CountdownTimer date="2025-03-08T07:30:00" />
         </div>
       </section>
 

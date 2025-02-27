@@ -30,21 +30,21 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ date }) => {
   const formatNumber = (num: number) => (num < 10 ? `0${num}` : num);
 
   return (
-    <div className="grid grid-cols-4 gap-10 py-4 p-10 text-xl font-bold text-white bg-red-500 rounded-lg justify-center">
+    <div className="grid grid-cols-4 gap-12 py-4 p-10 text-xl font-bold bg-gray-200 rounded-lg justify-center">
       <div className="flex flex-col items-center gap-2">
-        <span className="text-3xl">{formatNumber(timeLeft.days)}</span>
+        <span className="text-xl font-playwrite">{formatNumber(timeLeft.days)}</span>
         <span className="text-sm">Ngày</span>
       </div>
       <div className="flex flex-col items-center gap-2">
-        <span className="text-3xl">{formatNumber(timeLeft.hours)}</span>
+        <span className="text-xl font-playwrite">{formatNumber(timeLeft.hours)}</span>
         <span className="text-sm">Giờ</span>
       </div>
       <div className="flex flex-col items-center gap-2">
-        <span className="text-3xl">{formatNumber(timeLeft.minutes)}</span>
+        <span className="text-xl font-playwrite">{formatNumber(timeLeft.minutes)}</span>
         <span className="text-sm">Phút</span>
       </div>
       <div className="flex flex-col items-center gap-2">
-        <span className="text-3xl">{formatNumber(timeLeft.seconds)}</span>
+        <span className="text-xl font-playwrite">{formatNumber(timeLeft.seconds)}</span>
         <span className="text-sm">Giây</span>
       </div>
     </div>
