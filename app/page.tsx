@@ -5,11 +5,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import SnowEffect from "@/components/SnowEffect";
-import CountdownTimer from "@/components/CountdownTimer";
 import Guestbook from "@/components/Guestbook";
 import CalendarMarch from "@/components/CalendarMarch";
 import { DrawerDemo } from "@/components/DrawerDemo";
 import { Button } from "@/components/ui/button";
+import MusicToggleButton from "@/components/MusicToggleButton";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
@@ -33,6 +34,8 @@ export default function Page() {
 
   return (
     <div className="max-w-[435px] overflow-hidden">
+      <MusicToggleButton />
+      <ScrollToTop />
       <section className="content relative flex flex-col items-center justify-center z-[20] py-14 bg-gray-400">
         <SnowEffect />
         <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
