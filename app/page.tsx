@@ -13,6 +13,23 @@ import { Button } from "@/components/ui/button";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
+  useEffect(() => {
+    const handleWheel = (event:any) => {
+      if (event.ctrlKey) {
+        event.preventDefault();
+      }
+    };
+
+    const handleGesture = (event:any) => event.preventDefault();
+
+    document.addEventListener("wheel", handleWheel, { passive: false });
+    document.addEventListener("gesturestart", handleGesture);
+
+    return () => {
+      document.removeEventListener("wheel", handleWheel);
+      document.removeEventListener("gesturestart", handleGesture);
+    };
+  }, []);
 
   return (
     <div className="max-w-[435px] overflow-hidden">
@@ -50,20 +67,20 @@ export default function Page() {
         </div>
 
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-2xl py-5 px-5 bg-blue-300">
-          <h3>TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
+          <h3 className="font-bold text-md">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
           <h4>CHỦ NHẬT</h4>
           <h3>09 . 03 . 2025</h3>
           <h3>Tại Tư Gia Nhà Trai</h3>
-          <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+          <p className="text-sm">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
           <Button className="mb-1 mt-2">Xác nhận tham dự</Button>
           <DrawerDemo />
         </div>
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-2xl py-5 px-5 bg-blue-300">
-          <h3>TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
+          <h3 className="font-bold text-md">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
           <h4>CHỦ NHẬT</h4>
           <h3>09 . 03 . 2025</h3>
           <h3>Tại Tư Gia Nhà Trai</h3>
-          <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+          <p className="text-sm">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
           <Button className="mb-1 mt-2">Xác nhận tham dự</Button>
           <DrawerDemo />
         </div>
