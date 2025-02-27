@@ -13,11 +13,11 @@ export default function Page() {
   useEffect(() => { AOS.init(); }, []);
 
   return (
-    <div className="max-w-[435px] overflow-hidden flex flex-col items-center px-5">
-      {/* <section className="content relative flex items-center justify-center z-[20]">
+    <div className="max-w-[435px] overflow-hidden flex flex-col items-center px-6">
+      <section className="content relative flex items-center justify-center z-[20]">
         <SnowEffect />
         <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
-      </section> */}
+      </section>
       {/* 
       <section>
         <Image className=" w-[90%] mx-auto" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565962/3_q65hsl.svg" width={200} height={400} alt="Wedding" />
