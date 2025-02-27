@@ -7,6 +7,7 @@ import Image from "next/image";
 import SnowEffect from "@/components/SnowEffect";
 import CountdownTimer from "@/components/CountdownTimer";
 import Guestbook from "@/components/Guestbook";
+import CalendarMarch from "@/components/CalendarMarch";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
@@ -31,6 +32,10 @@ export default function Page() {
           <img data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504830/257A6816_ssfl1y.jpg" alt="Invitation 3" />
         </div>
       </section> */}
+
+      <section>
+        <CalendarMarch />
+      </section>
 
       <section className="py-9">
         <div className="border bg-white border-black px-6 w-[90%] mx-auto rounded-xl flex flex-col items-center py-8">
