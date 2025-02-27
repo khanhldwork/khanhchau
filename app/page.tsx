@@ -16,31 +16,52 @@ export default function Page() {
     <div className="max-w-[435px] overflow-hidden">
       <section className="content relative flex flex-col items-center justify-center z-[20] py-14 bg-gray-400">
         <SnowEffect />
-          <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
-          <h3 className="font-bold text-[24px] font-Lobster mb-3 mt-3">Phương Nam & Hải Yến</h3>
+        <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
+        <h3 className="font-bold text-[24px] font-Lobster mb-3 mt-3">Phương Nam & Hải Yến</h3>
         <div className="bg-blue-500 w-[55%] p-2">
-        <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
+          <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
         </div>
         <div className="mt-4 mb-1 font-bold">09.03.2025</div>
         <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
-      {/* 
-      <section>
+
+      {/* <section>
         <Image className=" w-[90%] mx-auto" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565962/3_q65hsl.svg" width={200} height={400} alt="Wedding" />
       </section> */}
 
-      {/* <section className="py-5 my-2">
-        <div className="w-[180px] h-[3px] bg-black rounded mx-auto mb-3"></div>
-        <h2 className="text-center font-medium text-[26px] mb-4" data-aos="fade" data-aos-duration="1000">Thư Mời</h2>
-        <div className="grid grid-cols-[auto_37%_auto] items-center gap-4 px-2 rounded">
-          <img data-aos="fade-left" data-aos-duration="1000" className="shadow-2xl" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504985/257A7142_hg6s9k.jpg" alt="Invitation 1" />
-          <img data-aos="fade-top" data-aos-duration="1000" className="shadow-2xl" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" alt="Invitation 2" />
-          <img data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504830/257A6816_ssfl1y.jpg" alt="Invitation 3" />
+      <section className="py-6 text-center">
+        <div className="mx-5">
+          <div className="w-[100px] h-[2px] bg-black rounded mx-auto mb-1"></div>
+          <h2 className=" font-medium text-[26px]  text-black font-Lobster">Thư Mời</h2>
+          <p className="text-sm font-semibold mb-5">THAM DỰ LỄ CƯỚI PHƯƠNG NAM & HẢI YẾN</p>
+          <div className="grid grid-cols-[auto_37%_auto] items-center gap-4 px-2 rounded">
+            <img data-aos="fade-left" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504985/257A7142_hg6s9k.jpg" alt="Invitation 1" />
+            <img data-aos="fade-top" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" alt="Invitation 2" />
+            <img data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504830/257A6816_ssfl1y.jpg" alt="Invitation 3" />
+          </div>
         </div>
-      </section> */}
 
-        <CalendarMarch />
-    
+        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-2xl py-5 px-5 bg-blue-300">
+          <h3>TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
+          <h4>CHỦ NHẬT</h4>
+          <h3>09 . 03 . 2025</h3>
+          <h3>Tại Tư Gia Nhà Trai</h3>
+          <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+          <button>Gửi mừng cưới</button>
+        </div>
+        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-4 rounded-2xl py-5 px-5 bg-blue-300">
+          <h3 className="font-bold">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
+          <h4 className="font-bold">CHỦ NHẬT</h4>
+          <h3 className="font-bold">09 . 03 . 2025</h3>
+          <h3 className="font-bold">Tại Tư Gia Nhà Trai</h3>
+          <p className="font-bold mb-3">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+          {/* <button className="py-5 bg-red-500  text-white rounded-2xl w-full mt-1 text-[15px]">Gửi mừng cưới</button> */}
+          <CountdownTimer date="2025-03-08T07:30:00" />
+        </div>
+      </section>
+
+      <CalendarMarch />
+
 
       {/* <section className="py-9">
         <div className="border bg-white border-black px-6 w-[90%] mx-auto rounded-xl flex flex-col items-center py-8">
@@ -52,7 +73,7 @@ export default function Page() {
         </div>
       </section> */}
 
-      <section className="bg-[#fff] py-8 px-6">
+      <section className="bg-[#f2f5f4] py-8 px-6">
         <div className="w-[90%] mx-auto">
           <h2 className="text-center font-medium text-[26px]">Album Hình Cưới</h2>
           <p className="text-center text-[15px] mb-6 mt-2">Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.</p>
