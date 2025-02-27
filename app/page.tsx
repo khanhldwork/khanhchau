@@ -14,9 +14,15 @@ export default function Page() {
 
   return (
     <div className="max-w-[435px] overflow-hidden">
-      <section className="content relative flex items-center justify-center z-[20]">
+      <section className="content relative flex flex-col items-center justify-center z-[20] py-14 bg-gray-400">
         <SnowEffect />
+          <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
+          <h3 className="font-bold text-[24px] font-Lobster mb-3 mt-3">Phương Nam & Hải Yến</h3>
+        <div className="bg-blue-500 w-[55%] p-2">
         <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
+        </div>
+        <div className="mt-4 mb-1 font-bold">09.03.2025</div>
+        <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
       {/* 
       <section>
