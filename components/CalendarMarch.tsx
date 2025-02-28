@@ -16,7 +16,7 @@ const CalendarMarch = () => {
             <div className="border-[6px] border-gray-200 py-5 px-4 rounded">
                 <h2 className="text-[20px] font-playwrite font-bold">SAVE THE DATE</h2>
                 <h2 className="text-lg font-playwrite mb-4 font-semibold">THÁNG 3 - 2025</h2>
-                <div className="grid grid-cols-7 gap-2 text-[13px] items-center h-[36px] rounded-sm font-bold bg-blue-500 text-white px-2">
+                <div className="grid grid-cols-7 gap-2 text-[13px] items-center h-[36px] rounded-sm font-bold bg-primary text-white px-2">
                     {weekdays.map((day, index) => (
                         <div key={index} className="px-2">{day}</div>
                     ))}
