@@ -28,7 +28,7 @@ const CalendarMarch = () => {
                     {days.map((day) => (
                         <div
                             key={day}
-                            className={`h-[28px] flex justify-center items-center rounded ${day === 9 ? "bg-red-500 text-white rotate" : ""}`}
+                            className={`h-[28px] flex justify-center items-center rounded ${day === 9 ? "bg-primary text-white rotate" : ""}`}
                         >
                             {day}
                         </div>
