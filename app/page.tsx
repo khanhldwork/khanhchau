@@ -35,16 +35,35 @@ export default function Page() {
   const handleOpenGoogleMaps = () => {
     const latitude = 20.758595;
     const longitude = 105.787167;
-    const googleMapsAppUrl = `geo:${latitude},${longitude}`;
+    
+    // URL mở trên trình duyệt (mọi thiết bị)
     const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  
+    // URL mở trên ứng dụng Google Maps (iOS và Android)
+    const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
   
     // Kiểm tra nếu đang chạy trên di động
     if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-      window.location.href = googleMapsAppUrl;
+      window.location.href = googleMapsAppUrl; // Thử mở ứng dụng Google Maps
     } else {
-      window.open(googleMapsWebUrl, "_blank");
+      window.open(googleMapsWebUrl, "_blank"); // Mở trên trình duyệt nếu không phải di động
     }
   };
+  
+
+  // const handleOpenGoogleMaps = () => {
+  //   const latitude = 20.758595;
+  //   const longitude = 105.787167;
+  //   const googleMapsAppUrl = `geo:${latitude},${longitude}`;
+  //   const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  
+  //   // Kiểm tra nếu đang chạy trên di động
+  //   if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+  //     window.location.href = googleMapsAppUrl;
+  //   } else {
+  //     window.open(googleMapsWebUrl, "_blank");
+  //   }
+  // };
   
   
 
