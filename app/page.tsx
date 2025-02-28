@@ -47,7 +47,7 @@ export default function Page() {
     <div className="max-w-[435px] overflow-hidden">
       <MusicToggleButton />
       <ScrollToTop />
-      <section className="w-full relative flex flex-col items-center justify-center z-[20] py-14 object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
+      <section className="w-full relative flex flex-col items-center justify-center z-[20] py-16 object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
         <SnowEffect />
         <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
         <h3 className="font-bold text-[24px] font-Lobster mb-4 mt-3">Phương Nam & Hải Yến</h3>
@@ -62,11 +62,11 @@ export default function Page() {
         <h2 className="font-semibold text-[20px] font-Lobster mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-center items-center gap-2">
-            <h2 className="font-extrabold mb-2">NHÀ TRAI</h2>
-            <p className="text-sm font-medium">ÔNG NGUYỄN HỮU CẦU</p>
-            <p className="text-sm font-medium mb-2">BÀ NGUYỄN THỊ KẾ</p>
-            <img className="w-[70px] mt-2" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565927/1_dpg4io.svg" alt="" />
-            <p className="font-semibold font-Lobster text-[24px] mt-3">Phương Nam</p>
+            <h2 className="font-extrabold mb-2">NHÀ GÁI</h2>
+            <p className="text-sm font-medium">ÔNG NGUYỄN DANH HÀO</p>
+            <p className="text-sm font-medium mb-2">BÀ NGUYỄN THỊ PHƯƠNG</p>
+            <Image className="w-[70px] mt-1 py-1" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565927/1_dpg4io.svg" width={200} height={400} alt="Wedding" />
+            <p className="font-semibold font-Lobster text-[24px] mt-3">Hải Yến</p>
           </div>
           <div className="">
             <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505065/257A6942_re2yug.jpg" width={200} height={400} alt="Wedding" />
@@ -78,7 +78,7 @@ export default function Page() {
             <h2 className="font-extrabold mb-2">NHÀ TRAI</h2>
             <p className="text-sm font-medium">ÔNG NGUYỄN HỮU CẦU</p>
             <p className="text-sm font-medium mb-2">BÀ NGUYỄN THỊ KẾ</p>
-            <img className="w-[70px] mt-2" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565926/2_ytvycn.svg" alt="" />
+            <Image className="w-[70px] mt-2" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565926/2_ytvycn.svg" width={200} height={400} alt="Wedding" />
             <p className="font-semibold font-Lobster text-[24px] mt-3">Phương Nam</p>
           </div>
         </div>
@@ -143,6 +143,10 @@ export default function Page() {
         </div>
       </section>
       <Guestbook />
+      <section className="bg-red-200 py-10 px-7 flex gap-2 flex-col text-white items-center justify-center text-center">
+        <h2 className="font-Lobster text-[46px]">Thank You</h2>
+        <p>Chúng tôi vô cùng trân trọng và biết ơn sự hiện diện của bạn trong ngày đặc biệt này!</p>
+      </section>
     </div>
   );
 }
