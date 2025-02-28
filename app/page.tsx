@@ -79,8 +79,8 @@ export default function Page() {
           <p className="text-sm font-semibold mb-5">THAM DỰ LỄ CƯỚI PHƯƠNG NAM & HẢI YẾN</p>
           <div className="grid grid-cols-[auto_40%_auto] items-center gap-4 px-2 rounded">
             <Image data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504985/257A7142_hg6s9k.jpg" width={250} height={300} alt="Invitation 3" />
-            <Image data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={250} height={300} alt="Invitation 2" />
-            <Image data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504830/257A6816_ssfl1y.jpg" width={250} height={300} alt="Invitation 3" />
+            <Image data-aos="fade-down" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={250} height={300} alt="Invitation 2" />
+            <Image data-aos="fade-left" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504830/257A6816_ssfl1y.jpg" width={250} height={300} alt="Invitation 3" />
           </div>
         </div>
 
@@ -89,7 +89,7 @@ export default function Page() {
           <h4 className="font-bold font-Lobster my-1">CHỦ NHẬT</h4>
           <h3 className="font-Lobster">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 mt-1 leading-6">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <DrawerDemo />
+          <DrawerDemo imageUrl={"https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg"}/>
           <Button className="mt-1 texxt-sm" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
         </div>
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-4 rounded-bl-[40px] py-6 px-5 bg-white shadow">
@@ -97,7 +97,7 @@ export default function Page() {
           <h4 className="font-bold font-Lobster my-1">CHỦ NHẬT</h4>
           <h3 className="font-Lobster">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 mt-1 leading-6">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <DrawerDemo />
+          <DrawerDemo imageUrl={"https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg"}/>
           <Button className="mt-1 texxt-sm" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
         </div>
       </section>
