@@ -7,12 +7,22 @@ import {
   DrawerContent,
   DrawerTrigger,
 } from "@/components/ui/drawer"
+import Image from "next/image";
 
 interface DrawerDemoProps {
-  imageUrl: string;
+  data?: {
+    imageUrl: string;
+    name: string;
+    accountNumber: string;
+    bankInfo: string;
+  };
 }
 
-export function DrawerDemo({ imageUrl }: DrawerDemoProps) {
+export function DrawerDemo({ data }: DrawerDemoProps) {
+  if (!data) {
+    return null;
+  }
+
   return (
     <Drawer>
       <DrawerTrigger asChild>
@@ -24,12 +34,18 @@ export function DrawerDemo({ imageUrl }: DrawerDemoProps) {
           <p className="text-[16px] text-gray text-center mb-3 mt-2 text-sm leading-6">
             Chúng tôi xin gửi lời cảm ơn chân thành đến bạn vì đã chia sẻ niềm vui trong ngày trọng đại của chúng tôi
           </p>
-          <img src={imageUrl} alt="Hình ảnh" className="w-[76%]" />
-          <h2 className="mt-4 font-bold">NGUYEN HAI YEN</h2>
-          <p className="text-sm mt-2 font-semibold">100870601899</p>
-          <p className="text-sm mt-2 font-semibold">VietinBank CN DONG DA - PGD CAT LINK</p>
+          {data.imageUrl && (
+            <Image className="shadow-2xl rounded-md w-[76%]" src={data.imageUrl} width={100} height={100} alt="Invitation 3" />
+          )}
+          <h2 className="mt-4 font-bold">{data.name || "Không có tên"}</h2>
+          <p className="text-sm mt-2 font-semibold">
+            {data.accountNumber || "Chưa có số tài khoản"}
+          </p>
+          <p className="text-sm mt-2 font-semibold">
+            {data.bankInfo || "Chưa có thông tin ngân hàng"}
+          </p>
         </div>
       </DrawerContent>
     </Drawer>
-  )
+  );
 }

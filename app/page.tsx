@@ -52,7 +52,7 @@ export default function Page() {
         <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
         <h3 className="font-bold text-[24px] font-Lobster mb-4 mt-3">Phương Nam & Hải Yến</h3>
         <div className="bg-[#f62259] w-[55%] p-2">
-          <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565965/ch%E1%BB%8Dn_1_trong_2_seseul.svg" width={200} height={400} alt="Wedding" />
+          <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={200} height={300} alt="Wedding" />
         </div>
         <div className="mt-4 mb-1 font-bold">09.03.2025</div>
         <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
@@ -63,10 +63,10 @@ export default function Page() {
         <div className="grid grid-cols-2">
           <div className="border"></div>
           <div className="border">
-          <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505065/257A6942_re2yug.jpg" width={200} height={400} alt="Wedding" />
+            <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505065/257A6942_re2yug.jpg" width={200} height={400} alt="Wedding" />
           </div>
           <div className="border">
-          <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505075/257A6958_voyspn.jpg" width={200} height={400} alt="Wedding" />
+            <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505075/257A6958_voyspn.jpg" width={200} height={400} alt="Wedding" />
           </div>
           <div className="border"></div>
         </div>
@@ -89,7 +89,12 @@ export default function Page() {
           <h4 className="font-bold font-Lobster my-1">CHỦ NHẬT</h4>
           <h3 className="font-Lobster">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 mt-1 leading-6">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <DrawerDemo imageUrl={"https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg"}/>
+          <DrawerDemo data={{
+            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
+            name: "NGUYEN PHUONG NAM",
+            accountNumber: "19035514534038",
+            bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
+          }} />
           <Button className="mt-1 texxt-sm" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
         </div>
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-4 rounded-bl-[40px] py-6 px-5 bg-white shadow">
@@ -97,7 +102,12 @@ export default function Page() {
           <h4 className="font-bold font-Lobster my-1">CHỦ NHẬT</h4>
           <h3 className="font-Lobster">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 mt-1 leading-6">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <DrawerDemo imageUrl={"https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg"}/>
+          <DrawerDemo data={{
+            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
+            name: "NGUYEN HAI YEN",
+            accountNumber: "100870601899",
+            bankInfo: "VietinBank CN DONG DA - PGD CAT LINK"
+          }} />
           <Button className="mt-1 texxt-sm" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
         </div>
       </section>
