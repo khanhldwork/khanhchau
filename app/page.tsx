@@ -45,8 +45,8 @@ export default function Page() {
 
   return (
     <div className="max-w-[435px] overflow-hidden">
-      {/* <MusicToggleButton /> */}
-      {/* <ScrollToTop /> */}
+      <MusicToggleButton />
+      <ScrollToTop />
       <section className="w-full relative flex flex-col items-center justify-center z-[20] py-14 object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
         <SnowEffect />
         <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
@@ -61,14 +61,26 @@ export default function Page() {
       <section className="py-6 px-7 text-center">
         <h2 className="font-semibold text-[20px] font-Lobster mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
         <div className="grid grid-cols-2">
-          <div className="border"></div>
-          <div className="border">
+          <div className="flex flex-col justify-center items-center gap-2">
+            <h2 className="font-extrabold mb-2">NHÀ TRAI</h2>
+            <p className="text-sm font-medium">ÔNG NGUYỄN HỮU CẦU</p>
+            <p className="text-sm font-medium mb-2">BÀ NGUYỄN THỊ KẾ</p>
+            <img className="w-[70px] mt-2" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565927/1_dpg4io.svg" alt="" />
+            <p className="font-semibold font-Lobster text-[24px] mt-3">Phương Nam</p>
+          </div>
+          <div className="">
             <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505065/257A6942_re2yug.jpg" width={200} height={400} alt="Wedding" />
           </div>
-          <div className="border">
+          <div className="">
             <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505075/257A6958_voyspn.jpg" width={200} height={400} alt="Wedding" />
           </div>
-          <div className="border"></div>
+          <div className="flex flex-col justify-center items-center gap-2">
+            <h2 className="font-extrabold mb-2">NHÀ TRAI</h2>
+            <p className="text-sm font-medium">ÔNG NGUYỄN HỮU CẦU</p>
+            <p className="text-sm font-medium mb-2">BÀ NGUYỄN THỊ KẾ</p>
+            <img className="w-[70px] mt-2" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565926/2_ytvycn.svg" alt="" />
+            <p className="font-semibold font-Lobster text-[24px] mt-3">Phương Nam</p>
+          </div>
         </div>
       </section>
 
