@@ -15,17 +15,21 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
-  // const handleOpenGoogleMaps = () => {
-  //   const latitude = 20.758595;
-  //   const longitude = 105.787167;
-  //   const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
-  //   const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
-  //   if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-  //     window.location.href = googleMapsAppUrl;
-  //   } else {
-  //     window.open(googleMapsWebUrl, "_blank");
-  //   }
-  // };
+  useEffect(() => {
+    const fetchWishes = async () => {
+        try {
+            const response = await fetch("https://weddingserver-1.onrender.com/wishes");
+            if (!response.ok) {
+                throw new Error("Không thể tải danh sách lời chúc!");
+            }
+        } catch (err: any) {
+            console.log(err.message);
+            
+        }
+    };
+
+    fetchWishes();
+}, []);
 
   const handleOpenGoogleMaps = (latitude :number, longitude: number) => {
     const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
