@@ -33,7 +33,7 @@ export default function Page() {
 
       <ScrollToTop />
 
-      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-10 object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
+      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-8  object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
         {/* <SnowEffect /> */}
         <FallingHearts />
         <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-8">SAVE THE DATE</h2>
@@ -41,12 +41,12 @@ export default function Page() {
         <div className="bg-[#f62259] w-[40%] p-2">
           <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={200} height={300} alt="Wedding" />
         </div>
-        <div className="mt-5 mb-2 font-bold text-xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
+        <div className="mt-5 mb-3 font-bold text-3xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
         <p className="text-sm">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
 
       <section className="py-6 px-7 text-center">
-        <h2 className="font-extrabold text-[22px] font-Lobster mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
+        <h2 className="font-bold text-[24px] font-great-vibes mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-right" data-aos-duration="1000">
             <h2 className="font-extrabold font-dm-serif-display mb-2">NHÀ GÁI</h2>
@@ -85,8 +85,8 @@ export default function Page() {
 
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-left" data-aos-duration="1000">
           <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
-          <h4 className="font-bold font-dm-serif-display my-2">CHỦ NHẬT</h4>
-          <h3 className="font-dm-serif-display text-primary zoom-text text-sm">09 . 03 . 2025</h3>
+          <h4 className="font-bold font-dm-serif-display my-2 text-lg">CHỦ NHẬT</h4>
+          <h3 className="font-dm-serif-display text-primary zoom-text font-bold text-2xl">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
           <DrawerDemo data={{
             imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
@@ -99,8 +99,8 @@ export default function Page() {
 
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-right" data-aos-duration="1000">
           <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ GÁI</h3>
-          <h4 className="font-bold font-dm-serif-display my-2">CHỦ NHẬT</h4>
-          <h3 className="font-dm-serif-display text-primary zoom-text text-sm">09 . 03 . 2025</h3>
+          <h4 className="font-bold font-dm-serif-display my-2 text-lg">CHỦ NHẬT</h4>
+          <h3 className="font-dm-serif-display text-primary zoom-text font-bold text-2xl">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
           <DrawerDemo data={{
             imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
@@ -134,7 +134,7 @@ export default function Page() {
       <Guestbook />
 
       <section className="bg-primary py-10 px-7 flex gap-2 flex-col text-white items-center justify-center text-center">
-        <h2 className="font-great-vibes zoom-text text-[46px]">Thank You</h2>
+        <h2 className="font-great-vibes font-bold zoom-text text-[46px]">Thank You</h2>
         <p>Chúng tôi vô cùng trân trọng và biết ơn sự hiện diện của bạn trong ngày đặc biệt này!</p>
       </section>
     </div>
