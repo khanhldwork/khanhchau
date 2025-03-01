@@ -29,14 +29,14 @@ const FallingHearts = () => {
                     background: { color: "" },
                     fpsLimit: 120,
                     particles: {
-                        number: { value: 56 }, // Số lượng trái tim
+                        number: { value: 30 }, // Số lượng trái tim
                         color: { value: ["#ff4d6d", "#ff758f", "#ff99ac"] }, // Màu sắc trái tim
                         shape: { type: "heart" }, // Hình trái tim
                         opacity: { value: { min: 0.7, max: 1 }, random: true },
-                        size: { value: { min: 5, max: 9 }, random: true }, // Kích thước trái tim
+                        size: { value: { min: 2, max: 9 }, random: true }, // Kích thước trái tim
                         move: {
                             enable: true,
-                            speed: 1.5, // Tốc độ rơi nhẹ nhàng hơn
+                            speed: 5, // Tốc độ rơi nhẹ nhàng hơn
                             direction: "bottom",
                             straight: false,
                             random: true,
