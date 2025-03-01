@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import SnowEffect from "@/components/SnowEffect";
+import FallingHearts from "@/components/FallingHearts";
 import Guestbook from "@/components/Guestbook";
 import CalendarMarch from "@/components/CalendarMarch";
 import { DrawerDemo } from "@/components/DrawerDemo";
@@ -33,10 +34,11 @@ export default function Page() {
       <ScrollToTop />
 
       <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-10 object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
-        <SnowEffect />
+        {/* <SnowEffect /> */}
+        <FallingHearts />
         <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-8">SAVE THE DATE</h2>
         <h3 className="font-bold text-[26px] font-great-vibes mb-4 mt-3">Phương Nam & Hải Yến</h3>
-        <div className="bg-[#f62259] w-[45%] p-2">
+        <div className="bg-[#f62259] w-[40%] p-2">
           <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={200} height={300} alt="Wedding" />
         </div>
         <div className="mt-5 mb-2 font-bold text-xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
@@ -72,7 +74,7 @@ export default function Page() {
       <section className="py-8 text-center bg-[#f2f5f4]">
         <div className="mx-5">
           <div className="w-[100px] h-[2px] bg-black rounded mx-auto mb-1"></div>
-          <h2 className=" font-medium text-[26px]  text-black font-Lobster">Thư Mời</h2>
+          <h2 className=" font-bold text-[28px]  text-black font-great-vibes">Thư Mời</h2>
           <p className="text-sm font-semibold mb-5">THAM DỰ LỄ CƯỚI PHƯƠNG NAM & HẢI YẾN</p>
           <div className="grid grid-cols-[auto_40%_auto] items-center gap-4 px-2 rounded">
             <Image data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504985/257A7142_hg6s9k.jpg" width={250} height={300} alt="Invitation 3" />
@@ -114,7 +116,7 @@ export default function Page() {
 
       <section className="bg-[#f2f5f4] py-8 px-6">
         <div className="w-[90%] mx-auto">
-          <h2 className="text-center font-medium text-[26px] font-Lobster">Album Hình Cưới</h2>
+          <h2 className="text-center font-bold text-[28px] font-great-vibes">Album Hình Cưới</h2>
           <p className="text-center text-[15px] mb-6 mt-2">Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.</p>
         </div>
         <div className="columns-2 gap-3 [&>*:not(:first-child)]:mt-3">
@@ -132,7 +134,7 @@ export default function Page() {
       <Guestbook />
 
       <section className="bg-primary py-10 px-7 flex gap-2 flex-col text-white items-center justify-center text-center">
-        <h2 className="font-Lobster text-[46px]">Thank You</h2>
+        <h2 className="font-great-vibes zoom-text text-[46px]">Thank You</h2>
         <p>Chúng tôi vô cùng trân trọng và biết ơn sự hiện diện của bạn trong ngày đặc biệt này!</p>
       </section>
     </div>

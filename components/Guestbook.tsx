@@ -48,7 +48,7 @@ const Guestbook: React.FC = () => {
   return (
     <section className="py-12 px-7">
       <div className="">
-        <h2 className="text-center font-medium text-[28px] font-Lobster">Sổ Lưu Bút</h2>
+        <h2 className="text-center font-bold text-[28px] font-great-vibes">Sổ Lưu Bút</h2>
         <p className="text-center text-[15px] mt-2 mb-6">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!</p>
       </div>
 
@@ -57,7 +57,7 @@ const Guestbook: React.FC = () => {
           <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên của bạn" className="bg-white py-5 text-[15px]" required />
           <Input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập số điện thoại của bạn" className="bg-white py-5 text-[15px]" required />
           <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Nhập lời chúc của bạn" className="bg-white py-2.5 h-[120px] text-[15px]" required />
-          <Button variant="outline" type="submit" disabled={loading} className="py-6 font-playwrite bg-white text-black font-extrabold uppercase rounded-xl w-full mt-1 text-[14px]">{loading ? "Đang gửi..." : "Gửi lời chúc"}</Button>
+          <Button variant="outline" type="submit" disabled={loading} className="py-6 bg-white text-black fon-bold uppercase rounded-xl w-full mt-1 text-[14px]">{loading ? "Đang gửi..." : "Gửi lời chúc"}</Button>
         </form>
         {submitted && <p className="text-green-600 mb-4">Cảm ơn bạn đã gửi lời chúc!</p>}
         {error && <p className="text-red-600 mb-4">{error}</p>}
