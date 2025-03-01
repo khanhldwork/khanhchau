@@ -11,9 +11,9 @@ const Guestbook: React.FC = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+  
     try {
       const response = await fetch("https://weddingserver-1.onrender.com/wishes", {
         method: "POST",
@@ -22,11 +22,11 @@ const Guestbook: React.FC = () => {
         },
         body: JSON.stringify({ name, phone, message }),
       });
-
+  
       if (!response.ok) {
         throw new Error("Gửi lời chúc thất bại, vui lòng thử lại!");
       }
-
+  
       console.log("Lời chúc đã gửi:", { name, phone, message });
       toast("Gửi lời chúc thành công!", {
         description: "Cảm ơn bạn đã đồng hành cùng chúng tôi!",
@@ -35,12 +35,22 @@ const Guestbook: React.FC = () => {
           onClick: () => console.log("Đóng thông báo"),
         },
       });
-
+  
       setName("");
       setPhone("");
       setMessage("");
+    } catch (error) {
+      console.error("Đã xảy ra lỗi:", error);
+      toast("Gửi lời chúc thất bại!", {
+        description: "Vui lòng thử lại sau.",
+        action: {
+          label: "Đóng",
+          onClick: () => console.log("Đóng thông báo lỗi"),
+        },
+      });
     }
   };
+  
 
   return (
     <section className="py-12 px-7">
@@ -54,7 +64,7 @@ const Guestbook: React.FC = () => {
           <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nhập tên của bạn" className="bg-white py-5 text-[15px]" required />
           <Input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Nhập số điện thoại của bạn" className="bg-white py-5 text-[15px]" required />
           <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Nhập lời chúc của bạn" className="bg-white py-2.5 h-[120px] text-[15px]" required />
-          <Button variant="outline" type="submit" disabled={loading} className="py-6 bg-white text-black fon-bold uppercase rounded-xl w-full mt-1 text-[14px]">Gửi lời chúc</Button>
+          <Button variant="outline" type="submit" className="py-6 bg-white text-black fon-bold uppercase rounded-xl w-full mt-1 text-[14px]">Gửi lời chúc</Button>
         </form>
       </div>
     </section>
