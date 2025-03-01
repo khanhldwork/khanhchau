@@ -25,7 +25,7 @@ export default function Page() {
     } else {
       window.open(googleMapsWebUrl, "_blank");
     }
-    };
+  };
 
   return (
     <div className="max-w-[435px] overflow-hidden">
@@ -37,11 +37,11 @@ export default function Page() {
         {/* <SnowEffect /> */}
         <FallingHearts />
         <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-8">SAVE THE DATE</h2>
-        <h3 className="font-bold text-[26px] font-great-vibes mb-4 mt-3">Phương Nam & Hải Yến</h3>
-        <div className="bg-[#f62259] w-[40%] p-2">
+        <h3 className="font-bold text-[28px] font-great-vibes mb-4 mt-3">Phương Nam & Hải Yến</h3>
+        <div className="bg-[#f62259] w-[45%] p-2">
           <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={200} height={300} alt="Wedding" />
         </div>
-        <div className="mt-5 mb-3 font-bold text-3xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
+        <div className="mt-5 mb-4 font-bold text-3xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
         <p className="text-sm">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
 
