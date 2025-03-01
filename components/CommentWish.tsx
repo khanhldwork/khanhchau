@@ -27,8 +27,8 @@ const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
         <div className="space-y-2">
           {wishes.map((wish) => (
             <div key={wish._id} className="px-4 py-3 border rounded-lg shadow-sm bg-gray-50">
-              <h3 className="font-semibold text-sm text-gray-900">{wish.name}</h3>
-              <p className="text-gray-700 mt-1 text-sm">{wish.message}</p>
+              <h3 className="font-semibold text-sm text-gray-900 uppercase">{wish.name}</h3>
+              <p className="text-gray-700 mt-1 text-sm upa">{wish.message}</p>
             </div>
           ))}
         </div>
