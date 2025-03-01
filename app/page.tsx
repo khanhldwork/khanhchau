@@ -24,7 +24,7 @@ export default function Page() {
     } else {
       window.open(googleMapsWebUrl, "_blank");
     }
-  };
+    };
 
   return (
     <div className="max-w-[435px] overflow-hidden">
@@ -44,7 +44,7 @@ export default function Page() {
       </section>
 
       <section className="py-6 px-7 text-center">
-        <h2 className="font-extrabold text-[22px] font-Lobster mb-6">"Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương"</h2>
+        <h2 className="font-extrabold text-[22px] font-Lobster mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-right" data-aos-duration="1000">
             <h2 className="font-extrabold font-dm-serif-display mb-2">NHÀ GÁI</h2>
