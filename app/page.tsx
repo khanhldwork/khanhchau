@@ -43,13 +43,15 @@ export default function Page() {
       <MusicToggleButton />
 
       <ScrollToTop />
+     
 
-      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-8  object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
+      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-8">
         {/* <SnowEffect /> */}
+        <Image className="w-full absolute z-[-1]" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740811998/Untitled_design_pis8dc.png" width={200} height={300} alt="Wedding" />
         <FallingHearts />
-        <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-8">SAVE THE DATE</h2>
-        <h3 className="font-bold text-[28px] font-great-vibes mb-4 mt-3">Phương Nam & Hải Yến</h3>
-        <div className="bg-[#f62259] w-[45%] p-2">
+        <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-2">SAVE THE DATE</h2>
+        <h3 className="font-bold text-[28px] font-great-vibes my-4">Phương Nam & Hải Yến</h3>
+        <div className="bg-gray-400 w-[45%] p-1.5 my-1 rounded-md">
           <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={200} height={300} alt="Wedding" />
         </div>
         <div className="mt-5 mb-4 font-bold text-3xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
@@ -57,7 +59,7 @@ export default function Page() {
       </section>
 
       <section className="py-6 px-7 text-center">
-        <h2 className="font-bold text-[24px] font-great-vibes mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
+        <h2 className="font-bold text-[24px] font-great-vibes mb-6 pt-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
         <div className="grid grid-cols-2">
           <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-right" data-aos-duration="1000">
             <h2 className="font-extrabold font-dm-serif-display mb-2">NHÀ GÁI</h2>
