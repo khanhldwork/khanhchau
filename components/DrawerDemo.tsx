@@ -30,14 +30,14 @@ export function DrawerDemo({ data }: DrawerDemoProps) {
       </DrawerTrigger>
       <DrawerContent>
         <div className="flex justify-center items-center flex-col px-7 py-8 pb-10">
-          <h3 className="font-Lobster text-[26px]">GỬI MỪNG CƯỚI</h3>
+          <h3 className="font-great-vibes text-[28px] font-bold">GỬI MỪNG CƯỚI</h3>
           <p className="text-[15px] text-center mb-3 mt-2 text-sm leading-6">
             Chúng tôi xin gửi lời cảm ơn chân thành đến bạn vì đã chia sẻ niềm vui trong ngày trọng đại của chúng tôi
           </p>
           {data.imageUrl && (
             <Image className="w-[76%]" src={data.imageUrl} width={100} height={100} alt="Invitation 3" />
           )}
-          <h2 className="mt-4 font-bold font-playwrite">{data.name || "Không có tên"}</h2>
+          <h2 className="mt-4 font-bold font-dm-serif-display">{data.name || "Không có tên"}</h2>
           <p className="text-sm mt-3 text-center">
             {data.accountNumber || "Chưa có số tài khoản"}
           </p>

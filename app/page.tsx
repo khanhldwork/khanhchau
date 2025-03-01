@@ -15,11 +15,22 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
-  const handleOpenGoogleMaps = () => {
-    const latitude = 20.758595;
-    const longitude = 105.787167;
+  // const handleOpenGoogleMaps = () => {
+  //   const latitude = 20.758595;
+  //   const longitude = 105.787167;
+  //   const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  //   const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
+  //   if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+  //     window.location.href = googleMapsAppUrl;
+  //   } else {
+  //     window.open(googleMapsWebUrl, "_blank");
+  //   }
+  // };
+
+  const handleOpenGoogleMaps = (latitude, longitude) => {
     const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
     const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
+
     if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
       window.location.href = googleMapsAppUrl;
     } else {
@@ -94,7 +105,7 @@ export default function Page() {
             accountNumber: "19035514534038",
             bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
           }} />
-          <Button className="mt-1 text-sm shake" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
+          <Button className="mt-1 text-sm shake" onClick={()=> handleOpenGoogleMaps(20.758595, 105.787167)}>Xem chỉ đường</Button>
         </div>
 
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-right" data-aos-duration="1000">
@@ -103,12 +114,12 @@ export default function Page() {
           <h3 className="font-dm-serif-display text-primary zoom-text font-bold text-2xl">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
           <DrawerDemo data={{
-            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
-            name: "NGUYEN PHUONG NAM",
-            accountNumber: "19035514534038",
-            bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
+            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
+            name: "NGUYEN HAI YEN",
+            accountNumber: "100870601899",
+            bankInfo: "VietinBank CN DONG DA"
           }} />
-          <Button className="mt-1 text-sm shake" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
+           <Button className="mt-1 text-sm shake" onClick={()=> handleOpenGoogleMaps(20.7722500, 105.7315278)}>Xem chỉ đường</Button>
         </div>
       </section>
 
