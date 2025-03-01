@@ -26,11 +26,11 @@ export function DrawerDemo({ data }: DrawerDemoProps) {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="outline">Gửi mừng cưới</Button>
+        <Button variant="outline">Hộp mừng cưới</Button>
       </DrawerTrigger>
       <DrawerContent>
         <div className="flex justify-center items-center flex-col px-7 py-8 pb-10">
-          <h3 className="font-great-vibes text-[28px] font-bold">GỬI MỪNG CƯỚI</h3>
+          <h3 className="font-dm-serif-display text-[28px] font-bold">GỬI MỪNG CƯỚI</h3>
           <p className="text-[15px] text-center mb-3 mt-2 text-sm leading-6">
             Chúng tôi xin gửi lời cảm ơn chân thành đến bạn vì đã chia sẻ niềm vui trong ngày trọng đại của chúng tôi
           </p>
