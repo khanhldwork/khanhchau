@@ -39,9 +39,7 @@ const Guestbook: React.FC = () => {
       setName("");
       setPhone("");
       setMessage("");
-    } catch (err: any) {
-      setError(err.message);
-    } 
+    }
   };
 
   return (
