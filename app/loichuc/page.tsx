@@ -12,30 +12,51 @@ interface Wish {
 const WishList: React.FC = () => {
     const [wishes, setWishes] = useState<Wish[]>([]);
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");
+    const [error, setError] = useState("");swipeDirection
 
     useEffect(() => {
-        const fetchWishes = async () => {
-            setLoading(true);
-            setError("");
-
-            try {
-                const response = await fetch("https://weddingserver-1.onrender.com/wishes");
-                if (!response.ok) {
-                    throw new Error("Không thể tải danh sách lời chúc!");
-                }
-
-                const data = await response.json();
-                setWishes(data);
-            } catch (err: any) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
         fetchWishes();
     }, []);
+
+    const fetchWishes = async () => {
+        setLoading(true);
+        setError("");
+
+        try {
+            const response = await fetch("https://weddingserver-1.onrender.com/wishes");
+            if (!response.ok) {
+                throw new Error("Không thể tải danh sách lời chúc!");
+            }
+
+            const data = await response.json();
+            setWishes(data);
+        } catch (err: any) {
+            setError(err.message);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleDelete = async (id: string) => {
+        const confirmDelete = window.confirm("Bạn có chắc chắn muốn xóa lời chúc này?");
+        if (!confirmDelete) return;
+
+        try {
+            const response = await fetch(`https://weddingserver-1.onrender.com/wishes/${id}`, {
+                method: "DELETE",
+            });
+
+            if (!response.ok) {
+                throw new Error("Không thể xóa lời chúc!");
+            }
+
+            // Xóa thành công -> Cập nhật danh sách lời chúc
+            setWishes(wishes.filter((wish) => wish._id !== id));
+            alert("Lời chúc đã được xóa!");
+        } catch (err: any) {
+            alert(err.message);
+        }
+    };
 
     return (
         <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
@@ -56,6 +77,7 @@ const WishList: React.FC = () => {
                                 <th className="border p-2">Tên</th>
                                 <th className="border p-2">Số điện thoại</th>
                                 <th className="border p-2">Lời chúc</th>
+                                <th className="border p-2">Hành động</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -64,6 +86,14 @@ const WishList: React.FC = () => {
                                     <td className="border p-2">{wish.name}</td>
                                     <td className="border p-2">{wish.phone}</td>
                                     <td className="border p-2">{wish.message}</td>
+                                    <td className="border p-2">
+                                        <button
+                                            onClick={() => handleDelete(wish._id)}
+                                            className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+                                        >
+                                            Xóa
+                                        </button>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
