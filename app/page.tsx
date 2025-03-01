@@ -97,10 +97,10 @@ export default function Page() {
         </div>
 
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow">
-          <h3 className="font-bold text-md">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
-          <h4 className="font-bold font-Lobster my-1">CHỦ NHẬT</h4>
-          <h3 className="font-Lobster">09 . 03 . 2025</h3>
-          <p className="text-sm mb-2.5 mt-1 leading-6">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
+          <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
+          <h4 className="font-bold font-Lobster my-2">CHỦ NHẬT</h4>
+          <h3 className="font-Lobster text-primary zoom-text text-sm">09 . 03 . 2025</h3>
+          <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
           <DrawerDemo data={{
             imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
             name: "NGUYEN PHUONG NAM",
