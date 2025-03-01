@@ -5,6 +5,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
+import CommentWish from "./CommentWish"
 
 const Guestbook: React.FC = () => {
   const [name, setName] = useState("");
@@ -66,6 +67,8 @@ const Guestbook: React.FC = () => {
           <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Nhập lời chúc của bạn" className="bg-white py-2.5 h-[120px] text-[15px]" required />
           <Button variant="outline" type="submit" className="py-6 bg-white text-black fon-bold uppercase rounded-xl w-full mt-1 text-[14px]">Gửi lời chúc</Button>
         </form>
+
+        <CommentWish />
       </div>
     </section>
   );
