@@ -27,7 +27,7 @@ export default function Page() {
   //   }
   // };
 
-  const handleOpenGoogleMaps = (latitude, longitude) => {
+  const handleOpenGoogleMaps = (latitude :number, longitude: number) => {
     const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
     const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
 
