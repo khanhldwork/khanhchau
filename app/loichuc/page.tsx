@@ -12,7 +12,7 @@ interface Wish {
 const WishList: React.FC = () => {
     const [wishes, setWishes] = useState<Wish[]>([]);
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");swipeDirection
+    const [error, setError] = useState("");
 
     useEffect(() => {
         fetchWishes();
