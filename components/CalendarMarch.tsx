@@ -25,12 +25,15 @@ const CalendarMarch = () => {
                         <div key={"empty-" + index} className="h-[28px] flex justify-center items-center"></div>
                     ))}
                     {days.map((day) => (
-                        <div
-                            key={day}
-                            className={`h-[28px] flex justify-center items-center rounded ${day === 9 ? "bg-primary text-white rotate" : ""}`}
-                        >
-                            {day}
-                        </div>
+                       <div
+                       key={day}
+                       className={`h-[28px] flex justify-center items-center rounded 
+                         ${day === 9 ? "bg-primary text-white rotate" : ""} 
+                         ${day === 8 ? "bg-gray-200 rotate" : ""}`}
+                     >
+                       {day}
+                     </div>
+                     
                     ))}
                 </div>
                 <CountdownTimer date="2025-03-08T07:30:00" />
