@@ -12,7 +12,7 @@ const CalendarMarch = () => {
     const emptyCells = Array.from({ length: (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1) }, () => null);
 
     return (
-        <section className="text-center py-9 px-7 w-full">
+        <section className="text-center py-9 px-7 w-full" data-aos="fade" data-aos-duration="1000">
             <div className="border-[6px] border-gray-200 py-5 px-4 rounded">
                 <h2 className="text-lg font-playwrite mb-4 font-semibold">THÁNG 3 - 2025</h2>
                 <div className="grid grid-cols-7 gap-2 text-[13px] items-center h-[36px] rounded-sm font-bold bg-primary text-white px-2">

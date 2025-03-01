@@ -14,23 +14,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
-  useEffect(() => {
-    const handleWheel = (event: any) => {
-      if (event.ctrlKey) {
-        event.preventDefault();
-      }
-    };
-
-    const handleGesture = (event: any) => event.preventDefault();
-    document.addEventListener("wheel", handleWheel, { passive: false });
-    document.addEventListener("gesturestart", handleGesture);
-
-    return () => {
-      document.removeEventListener("wheel", handleWheel);
-      document.removeEventListener("gesturestart", handleGesture);
-    };
-  }, []);
-
   const handleOpenGoogleMaps = () => {
     const latitude = 20.758595;
     const longitude = 105.787167;
@@ -46,40 +29,42 @@ export default function Page() {
   return (
     <div className="max-w-[435px] overflow-hidden">
       <MusicToggleButton />
+
       <ScrollToTop />
-      <section className="w-full relative flex flex-col items-center justify-center z-[20] py-16 object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
+
+      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-10 object-cover bg-[url(https://res.cloudinary.com/dpufemrnq/image/upload/v1740708261/5_pl6fxl.svg)]">
         <SnowEffect />
-        <h2 className="font-extrabold text-[19px] font-playwrite">SAVE THE DATE</h2>
-        <h3 className="font-bold text-[24px] font-Lobster mb-4 mt-3">Phương Nam & Hải Yến</h3>
-        <div className="bg-[#f62259] w-[55%] p-2">
+        <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-8">SAVE THE DATE</h2>
+        <h3 className="font-bold text-[26px] font-great-vibes mb-4 mt-3">Phương Nam & Hải Yến</h3>
+        <div className="bg-[#f62259] w-[45%] p-2">
           <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={200} height={300} alt="Wedding" />
         </div>
-        <div className="mt-4 mb-1 font-bold">09.03.2025</div>
-        <p className="font-bold">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
+        <div className="mt-5 mb-2 font-bold text-xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
+        <p className="text-sm">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
 
       <section className="py-6 px-7 text-center">
-        <h2 className="font-semibold text-[20px] font-Lobster mb-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
+        <h2 className="font-extrabold text-[22px] font-Lobster mb-6">"Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương"</h2>
         <div className="grid grid-cols-2">
-          <div className="flex flex-col justify-center items-center gap-2">
-            <h2 className="font-extrabold mb-2">NHÀ GÁI</h2>
-            <p className="text-sm font-medium">ÔNG NGUYỄN DANH HÀO</p>
-            <p className="text-sm font-medium mb-2">BÀ NGUYỄN THỊ PHƯƠNG</p>
+          <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-right" data-aos-duration="1000">
+            <h2 className="font-extrabold font-dm-serif-display mb-2">NHÀ GÁI</h2>
+            <p className="text-[12px] font-medium">ÔNG NGUYỄN DANH HÀO</p>
+            <p className="text-[12px] font-medium mb-2">BÀ NGUYỄN THỊ PHƯƠNG</p>
             <Image className="w-[70px] mt-1 py-1" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565927/1_dpg4io.svg" width={200} height={400} alt="Wedding" />
-            <p className="font-semibold font-Lobster text-[24px] mt-3">Hải Yến</p>
+            <p className="font-semibold font-great-vibes text-[24px] mt-3 text-primary">Hải Yến</p>
           </div>
-          <div className="">
+          <div className="" data-aos="fade-left" data-aos-duration="1000">
             <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505065/257A6942_re2yug.jpg" width={200} height={400} alt="Wedding" />
           </div>
-          <div className="">
+          <div className="" data-aos="fade-right" data-aos-duration="1000">
             <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505075/257A6958_voyspn.jpg" width={200} height={400} alt="Wedding" />
           </div>
-          <div className="flex flex-col justify-center items-center gap-2">
-            <h2 className="font-extrabold mb-2">NHÀ TRAI</h2>
-            <p className="text-sm font-medium">ÔNG NGUYỄN HỮU CẦU</p>
-            <p className="text-sm font-medium mb-2">BÀ NGUYỄN THỊ KẾ</p>
+          <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-left" data-aos-duration="1000">
+            <h2 className="font-extrabold font-dm-serif-display mb-2">NHÀ TRAI</h2>
+            <p className="text-[12px] font-medium">ÔNG NGUYỄN HỮU CẦU</p>
+            <p className="text-[12px] font-medium mb-2">BÀ NGUYỄN THỊ KẾ</p>
             <Image className="w-[70px] mt-2" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565926/2_ytvycn.svg" width={200} height={400} alt="Wedding" />
-            <p className="font-semibold font-Lobster text-[24px] mt-3">Phương Nam</p>
+            <p className="font-semibold font-great-vibes text-[24px] mt-3 text-primary">Phương Nam</p>
           </div>
         </div>
       </section>
@@ -96,10 +81,10 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow">
+        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-left" data-aos-duration="1000">
           <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
-          <h4 className="font-bold font-Lobster my-2">CHỦ NHẬT</h4>
-          <h3 className="font-Lobster text-primary zoom-text text-sm">09 . 03 . 2025</h3>
+          <h4 className="font-bold font-dm-serif-display my-2">CHỦ NHẬT</h4>
+          <h3 className="font-dm-serif-display text-primary zoom-text text-sm">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
           <DrawerDemo data={{
             imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
@@ -107,20 +92,21 @@ export default function Page() {
             accountNumber: "19035514534038",
             bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
           }} />
-          <Button className="mt-1 texxt-sm" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
+          <Button className="mt-1 text-sm shake" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
         </div>
-        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-4 rounded-bl-[40px] py-6 px-5 bg-white shadow">
-          <h3 className="font-bold text-md">TIỆC MỪNG CƯỚI NHÀ GÁI</h3>
-          <h4 className="font-bold font-Lobster my-1">CHỦ NHẬT</h4>
-          <h3 className="font-Lobster">09 . 03 . 2025</h3>
-          <p className="text-sm mb-2.5 mt-1 leading-6">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
+
+        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-right" data-aos-duration="1000">
+          <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ GÁI</h3>
+          <h4 className="font-bold font-dm-serif-display my-2">CHỦ NHẬT</h4>
+          <h3 className="font-dm-serif-display text-primary zoom-text text-sm">09 . 03 . 2025</h3>
+          <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
           <DrawerDemo data={{
-            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
-            name: "NGUYEN HAI YEN",
-            accountNumber: "100870601899",
-            bankInfo: "VietinBank CN DONG DA - PGD CAT LINK"
+            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
+            name: "NGUYEN PHUONG NAM",
+            accountNumber: "19035514534038",
+            bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
           }} />
-          <Button className="mt-1 texxt-sm" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
+          <Button className="mt-1 text-sm shake" onClick={handleOpenGoogleMaps}>Xem chỉ đường</Button>
         </div>
       </section>
 
@@ -142,8 +128,10 @@ export default function Page() {
           <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
         </div>
       </section>
+
       <Guestbook />
-      <section className="bg-red-200 py-10 px-7 flex gap-2 flex-col text-white items-center justify-center text-center">
+
+      <section className="bg-primary py-10 px-7 flex gap-2 flex-col text-white items-center justify-center text-center">
         <h2 className="font-Lobster text-[46px]">Thank You</h2>
         <p>Chúng tôi vô cùng trân trọng và biết ơn sự hiện diện của bạn trong ngày đặc biệt này!</p>
       </section>

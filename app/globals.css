@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,9 +16,10 @@ body {
   font-family: "Pacifico", serif; 
   font-family: "Libre Baskerville", serif;
   font-family: "Nunito", sans-serif;  */
-  /* font-family: "Luxurious Script", serif; */
+  /* font-family: "Luxurious Script", se  rif; */
 
   font-family: "Nunito", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -27,17 +29,21 @@ html, body {
   touch-action: pan-x pan-y;
 }
 
-
-.font-playwrite {
-  font-family: "Playwrite IT Moderna", serif;
+.font-great-vibes {
+  font-family: "Great Vibes", cursive;
 }
-.font-playwrite {
-  font-family: "Playwrite IT Moderna", serif;
+
+.font-dm-serif-display {
+  font-family: "DM Serif Display", serif;
 }
 
 .font-Lobster {
   font-family: "Lobster", sans-serif;
+  font-family: "Allura", cursive;
+  font-weight: 800;
 }
+
+
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -304,3 +310,20 @@ html {
 #scrollTopBtn:hover {
   background-color: #0056b3;
 }
+
+
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-18px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-8px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  display: inline-block;
+  animation: shake 0.5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
