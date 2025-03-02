@@ -35,7 +35,7 @@ export function DrawerDemo({ data }: DrawerDemoProps) {
             Chúng tôi xin gửi lời cảm ơn chân thành đến bạn vì đã chia sẻ niềm vui trong ngày trọng đại của chúng tôi
           </p>
           {data.imageUrl && (
-            <Image className="w-[76%]" src={data.imageUrl} width={100} height={100} alt="Invitation 3" />
+            <Image className="w-[76%] lg:w-[370px]" src={data.imageUrl} width={100} height={100} alt="Invitation 3" />
           )}
           <h2 className="mt-4 font-bold font-dm-serif-display">{data.name || "Không có tên"}</h2>
           <p className="text-sm mt-3 text-center">
