@@ -11,7 +11,7 @@ interface Wish {
 
 interface Props {
   wishes: Wish[];
-  fetchWishes: () => void; // Nhận hàm fetch từ Guestbook
+  fetchWishes: () => void; 
 }
 
 const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
@@ -20,9 +20,11 @@ const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
   }, []);
 
   return (
-    <div className="mt-6">
+    <div className="p-6 bg-primary shadow-md mt-2 rounded-md">
       {wishes.length === 0 ? (
-        <p className="text-gray-500">Chưa có lời chúc nào!</p>
+        <div className="px-4 py-3 border rounded-lg shadow-sm bg-gray-50 text-center">
+          <h3 className="font-semibold text-sm text-gray-900 uppercase">Đang tải lời chúc</h3>
+        </div>
       ) : (
         <div className="space-y-2">
           {wishes.map((wish) => (
