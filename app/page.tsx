@@ -12,26 +12,27 @@ import { DrawerDemo } from "@/components/DrawerDemo";
 import { Button } from "@/components/ui/button";
 import MusicToggleButton from "@/components/MusicToggleButton";
 import ScrollToTop from "@/components/ScrollToTop";
+import FloatingMenu from "@/components/FloatingMenu";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
   useEffect(() => {
     const fetchWishes = async () => {
-        try {
-            const response = await fetch("https://weddingserver-1.onrender.com/wishes");
-            if (!response.ok) {
-                throw new Error("Không thể tải danh sách lời chúc!");
-            }
-        } catch (err: any) {
-            console.log(err.message);
-            
+      try {
+        const response = await fetch("https://weddingserver-1.onrender.com/wishes");
+        if (!response.ok) {
+          throw new Error("Không thể tải danh sách lời chúc!");
         }
+      } catch (err: any) {
+        console.log(err.message);
+
+      }
     };
 
     fetchWishes();
-}, []);
+  }, []);
 
-  const handleOpenGoogleMaps = (latitude :number, longitude: number) => {
+  const handleOpenGoogleMaps = (latitude: number, longitude: number) => {
     const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
     const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
 
@@ -45,9 +46,9 @@ export default function Page() {
   return (
     <div className="max-w-[435px] overflow-hidden">
       <MusicToggleButton />
+      <FloatingMenu />
+      {/* <ScrollToTop /> */}
 
-      <ScrollToTop />
-     
 
       <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-8">
         {/* <SnowEffect /> */}
@@ -111,7 +112,7 @@ export default function Page() {
             accountNumber: "19035514534038",
             bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
           }} />
-          <Button className="mt-1 text-sm shake" onClick={()=> handleOpenGoogleMaps(20.758595, 105.787167)}>Xem chỉ đường</Button>
+          <Button className="mt-1 text-sm shake" onClick={() => handleOpenGoogleMaps(20.758595, 105.787167)}>Xem chỉ đường</Button>
         </div>
 
         <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-right" data-aos-duration="1000">
@@ -125,7 +126,7 @@ export default function Page() {
             accountNumber: "100870601899",
             bankInfo: "VietinBank CN DONG DA"
           }} />
-           <Button className="mt-1 text-sm shake" onClick={()=> handleOpenGoogleMaps(20.7722500, 105.7315278)}>Xem chỉ đường</Button>
+          <Button className="mt-1 text-sm shake" onClick={() => handleOpenGoogleMaps(20.7722500, 105.7315278)}>Xem chỉ đường</Button>
         </div>
       </section>
 
