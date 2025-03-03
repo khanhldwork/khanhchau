@@ -16,24 +16,27 @@ interface Props {
 }
 
 const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
-  const [count, setCount] = useState(3);
+  const [visibleWishes, setVisibleWishes] = useState<Wish[]>([]);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     fetchWishes();
   }, []);
 
-  const sortedWishes = [...wishes].reverse();
-  const visibleWishes = sortedWishes.slice(0, count);
+  useEffect(() => {
+    setVisibleWishes(wishes.slice(0, 3));
+  }, [wishes]);
 
-  const handleLoadMore = () => {
-    setCount((prev) => Math.min(prev + 3, wishes.length));
+  const handleShowMore = () => {
+    setShowAll(true);
+    setVisibleWishes(wishes);
   };
 
   return (
     <div className="p-6 bg-primary shadow-md mt-2 rounded-md">
       {wishes.length === 0 ? (
         <div className="px-4 py-3 border rounded-lg shadow-sm bg-gray-50 text-center">
-          <h3 className="font-semibold text-sm text-gray-900 uppercase">Đang tải lời chúc</h3>
+          <h3 className="font-semibold text-sm text-gray-900 uppercase">Đang tải lời chúc...</h3>
         </div>
       ) : (
         <div className="space-y-2">
@@ -43,14 +46,14 @@ const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
               <p className="text-gray-700 mt-1 text-sm">{wish.message}</p>
             </div>
           ))}
-          {visibleWishes.length < wishes.length && (
-            <div className="flex justify-center mt-6">
+          {!showAll && wishes.length > 3 && (
+            <div className="mt-6 flex justify-center">
               <Button
                 variant="outline"
-                onClick={handleLoadMore}
+                onClick={handleShowMore}
                 className="px-6"
               >
-                Xem thêm lời chúc
+                Xem thêm
               </Button>
             </div>
           )}
