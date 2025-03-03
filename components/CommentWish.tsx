@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 
 interface Wish {
   _id: string;
@@ -24,7 +24,7 @@ const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
   }, []);
 
   useEffect(() => {
-    setVisibleWishes(wishes.slice(-count));
+    setVisibleWishes(wishes.slice(-count).reverse());
   }, [wishes, count]);
 
   const handleLoadMore = () => {
@@ -46,12 +46,15 @@ const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
             </div>
           ))}
           {visibleWishes.length < wishes.length && (
-            <Button variant="outline"
-              onClick={handleLoadMore}
-              className="px-6"
-            >
-              Xem thêm lời chúc
-            </Button>
+            <div className="flex justify-center mt-5">
+              <Button
+                variant="outline"
+                onClick={handleLoadMore}
+                className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600"
+              >
+                Xem thêm lời chúc
+              </Button>
+            </div>
           )}
         </div>
       )}
