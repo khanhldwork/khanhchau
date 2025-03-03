@@ -16,16 +16,14 @@ interface Props {
 }
 
 const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
-  const [visibleWishes, setVisibleWishes] = useState<Wish[]>([]);
   const [count, setCount] = useState(3);
 
   useEffect(() => {
     fetchWishes();
   }, []);
 
-  useEffect(() => {
-    setVisibleWishes(wishes.slice(-count).reverse());
-  }, [wishes, count]);
+  const sortedWishes = [...wishes].reverse();
+  const visibleWishes = sortedWishes.slice(0, count);
 
   const handleLoadMore = () => {
     setCount((prev) => Math.min(prev + 3, wishes.length));
@@ -46,11 +44,11 @@ const CommentWish: React.FC<Props> = ({ wishes, fetchWishes }) => {
             </div>
           ))}
           {visibleWishes.length < wishes.length && (
-            <div className="flex justify-center mt-5">
+            <div className="flex justify-center mt-6">
               <Button
                 variant="outline"
                 onClick={handleLoadMore}
-                className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600"
+                className="px-6"
               >
                 Xem thêm lời chúc
               </Button>
