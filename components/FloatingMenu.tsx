@@ -3,6 +3,16 @@ import { Menu, Plus, Settings } from "lucide-react";
 
 export default function FloatingMenu() {
     const [isOpen, setIsOpen] = useState(true);
+    const handleOpenGoogleMaps = (latitude: number, longitude: number) => {
+        const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+        const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
+    
+        if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          window.location.href = googleMapsAppUrl;
+        } else {
+          window.open(googleMapsWebUrl, "_blank");
+        }
+      };
 
     return (
         <div className="fixed bottom-6 right-4 flex flex-col items-center gap-2 z-50">

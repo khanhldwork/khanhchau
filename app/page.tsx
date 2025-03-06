@@ -4,33 +4,17 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import SnowEffect from "@/components/SnowEffect";
 import FallingHearts from "@/components/FallingHearts";
-import Guestbook from "@/components/Guestbook";
-import CalendarMarch from "@/components/CalendarMarch";
-import { DrawerDemo } from "@/components/DrawerDemo";
+import GuestbookWithComments from "@/components/GuestbookWithComments";
+
+import EventCalendar from "@/components/EventCalendar";
+import { WeddingGiftDrawer } from "@/components/WeddingGiftDrawer";
 import { Button } from "@/components/ui/button";
 import MusicToggleButton from "@/components/MusicToggleButton";
-import ScrollToTop from "@/components/ScrollToTop";
 import FloatingMenu from "@/components/FloatingMenu";
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
-  useEffect(() => {
-    const fetchWishes = async () => {
-      try {
-        const response = await fetch("https://weddingserver-1.onrender.com/wishes");
-        if (!response.ok) {
-          throw new Error("Không thể tải danh sách lời chúc!");
-        }
-      } catch (err: any) {
-        console.log(err.message);
-
-      }
-    };
-
-    fetchWishes();
-  }, []);
 
   const handleOpenGoogleMaps = (latitude: number, longitude: number) => {
     const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
@@ -45,13 +29,10 @@ export default function Page() {
 
   return (
     <div className="max-w-[435px] overflow-hidden">
-      <MusicToggleButton />
-      <FloatingMenu />
-      {/* <ScrollToTop /> */}
-
+      {/* <MusicToggleButton /> */}
+      {/* <FloatingMenu /> */}
 
       <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-8">
-        {/* <SnowEffect /> */}
         <Image className="w-full absolute z-[-1]" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740811998/Untitled_design_pis8dc.png" width={200} height={300} alt="Wedding" />
         <FallingHearts />
         <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-2">SAVE THE DATE</h2>
@@ -106,7 +87,7 @@ export default function Page() {
           <h4 className="font-bold font-dm-serif-display my-2 text-lg">CHỦ NHẬT</h4>
           <h3 className="font-dm-serif-display text-primary zoom-text font-bold text-2xl">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <DrawerDemo data={{
+          <WeddingGiftDrawer data={{
             imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
             name: "NGUYEN PHUONG NAM",
             accountNumber: "19035514534038",
@@ -115,12 +96,12 @@ export default function Page() {
           <Button className="mt-1 text-sm shake" onClick={() => handleOpenGoogleMaps(20.758595, 105.787167)}>Xem chỉ đường</Button>
         </div>
 
-        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-right" data-aos-duration="1000">
+        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-bl-[40px] py-6 px-5 bg-white shadow" data-aos="fade-right" data-aos-duration="1000">
           <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ GÁI</h3>
           <h4 className="font-bold font-dm-serif-display my-2 text-lg">CHỦ NHẬT</h4>
           <h3 className="font-dm-serif-display text-primary zoom-text font-bold text-2xl">09 . 03 . 2025</h3>
           <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <DrawerDemo data={{
+          <WeddingGiftDrawer data={{
             imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
             name: "NGUYEN HAI YEN",
             accountNumber: "100870601899",
@@ -130,7 +111,12 @@ export default function Page() {
         </div>
       </section>
 
-      <CalendarMarch />
+      <EventCalendar
+        primaryDate="2025-03-09"
+        secondaryDate="2025-03-08"
+        countdownTarget="2025-03-08T00:00:00"
+      />
+    
 
       <section className="bg-[#f2f5f4] py-8 px-6">
         <div className="w-[90%] mx-auto">
@@ -149,7 +135,7 @@ export default function Page() {
         </div>
       </section>
 
-      <Guestbook />
+      <GuestbookWithComments />
 
       <section className="bg-primary py-10 px-7 flex gap-2 flex-col text-white items-center justify-center text-center">
         <h2 className="font-great-vibes font-bold zoom-text text-[46px]">Thank You</h2>

@@ -40,7 +40,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         {children}
-        <Toaster position="top-center"/>
+        <Toaster position="top-center" duration={50000}/>
       </body>
     </html>
   );
