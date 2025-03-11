@@ -116,7 +116,7 @@ export default function Page() {
         secondaryDate="2025-03-08"
         countdownTarget="2025-03-08T00:00:00"
       />
-    
+
 
       <section className="bg-[#f2f5f4] py-8 px-6">
         <div className="w-[90%] mx-auto">

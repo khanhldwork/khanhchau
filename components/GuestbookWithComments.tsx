@@ -43,14 +43,7 @@ const GuestbookWithComments: React.FC = () => {
         throw new Error("Gửi lời chúc thất bại, vui lòng thử lại!");
       }
 
-      toast("Gửi lời chúc thành công!", {
-        description:
-          "Chúng tôi vô cùng trân trọng và biết ơn lời chúc phúc của bạn dành cho ngày trọng đại của chúng tôi. Cảm ơn bạn đã chia sẻ niềm vui này cùng chúng tôi!",
-        action: {
-          label: "Đóng",
-          onClick: () => console.log("Đóng thông báo"),
-        },
-      });
+      toast.success(<div>Chúng tôi vô cùng trân trọng và biết ơn lời chúc phúc của bạn dành cho ngày trọng đại của chúng tôi. Cảm ơn bạn đã chia sẻ niềm vui này cùng chúng tôi!</div>);
 
       setName("");
       setPhone("");
@@ -60,10 +53,6 @@ const GuestbookWithComments: React.FC = () => {
       console.error("Đã xảy ra lỗi:", error);
       toast("Gửi lời chúc thất bại!", {
         description: "Vui lòng thử lại sau.",
-        action: {
-          label: "Đóng",
-          onClick: () => console.log("Đóng thông báo lỗi"),
-        },
       });
     } finally {
       setLoading(false);
