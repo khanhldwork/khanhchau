@@ -7,18 +7,19 @@ export const metadata: Metadata = {
   description: "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
   openGraph: {
     title: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
-    description: "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến.",
-    type: "website",
+    description: "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
     url: "https://wedly.info",
+    siteName: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
     images: [
       {
         url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
-        type: "image/jpeg",
       },
     ],
+    locale: "vi_VN",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://wedly.info",
   }
 };
 
