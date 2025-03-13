@@ -12,6 +12,7 @@ import { WeddingGiftDrawer } from "@/components/WeddingGiftDrawer";
 import { Button } from "@/components/ui/button";
 import MusicToggleButton from "@/components/MusicToggleButton";
 import FloatingMenu from "@/components/FloatingMenu";
+import { CarouselSize } from "@/components/CarouselSize"
 
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
@@ -28,7 +29,7 @@ export default function Page() {
   };
 
   return (
-    <div className="max-w-[435px] overflow-hidden">
+    <div className="max-w-[435px] overflow-hidden select-none">
       {/* <MusicToggleButton /> */}
       {/* <FloatingMenu /> */}
 
@@ -37,9 +38,7 @@ export default function Page() {
         <FallingHearts />
         <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-2">SAVE THE DATE</h2>
         <h3 className="font-bold text-[28px] font-great-vibes my-4">Phương Nam & Hải Yến</h3>
-        <div className="bg-gray-400 w-[45%] p-1.5 my-1 rounded-md">
-          <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={200} height={300} alt="Wedding" />
-        </div>
+        <CarouselSize />
         <div className="mt-5 mb-4 font-bold text-3xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
         <p className="text-sm">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
       </section>
@@ -115,6 +114,8 @@ export default function Page() {
         primaryDate="2025-03-09"
         secondaryDate="2025-03-08"
         countdownTarget="2025-03-08T00:00:00"
+        eventStart="2025-03-08T00:00:00"
+        eventEnd="2025-03-09T23:59:59"
       />
 
 
