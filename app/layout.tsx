@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
-import { SheetSide } from "@/components/SheetSide";
 
 export const metadata: Metadata = {
   title: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
@@ -32,9 +31,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
-        <header className="h-[60px] bg-white fixed top-0 z-50 shadow-md w-full flex items-center justify-between px-4">
-        <SheetSide />
-        </header>
         {children}
         <Toaster position="top-center" duration={7000} closeButton />
       </body>
