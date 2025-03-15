@@ -33,7 +33,7 @@ export default function Page() {
       {/* <MusicToggleButton /> */}
       <FloatingMenu />
 
-      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-6 pb-8">
+      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-8">
         <Image className="w-full absolute z-[-1]" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740811998/Untitled_design_pis8dc.png" width={200} height={300} alt="Wedding" />
         <FallingHearts />
         <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-2">SAVE THE DATE</h2>
