@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import FallingHearts from "@/components/FallingHearts";
+import Snowfall from "@/components/Snowfall";
 import GuestbookWithComments from "@/components/GuestbookWithComments";
 
 import EventCalendar from "@/components/EventCalendar";
@@ -27,6 +28,8 @@ export default function Page() {
   return (
     <div className="max-w-[450px] md:max-w-[400px] overflow-hidden select-none">
       <FloatingMenu />
+      {/* <FallingHearts /> */}
+      <Snowfall />
 
       <Section1
         slides={[
