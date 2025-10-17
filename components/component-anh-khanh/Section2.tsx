@@ -18,7 +18,7 @@ interface Section2Props {
 
 const Section2: React.FC<Section2Props> = ({ title, galleryImages, groom, bride }) => {
     return (
-        <section className="text-center">
+        <section className="text-center px-4">
             <h2 className="font-bold text-[24px] font-great-vibes mb-6 pt-6">{title}</h2>
 
             <div className="grid grid-cols-2 gap-2">

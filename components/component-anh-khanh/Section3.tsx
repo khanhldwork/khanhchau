@@ -110,7 +110,7 @@ const Section3: React.FC<Section3Props> = ({ invitation, events }) => {
     };
 
     return (
-        <section className="py-10 text-center">
+        <section className="py-10 text-center px-3">
             {/* Thư mời */}
             <div>
                 <div className="w-[100px] h-[2px] bg-black rounded mx-auto mb-1"></div>
