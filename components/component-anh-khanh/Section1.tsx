@@ -41,10 +41,10 @@ export const Section1: React.FC<Section1Props> = ({
   }, [slides.length, autoplay]);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-lg">
+    <div className="relative w-full overflow-hidden ">
       {/* Slider track */}
       <div
-        className="flex transition-transform duration-700 ease-in-out"
+        className="flex transition-transform duration-700 ease-in-out rounded-none"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
@@ -54,7 +54,7 @@ export const Section1: React.FC<Section1Props> = ({
               alt={slide.alt || `Slide ${index + 1}`}
               width={1200}
               height={800}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-none"
             />
           </div>
         ))}

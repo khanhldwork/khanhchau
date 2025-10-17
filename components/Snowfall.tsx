@@ -40,7 +40,7 @@ const Snowfall: React.FC = () => {
                         },
                         move: {
                             enable: true,
-                            speed: 6, // Tốc độ rơi nhẹ
+                            speed: 10, // Tốc độ rơi nhẹ
                             direction: "bottom",
                             straight: false,
                             random: true,

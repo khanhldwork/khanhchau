@@ -10,20 +10,20 @@ interface Person {
 }
 
 interface Section2Props {
-     title: React.ReactNode;
-    galleryImages: string[]; // ảnh đầu và cuối
+    title: React.ReactNode;
+    galleryImages: string[];
     groom: Person;
     bride: Person;
 }
 
 const Section2: React.FC<Section2Props> = ({ title, galleryImages, groom, bride }) => {
     return (
-        <section className="text-center px-4">
+        <section className="text-center px-5">
             <h2 className="font-bold text-[24px] font-great-vibes mb-6 pt-6">{title}</h2>
 
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-0">
                 {/* Ảnh đầu */}
-                <div className="" data-aos="fade-right" data-aos-duration="1000">
+                <div className="border-[4px] border-gray-50" data-aos="fade-right" data-aos-duration="1000">
                     <Image
                         className="w-full"
                         src={galleryImages[0]}
@@ -34,7 +34,7 @@ const Section2: React.FC<Section2Props> = ({ title, galleryImages, groom, bride 
                 </div>
 
                 {/* Nhà trai */}
-                <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-left" data-aos-duration="1000">
+                <div className="flex flex-col justify-center items-center gap-2 border-[4px] border-gray-50" data-aos="fade-left" data-aos-duration="1000">
                     <h2 className="font-extrabold font-oswald mb-2">NHÀ TRAI</h2>
                     {groom.address && <p className="text-[14px]">{groom.address}</p>}
                     <h5 className="mt-5 text-[17px]">{groom.role}</h5>
@@ -42,7 +42,7 @@ const Section2: React.FC<Section2Props> = ({ title, galleryImages, groom, bride 
                 </div>
 
                 {/* Nhà gái */}
-                <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-left" data-aos-duration="1000">
+                <div className="flex flex-col justify-center items-center gap-2 border-[4px] border-gray-50" data-aos="fade-right" data-aos-duration="1000">
                     <h2 className="font-extrabold font-oswald mb-2">NHÀ GÁI</h2>
                     {bride.address && <p className="text-[14px]">{bride.address}</p>}
                     <h5 className="mt-5 text-[17px]">{bride.role}</h5>
@@ -50,7 +50,7 @@ const Section2: React.FC<Section2Props> = ({ title, galleryImages, groom, bride 
                 </div>
 
                 {/* Ảnh cuối */}
-                <div className="" data-aos="fade-left" data-aos-duration="1000">
+                <div className="border-[4px] border-gray-50" data-aos="fade-left" data-aos-duration="1000">
                     <Image
                         className="w-full"
                         src={galleryImages[1]}
