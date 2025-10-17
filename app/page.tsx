@@ -25,7 +25,7 @@ export default function Page() {
 
 
   return (
-    <div className="max-w-[400px] overflow-hidden select-none">
+    <div className="max-w-[450px] md:max-w-[400px] overflow-hidden select-none">
       <FloatingMenu />
 
       <Section1
@@ -48,7 +48,12 @@ export default function Page() {
 
 
       <Section2
-        title="Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương"
+        title={
+          <>
+            Hôn nhân là chuyện cả đời,<br />
+            Yêu người vừa ý, cưới người mình thương
+          </>
+        }
         galleryImages={[
           "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/77501014-78c3-4f0e-a2fc-25f01f7b6452.webp",
           "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/997031a1-7a3b-4e7b-aca0-2115c9917c7c.webp",
@@ -118,12 +123,13 @@ export default function Page() {
 
 
       <EventCalendar
-        primaryDate="2025-03-09"
-        secondaryDate="2025-03-08"
-        countdownTarget="2025-03-08T00:00:00"
-        eventStart="2025-03-08T00:00:00"
-        eventEnd="2025-03-09T23:59:59"
+        primaryDate="2025-10-25"        // Ngày chính hiển thị (chưa đến)
+        secondaryDate="2025-10-24"      // Ngày phụ hiển thị (chưa đến)
+        countdownTarget="2025-10-25T18:00:00"  // Ngày giờ bắt đầu sự kiện
+        eventStart="2025-10-25T18:00:00"       // Bắt đầu sự kiện
+        eventEnd="2025-10-25T23:59:59"         // Kết thúc sự kiện
       />
+
 
 
       <section className="bg-[#f2f5f4] py-8 px-6">

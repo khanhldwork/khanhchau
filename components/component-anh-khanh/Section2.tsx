@@ -10,7 +10,7 @@ interface Person {
 }
 
 interface Section2Props {
-    title: string;
+     title: React.ReactNode;
     galleryImages: string[]; // ảnh đầu và cuối
     groom: Person;
     bride: Person;
