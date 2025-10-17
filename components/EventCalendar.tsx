@@ -70,7 +70,7 @@ const EventCalendar: React.FC<EventCalendarProps> = ({
   }
 
   return (
-    <section className="text-center py-3 px-5 w-full">
+    <section className="text-center py-3  px-5 w-full">
       <div className="border-[5px] border-gray-200 py-5 px-4 rounded">
         <h2 className="text-lg font-dm-serif-display mb-4 font-semibold">
           THÁNG 3 - 2025

@@ -37,7 +37,7 @@ export default function Page() {
           { imageUrl: 'https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp' },
           { imageUrl: 'https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/bf5d6cd3-b372-4de3-be9d-0aa50fc1d9f2.webp' },
         ]}
-        title="Anh Tú & Thu Ngần"
+        title="Duy Khánh & Minh Châu"
         invitation={{
           weddingInviteText: "THƯ MỜI TIỆC CƯỚI",
           saturdayTime: "THỨ BẢY - 18:00",
