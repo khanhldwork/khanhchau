@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -22,9 +24,26 @@ html {
   font-family: "Great Vibes", cursive;
 }
 
-/*  */
+.font-great-vibes2 {
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
 .font-dm-serif-display {
   font-family: "DM Serif Display", serif;
+}
+
+.font-philosopher {
+  font-family: "Philosopher", sans-serif;
+  text-shadow: rgb(0, 0, 0) 1px 2px 3px;
+}
+
+.font-philosopher-noshadow {
+  font-family: "Philosopher", sans-serif;
+}
+
+.font-oswald {
+  font-family: "Oswald", sans-serif;
 }
 
 
@@ -40,6 +59,20 @@ html {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@font-face {
+  font-family: 'Fz-Photograph';
+  src: url('/fonts/Fz-Photograph.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-photograph {
+  font-family: 'Fz-Photograph';
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+  width: 170px;
+  text-align: right;
 }
 
 @layer base {
@@ -134,29 +167,29 @@ html {
 
 @keyframes zoomEffect {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   50% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes smoothBlink {
   0% {
-      color: white;
+    color: white;
   }
 
   50% {
-      color: #f62259;
+    color: #f62259;
   }
 
   100% {
-      color: white;
+    color: white;
   }
 }
 
@@ -169,21 +202,21 @@ html {
   animation: zoomEffect 1.5s infinite ease-in-out;
 }
 
-.pulse{
+.pulse {
   animation: zoomEffect 1.5s infinite ease-in-out;
 }
 
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   50% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -191,9 +224,11 @@ html {
   0% {
     transform: scale(1) rotate(0deg);
   }
+
   50% {
     transform: scale(1.1) rotate(10deg);
   }
+
   100% {
     transform: scale(1) rotate(0deg);
   }
@@ -258,11 +293,25 @@ html {
 }
 
 @keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-18px); }
-  50% { transform: translateX(10px); }
-  75% { transform: translateX(-8px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-18px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-8px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .shake {
@@ -270,4 +319,3 @@ html {
   animation: shake 0.5s ease-in-out infinite;
   animation-delay: 2s;
 }
-

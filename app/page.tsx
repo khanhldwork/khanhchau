@@ -14,101 +14,108 @@ import MusicToggleButton from "@/components/MusicToggleButton";
 import FloatingMenu from "@/components/FloatingMenu";
 import { CarouselSize } from "@/components/CarouselSize"
 
+
+import { Section1 } from "@/components/component-anh-khanh/Section1";
+import Section2 from "@/components/component-anh-khanh/Section2";
+import Section3 from "@/components/component-anh-khanh/Section3";
+
 export default function Page() {
   useEffect(() => { AOS.init(); }, []);
 
-  const handleOpenGoogleMaps = (latitude: number, longitude: number) => {
-    const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
-    const googleMapsAppUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
 
-    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-      window.location.href = googleMapsAppUrl;
-    } else {
-      window.open(googleMapsWebUrl, "_blank");
-    }
-  };
 
   return (
-    <div className="max-w-[435px] overflow-hidden select-none">
-      {/* <MusicToggleButton /> */}
+    <div className="max-w-[400px] overflow-hidden select-none">
       <FloatingMenu />
 
-      <section className="w-full relative flex flex-col items-center justify-center z-[20] pt-16 pb-8">
-        <Image className="w-full absolute z-[-1]" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740811998/Untitled_design_pis8dc.png" width={200} height={300} alt="Wedding" />
-        <FallingHearts />
-        <h2 className="font-extrabold text-[20px] font-dm-serif-display mt-2">SAVE THE DATE</h2>
-        <h3 className="font-bold text-[28px] font-great-vibes my-4">Phương Nam & Hải Yến</h3>
-        <CarouselSize />
-        <div className="mt-5 mb-4 font-bold text-3xl font-dm-serif-display zoom-text text-primary">09.03.2025</div>
-        <p className="text-sm">(Tức ngày 10 Tháng 02 Năm Ất Tỵ)</p>
-      </section>
+      <Section1
+        slides={[
+          { imageUrl: 'https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp' },
+          { imageUrl: 'https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp' },
+          { imageUrl: 'https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/bf5d6cd3-b372-4de3-be9d-0aa50fc1d9f2.webp' },
+        ]}
+        title="Anh Tú & Thu Ngần"
+        invitation={{
+          weddingInviteText: "THƯ MỜI TIỆC CƯỚI",
+          saturdayTime: "THỨ BẢY - 18:00",
+          saturdayDate: "05 . 04 . 2026",
+          sundayTime: "CHỦ NHẬT - 11:45",
+          sundayDate: "06 . 04 . 2026",
+          ceremonyText: "LỄ THÀNH HÔN",
+        }}
+        autoplay={3000}
+      />
 
-      <section className="py-6 px-7 text-center">
-        <h2 className="font-bold text-[24px] font-great-vibes mb-6 pt-6">Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương</h2>
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-right" data-aos-duration="1000">
-            <h2 className="font-extrabold font-dm-serif-display mb-2">NHÀ GÁI</h2>
-            <p className="text-[12px] font-medium">ÔNG NGUYỄN DANH HÀO</p>
-            <p className="text-[12px] font-medium mb-2">BÀ NGUYỄN THỊ PHƯƠNG</p>
-            <Image className="w-[70px] mt-1 py-1" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565927/1_dpg4io.svg" width={200} height={400} alt="Wedding" />
-            <p className="font-semibold font-great-vibes text-[24px] mt-3 text-primary">Hải Yến</p>
-          </div>
-          <div className="" data-aos="fade-left" data-aos-duration="1000">
-            <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505065/257A6942_re2yug.jpg" width={200} height={400} alt="Wedding" />
-          </div>
-          <div className="" data-aos="fade-right" data-aos-duration="1000">
-            <Image className="w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505075/257A6958_voyspn.jpg" width={200} height={400} alt="Wedding" />
-          </div>
-          <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-left" data-aos-duration="1000">
-            <h2 className="font-extrabold font-dm-serif-display mb-2">NHÀ TRAI</h2>
-            <p className="text-[12px] font-medium">ÔNG NGUYỄN HỮU CẦU</p>
-            <p className="text-[12px] font-medium mb-2">BÀ NGUYỄN THỊ KẾ</p>
-            <Image className="w-[70px] mt-2" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740565926/2_ytvycn.svg" width={200} height={400} alt="Wedding" />
-            <p className="font-semibold font-great-vibes text-[24px] mt-3 text-primary">Phương Nam</p>
-          </div>
-        </div>
-      </section>
 
-      <section className="py-8 text-center bg-[#f2f5f4]">
-        <div className="mx-5">
-          <div className="w-[100px] h-[2px] bg-black rounded mx-auto mb-1"></div>
-          <h2 className=" font-bold text-[28px]  text-black font-great-vibes">Thư Mời</h2>
-          <p className="text-sm font-semibold mb-5">THAM DỰ LỄ CƯỚI PHƯƠNG NAM & HẢI YẾN</p>
-          <div className="grid grid-cols-[auto_40%_auto] items-center gap-4 px-2 rounded">
-            <Image data-aos="fade-right" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504985/257A7142_hg6s9k.jpg" width={250} height={300} alt="Invitation 3" />
-            <Image data-aos="fade-down" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg" width={250} height={300} alt="Invitation 2" />
-            <Image data-aos="fade-left" data-aos-duration="1000" className="shadow-2xl rounded-md" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740504830/257A6816_ssfl1y.jpg" width={250} height={300} alt="Invitation 3" />
-          </div>
-        </div>
+      <Section2
+        title="Hôn nhân là chuyện cả đời, Yêu người vừa ý, cưới người mình thương"
+        galleryImages={[
+          "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/77501014-78c3-4f0e-a2fc-25f01f7b6452.webp",
+          "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/997031a1-7a3b-4e7b-aca0-2115c9917c7c.webp",
+        ]}
+        groom={{
+          role: "Chú Rể",
+          name: "Duy Khánh",
+          address: "Đội 8, Thôn Diệt Pháp, Xã Thiện Phiến, Hưng Yên",
+        }}
+        bride={{
+          role: "Cô Dâu",
+          name: "Minh Châu",
+          address: "Đội 8, Thôn Diệt Pháp, Xã Thiện Phiến, Hưng Yên",
+        }}
+      />
 
-        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-tr-[40px] py-6 px-5 bg-white shadow" data-aos="fade-left" data-aos-duration="1000">
-          <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ TRAI</h3>
-          <h4 className="font-bold font-dm-serif-display my-2 text-lg">CHỦ NHẬT</h4>
-          <h3 className="font-dm-serif-display text-primary zoom-text font-bold text-2xl">09 . 03 . 2025</h3>
-          <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <WeddingGiftDrawer data={{
-            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
-            name: "NGUYEN PHUONG NAM",
-            accountNumber: "19035514534038",
-            bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
-          }} />
-          <Button className="mt-1 text-sm shake" onClick={() => handleOpenGoogleMaps(20.758595, 105.787167)}>Xem chỉ đường</Button>
-        </div>
 
-        <div className="mx-7 flex flex-col gap-1 justify-center items-center mt-6 rounded-bl-[40px] py-6 px-5 bg-white shadow" data-aos="fade-right" data-aos-duration="1000">
-          <h3 className="font-bold text-sm">TIỆC MỪNG CƯỚI NHÀ GÁI</h3>
-          <h4 className="font-bold font-dm-serif-display my-2 text-lg">CHỦ NHẬT</h4>
-          <h3 className="font-dm-serif-display text-primary zoom-text font-bold text-2xl">09 . 03 . 2025</h3>
-          <p className="text-sm mb-2.5 leading-6 mt-2">Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội</p>
-          <WeddingGiftDrawer data={{
-            imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
-            name: "NGUYEN HAI YEN",
-            accountNumber: "100870601899",
-            bankInfo: "VietinBank CN DONG DA"
-          }} />
-          <Button className="mt-1 text-sm shake" onClick={() => handleOpenGoogleMaps(20.7722500, 105.7315278)}>Xem chỉ đường</Button>
-        </div>
-      </section>
+      <Section3
+        invitation={{
+          title: "Thư Mời",
+          subtitle: "Bạn và Người thương",
+          mainText: "THAM DỰ LỄ CƯỚI DUY KHÁNH & MINH CHÂU",
+          images: [
+            "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/a619703f-e248-4258-a0e0-77a289ed73fa.webp",
+            "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp",
+            "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/dd4a782a-cb2a-4d6f-b194-bcf2815bb54c.webp"
+          ]
+        }}
+        events={[
+          {
+            title: "TIỆC CƯỚI NHÀ TRAI",
+            dayOfWeek: "THỨ 7",
+            time: "18:00",
+            weddingDate: "05-04-2026",
+            lunarDate: "(Tức ngày 08 Tháng 03 Năm Bính Ngọ)",
+            locationName: "Tại Tư Gia Nhà Trai",
+            address: "Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội",
+            giftData: {
+              imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
+              name: "NGUYEN PHUONG NAM",
+              accountNumber: "19035514534038",
+              bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
+            },
+            mapCoords: { lat: 20.758595, lng: 105.787167 }
+          },
+          {
+            title: "TIỆC CƯỚI NHÀ GÁI",
+            dayOfWeek: "CHỦ NHẬT",
+            time: "11:45",
+            weddingDate: "06-04-2026",
+            lunarDate: "(Tức ngày 09 Tháng 03 Năm Bính Ngọ)",
+            locationName: "Tại Tư Gia Nhà Gái",
+            address: "Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội",
+            giftData: {
+              imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
+              name: "NGUYEN HAI YEN",
+              accountNumber: "100870601899",
+              bankInfo: "VietinBank CN DONG DA"
+            },
+            mapCoords: { lat: 20.77225, lng: 105.7315278 }
+          }
+        ]}
+      />
+
+
+
+
 
       <EventCalendar
         primaryDate="2025-03-09"
