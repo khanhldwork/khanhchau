@@ -13,18 +13,20 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://duykhanhminhchau.vercel.app/og-image.png",
+        secureUrl: "https://duykhanhminhchau.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     images: [
-      "/og-image.png",
+      "https://duykhanhminhchau.vercel.app/og-image.png",
     ],
   },
   alternates: {
