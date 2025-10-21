@@ -13,8 +13,8 @@ export const metadata = {
     type: "website",
     images: [
       {
-  url: "https://wedly.info/og-image.png",
-  secureUrl: "https://wedly.info/og-image.png",
+        url: "https://wedly.info/og-image.png",
+        secureUrl: "https://wedly.info/og-image.png",
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     images: [
-  "https://wedly.info/og-image.png",
+      "https://wedly.info/og-image.png",
     ],
   },
   alternates: {
@@ -51,6 +51,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta property="og:image" content="https://wedly.info/og-image.png" />
+        <meta property="og:image:secure_url" content="https://wedly.info/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU" />
+      </head>
       <body>
         {children}
         <Toaster position="top-center" duration={7000} closeButton />
