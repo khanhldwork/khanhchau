@@ -7,14 +7,14 @@ export const metadata = {
   title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
   openGraph: {
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
-    url: "https://duykhanhminhchau.vercel.app",
+    url: "https://wedly.info",
     siteName: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     locale: "vi_VN",
     type: "website",
     images: [
       {
-        url: "https://duykhanhminhchau.vercel.app/og-image.png",
-        secureUrl: "https://duykhanhminhchau.vercel.app/og-image.png",
+  url: "https://wedly.info/og-image.png",
+  secureUrl: "https://wedly.info/og-image.png",
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
@@ -26,13 +26,13 @@ export const metadata = {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     images: [
-      "https://duykhanhminhchau.vercel.app/og-image.png",
+  "https://wedly.info/og-image.png",
     ],
   },
   alternates: {
-    canonical: "https://duykhanhminhchau.vercel.app",
+    canonical: "https://wedly.info",
   },
-  metadataBase: new URL("https://duykhanhminhchau.vercel.app"),
+  metadataBase: new URL("https://wedly.info"),
 };
 
 
