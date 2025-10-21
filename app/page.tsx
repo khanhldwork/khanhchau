@@ -1,19 +1,40 @@
-"use client"
+
+
+export const metadata = {
+  title: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
+  description:
+    "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
+  openGraph: {
+    title: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
+    description:
+      "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
+    url: "https://wedly.info",
+    siteName: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
+    images: [
+      "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
+    ],
+    locale: "vi_VN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
+    description:
+      "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến.",
+    images: [
+      "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
+    ],
+  },
+};
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import FallingHearts from "@/components/FallingHearts";
 import Snowfall from "@/components/Snowfall";
 import GuestbookWithComments from "@/components/GuestbookWithComments";
 
 import EventCalendar from "@/components/EventCalendar";
-import { WeddingGiftDrawer } from "@/components/WeddingGiftDrawer";
-import { Button } from "@/components/ui/button";
-import MusicToggleButton from "@/components/MusicToggleButton";
 import FloatingMenu from "@/components/FloatingMenu";
-import { CarouselSize } from "@/components/CarouselSize"
-
 
 import { Section1 } from "@/components/component-anh-khanh/Section1";
 import Section2 from "@/components/component-anh-khanh/Section2";
@@ -23,7 +44,7 @@ import { useEffect } from "react";
 
 
 export default function Page() {
-  useEffect(() => { AOS.init(); }, []);
+  // useEffect(() => { AOS.init(); }, []);
 
 
 

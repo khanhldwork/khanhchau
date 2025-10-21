@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { Menu, Plus, Settings } from "lucide-react";
 
