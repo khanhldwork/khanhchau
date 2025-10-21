@@ -8,7 +8,7 @@ export default function DoorOpenSimple() {
 
   useEffect(() => {
     const raf = requestAnimationFrame(() => setOpen(true))
-    const hideTimer = setTimeout(() => setHidden(true), 5200)
+    const hideTimer = setTimeout(() => setHidden(true), 4100)
 
     return () => {
       cancelAnimationFrame(raf)
@@ -26,7 +26,7 @@ export default function DoorOpenSimple() {
         alt="left"
         style={{
           transform: open ? 'translateX(-100%)' : 'translateX(0)',
-          transition: 'transform 5s ease-in-out',
+          transition: 'transform 4s ease-in-out', // nhanh hơn một chút
         }}
         className="absolute top-0 left-0 h-full w-full object-cover z-40"
       />
@@ -37,7 +37,7 @@ export default function DoorOpenSimple() {
         alt="right"
         style={{
           transform: open ? 'translateX(100%)' : 'translateX(0)',
-          transition: 'transform 5s ease-in-out',
+          transition: 'transform 4s ease-in-out', // khớp với bên trái
         }}
         className="absolute top-0 right-0 h-full w-full object-cover z-30"
       />

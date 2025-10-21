@@ -1,3 +1,4 @@
+"use client"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -10,16 +11,17 @@ import FloatingMenu from "@/components/FloatingMenu";
 import { Section1 } from "@/components/component-anh-khanh/Section1";
 import Section2 from "@/components/component-anh-khanh/Section2";
 import Section3 from "@/components/component-anh-khanh/Section3";
-import DoorOpeningEffect from "@/components/DoorOpeningEffect";
 import { useEffect } from "react";
+import DoorOpenSimple from "@/components/DoorOpenSimple";
+
 
 
 export default function Page() {
-  // useEffect(() => { AOS.init(); }, []);
+  useEffect(() => { AOS.init(); }, []);
 
   return (
     <div className="max-w-[450px] md:max-w-[400px] overflow-hidden select-none relative">
-      <DoorOpeningEffect />
+      <DoorOpenSimple />
       <FloatingMenu />
       {/* <FallingHearts /> */}
       <Snowfall />

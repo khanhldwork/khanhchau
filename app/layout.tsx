@@ -4,33 +4,27 @@ import { Toaster } from "@/components/ui/sonner";
 
 
 export const metadata = {
-  title: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-  description:
-    "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Duy Khánh và Minh Châu. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
+  title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
   openGraph: {
-    title: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-    description:
-      "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Duy Khánh và Minh Châu. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
+    title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     url: "https://duykhanhminhchau.vercel.app",
-    siteName: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
+    siteName: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     locale: "vi_VN",
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015791/demo/2.png.png",
+        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png",
         width: 1200,
         height: 630,
-        alt: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
+        alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-    description:
-      "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Duy Khánh và Minh Châu.",
+    title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     images: [
-      "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015791/demo/2.png.png",
+      "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png",
     ],
   },
   alternates: {
@@ -38,6 +32,7 @@ export const metadata = {
   },
   metadataBase: new URL("https://duykhanhminhchau.vercel.app"),
 };
+
 
 export const viewport: Viewport = {
   width: "device-width",
