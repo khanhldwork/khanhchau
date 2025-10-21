@@ -8,13 +8,18 @@ export const metadata = {
     title: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
     description:
       "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
-    url: "https://wedly.info",
+    url: "https://duykhanhminhchau.vercel.app",
     siteName: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
-    images: [
-      "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
-    ],
     locale: "vi_VN",
     type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -25,6 +30,10 @@ export const metadata = {
       "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
     ],
   },
+  alternates: {
+    canonical: "https://duykhanhminhchau.vercel.app",
+  },
+  metadataBase: new URL("https://duykhanhminhchau.vercel.app"),
 };
 
 import AOS from "aos";
