@@ -1,42 +1,3 @@
-
-
-export const metadata = {
-  title: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-  description:
-    "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Duy Khánh và Minh Châu. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
-  openGraph: {
-    title: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-    description:
-      "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Duy Khánh và Minh Châu. Hãy cùng nhau tạo nên những khoảnh khắc ý nghĩa và đáng nhớ!",
-    url: "https://duykhanhminhchau.vercel.app",
-    siteName: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-    locale: "vi_VN",
-    type: "website",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015791/demo/2.png.png",
-        width: 1200,
-        height: 630,
-        alt: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Thiệp mời cưới Duy Khánh ♥ Minh Châu",
-    description:
-      "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Duy Khánh và Minh Châu.",
-    images: [
-      "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015791/demo/2.png.png",
-    ],
-  },
-  alternates: {
-    canonical: "https://duykhanhminhchau.vercel.app",
-  },
-  metadataBase: new URL("https://duykhanhminhchau.vercel.app"),
-};
-
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -55,8 +16,6 @@ import { useEffect } from "react";
 
 export default function Page() {
   // useEffect(() => { AOS.init(); }, []);
-
-
 
   return (
     <div className="max-w-[450px] md:max-w-[400px] overflow-hidden select-none relative">
