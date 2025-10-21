@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
+        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015791/demo/2.png.png",
         width: 1200,
         height: 630,
         alt: "Thiệp mời cưới Phương Nam ♥ Hải Yến",
@@ -27,7 +27,7 @@ export const metadata = {
     description:
       "Trân trọng kính mời bạn đến chung vui cùng chúng tôi trong ngày trọng đại của Phương Nam và Hải Yến.",
     images: [
-      "https://res.cloudinary.com/dpufemrnq/image/upload/v1740504936/257A6768_olhw6i.jpg",
+      "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015791/demo/2.png.png",
     ],
   },
   alternates: {
