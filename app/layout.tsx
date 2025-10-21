@@ -13,7 +13,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     images: [
-      "https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png",
+      "/og-image.png",
     ],
   },
   alternates: {
