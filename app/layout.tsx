@@ -39,11 +39,6 @@ export const metadata: Metadata = {
   },
 
   metadataBase: new URL("https://wedly.info"),
-
-  // 👇 Thêm fb:app_id để Messenger nhận diện preview (rất quan trọng)
-  other: {
-    "fb:app_id": "966242223397117", // app ID mặc định của Facebook (bạn có thể để nguyên)
-  },
 };
 
 export const viewport: Viewport = {
@@ -62,6 +57,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <head>
+        <meta property="fb:app_id" content="966242223397117" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body>
