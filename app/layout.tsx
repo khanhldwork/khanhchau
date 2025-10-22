@@ -13,12 +13,10 @@ export const metadata: Metadata = {
     description:
       "Trân trọng kính mời bạn đến chung vui cùng Duy Khánh & Minh Châu trong ngày trọng đại của chúng tôi.",
     url: "https://wedly.info",
-    siteName: "Wedly",
-    locale: "vi_VN",
     type: "website",
     images: [
       {
-        url: "https://wedly.info/og-image.png",
+        url: "https://content.pancake.vn/1/s1200x650/fwebp0/0d/16/0b/58/c17f88fa0ee84d30d67d46083a965c3312eafd46fdda235235cbd987-w:1708-h:1188-l:193754-t:image/jpeg.jpg",
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
@@ -31,7 +29,7 @@ export const metadata: Metadata = {
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     description:
       "Trân trọng kính mời bạn đến chung vui cùng Duy Khánh & Minh Châu trong ngày trọng đại của chúng tôi.",
-    images: ["https://wedly.info/og-image.png"],
+    images: ["https://content.pancake.vn/1/s1200x650/fwebp0/0d/16/0b/58/c17f88fa0ee84d30d67d46083a965c3312eafd46fdda235235cbd987-w:1708-h:1188-l:193754-t:image/jpeg.jpg"],
   },
 
   alternates: {
