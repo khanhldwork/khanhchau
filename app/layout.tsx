@@ -2,39 +2,37 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
-
-export const metadata = {
+export const metadata: Metadata = {
   title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
+  description: "Thiệp mời cưới trực tuyến Duy Khánh & Minh Châu",
+  keywords: "thiệp cưới, đám cưới, thư mời, Duy Khánh, Minh Châu",
   openGraph: {
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
+    description: "Thiệp mời cưới trực tuyến Duy Khánh & Minh Châu",
     url: "https://wedly.info",
-    siteName: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
+    siteName: "Wedly",
     locale: "vi_VN",
     type: "website",
     images: [
       {
-        url: "https://wedly.info/og-image.png",
-        secureUrl: "https://wedly.info/og-image.png",
+        url: "/api/og", // Dynamic OG image
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
-    images: [
-      "https://wedly.info/og-image.png",
-    ],
+    description: "Thiệp mời cưới trực tuyến Duy Khánh & Minh Châu",
+    images: ["/api/og"],
   },
   alternates: {
     canonical: "https://wedly.info",
   },
   metadataBase: new URL("https://wedly.info"),
 };
-
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -53,11 +51,7 @@ export default function RootLayout({
     <html lang="vi">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta property="og:image" content="https://wedly.info/og-image.png" />
-        <meta property="og:image:secure_url" content="https://wedly.info/og-image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU" />
+        {/* KHÔNG thêm meta tags OG thủ công - Next.js tự generate */}
       </head>
       <body>
         {children}
