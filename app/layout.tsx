@@ -11,10 +11,19 @@ export const metadata: Metadata = {
     siteName: "Wedly",
     locale: "vi_VN",
     type: "website",
+    images: [
+      {
+        url: "https://wedly.info/og-image.png", // ảnh trong thư mục public
+        width: 1200,
+        height: 630,
+        alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
+    images: ["https://wedly.info/og-image.png"],
   },
   alternates: {
     canonical: "https://wedly.info",
