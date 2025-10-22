@@ -1,35 +1,48 @@
-// app/api/og/route.ts
+// app/api/og/route.ts - HOÀN CHỈNH
 import { NextResponse } from 'next/server'
 
 export const runtime = 'edge'
 
 export async function GET() {
+    const CLOUDINARY_IMAGE_URL = 'https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png'
+
     try {
-        const imageUrl = 'https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png'
+        console.log('Fetching image from:', CLOUDINARY_IMAGE_URL)
 
-        // Fetch ảnh từ Cloudinary
-        const response = await fetch(imageUrl)
+        const imageResponse = await fetch(CLOUDINARY_IMAGE_URL, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (compatible; FacebookBot/1.0)'
+            }
+        })
 
-        if (!response.ok) {
-            throw new Error('Failed to fetch image')
+        if (!imageResponse.ok) {
+            throw new Error(`Cloudinary response: ${imageResponse.status}`)
         }
 
-        // Get image data
-        const imageBuffer = await response.arrayBuffer()
+        const imageData = await imageResponse.arrayBuffer()
 
-        // Return image với cache control
-        return new Response(imageBuffer, {
-            status: 200,
+        console.log('Image fetched successfully, size:', imageData.byteLength)
+
+        return new Response(imageData, {
             headers: {
                 'Content-Type': 'image/png',
+                'Content-Length': imageData.byteLength.toString(),
                 'Cache-Control': 'no-cache, no-store, must-revalidate, max-age=0',
                 'Pragma': 'no-cache',
                 'Expires': '0',
-                'CDN-Cache-Control': 'no-cache',
+                'Access-Control-Allow-Origin': '*',
             },
         })
+
     } catch (error) {
-        // Fallback: redirect đến ảnh gốc
-        return NextResponse.redirect('https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png')
+        console.error('OG image proxy error:', error)
+
+        // Fallback: redirect trực tiếp
+        return NextResponse.redirect(CLOUDINARY_IMAGE_URL, {
+            status: 302,
+            headers: {
+                'Cache-Control': 'no-cache, no-store, must-revalidate',
+            },
+        })
     }
 }
