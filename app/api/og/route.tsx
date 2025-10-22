@@ -5,5 +5,5 @@ export const runtime = 'edge'
 
 export async function GET() {
   // Redirect thẳng đến ảnh Cloudinary của bạn
-  return NextResponse.redirect('https://res.cloudinary.com/dpufemrnq/image/upload/v1761015790/demo/1.png.png')
+  return NextResponse.redirect('wedly.info/api/og')
 }
