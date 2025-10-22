@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
   openGraph: {
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
-    url: "https://wedly.info",
+    url: "https://wedding-invitation-card-ctzi.vercel.app",
     type: "website",
     images: [
       {
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://wedly.info",
+    canonical: "https://wedding-invitation-card-ctzi.vercel.app",
   },
 
-  metadataBase: new URL("https://wedly.info"),
+  metadataBase: new URL("https://wedding-invitation-card-ctzi.vercel.app"),
 };
 
 export const viewport: Viewport = {

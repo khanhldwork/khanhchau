@@ -13,6 +13,7 @@ import Section2 from "@/components/component-anh-khanh/Section2";
 import Section3 from "@/components/component-anh-khanh/Section3";
 import { useEffect } from "react";
 import DoorOpenSimple from "@/components/DoorOpenSimple";
+import Section4 from "@/components/component-anh-khanh/Section4";
 
 
 
@@ -73,7 +74,7 @@ export default function Page() {
         invitation={{
           title: "Thư Mời",
           subtitle: "Bạn và Người thương",
-          mainText: "THAM DỰ LỄ CƯỚI DUY KHÁNH & MINH CHÂU",
+          mainText: "THAM DỰ LỄ CƯỚI DUY KHÁNH & MINH CHÂU",
           images: [
             "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/a619703f-e248-4258-a0e0-77a289ed73fa.webp",
             "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp",
@@ -91,7 +92,7 @@ export default function Page() {
             address: "Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội",
             giftData: {
               imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
-              name: "NGUYEN PHUONG NAM",
+              name: "LÊ DUY KHÁNH",
               accountNumber: "19035514534038",
               bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
             },
@@ -107,7 +108,7 @@ export default function Page() {
             address: "Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội",
             giftData: {
               imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
-              name: "NGUYEN HAI YEN",
+              name: "NGUYỄN MINH CHÂU",
               accountNumber: "100870601899",
               bankInfo: "VietinBank CN DONG DA"
             },
@@ -117,16 +118,15 @@ export default function Page() {
       />
 
 
-
-
-
-      <EventCalendar
-        primaryDate="2025-10-25"        // Ngày chính hiển thị (chưa đến)
-        secondaryDate="2025-10-24"      // Ngày phụ hiển thị (chưa đến)
-        countdownTarget="2025-10-25T18:00:00"  // Ngày giờ bắt đầu sự kiện
-        eventStart="2025-10-25T18:00:00"       // Bắt đầu sự kiện
-        eventEnd="2025-10-25T23:59:59"         // Kết thúc sự kiện
+      <Section4
+        monthTitle="THÁNG 11 - 2025"
+        primaryDate="2025-11-28"
+        secondaryDate="2025-11-29"
+        countdownTarget="2025-11-28T18:00:00"
+        eventStart="2025-11-28T18:00:00"
+        eventEnd="2025-11-29T12:00:00"
       />
+
 
 
 

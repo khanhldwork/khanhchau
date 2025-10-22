@@ -62,7 +62,7 @@ export const Section1: React.FC<Section1Props> = ({
 
       {/* Overlay tiêu đề */}
       <div className="absolute inset-0 flex flex-col text-center text-white px-3">
-        <h1 className="font-photograph text-white text-[42px] mt-[60px]">{title}</h1>
+        <h1 className="font-photograph text-white text-[40px] mt-[60px]">{title}</h1>
       </div>
 
       {/* Overlay thông tin tiệc */}
