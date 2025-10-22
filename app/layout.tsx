@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/api/og", // Dynamic OG image
+        url: "/api/og?v=2",
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
     description: "Thiệp mời cưới trực tuyến Duy Khánh & Minh Châu",
-    images: ["/api/og"],
+    images: ["/api/og?v=2"],
   },
   alternates: {
     canonical: "https://wedly.info",
@@ -51,7 +51,6 @@ export default function RootLayout({
     <html lang="vi">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        {/* KHÔNG thêm meta tags OG thủ công - Next.js tự generate */}
       </head>
       <body>
         {children}
