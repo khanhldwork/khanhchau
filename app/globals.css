@@ -32,6 +32,17 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "VIPPerfectSignature";
+  src: url("/fonts/Perfect-Signature.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.font-perfect {
+  font-family: "VIPPerfectSignature", sans-serif;
+}
 
 .font-photograph {
   font-family: "PhotographSignature", sans-serif;

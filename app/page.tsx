@@ -14,6 +14,7 @@ import Section2 from "@/components/component-anh-khanh/Section2";
 import Section3 from "@/components/component-anh-khanh/Section3";
 import Section4 from "@/components/component-anh-khanh/Section4";
 import Section5 from "@/components/component-anh-khanh/Section5";
+import Section9 from "@/components/component-anh-khanh/Section9";
 
 
 
@@ -117,7 +118,25 @@ export default function Page() {
       />
 
 
-      <Section4/>
+      <Section4
+        firstCeremony={{
+          title: "LỄ THÀNH HÔN",
+          time: "Vào Chủ Nhật - 11:45",
+          month: "Tháng 4",
+          day: "06",
+          year: "2026",
+          lunarDate: "(Tức ngày 08 Tháng 03 Năm Bính Ngọ)",
+        }}
+        secondCeremony={{
+          title: "LỄ RƯỚC DÂU",
+          time: "Vào Chủ Nhật - 11:00",
+          month: "Tháng 4",
+          day: "06",
+          year: "2026",
+          lunarDate: "(Tức ngày 08 Tháng 03 Năm Bính Ngọ)",
+        }}
+      />
+
 
 
       <Section5
@@ -151,10 +170,11 @@ export default function Page() {
 
       <GuestbookWithComments />
 
-      <section className="bg-primary py-10 px-7 flex gap-2 flex-col text-white items-center justify-center text-center">
-        <h2 className="font-great-vibes font-bold zoom-text text-[46px]">Thank You</h2>
-        <p>Chúng tôi vô cùng trân trọng và biết ơn sự hiện diện của bạn trong ngày đặc biệt này!</p>
-      </section>
+
+      <Section9
+        backgroundImage="https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/dd4a782a-cb2a-4d6f-b194-bcf2815bb54c.webp"
+        bottomText="Rất hân hạnh được đón tiếp!"
+      />
     </div>
   );
 }
