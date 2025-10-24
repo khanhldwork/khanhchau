@@ -15,6 +15,7 @@ import Section3 from "@/components/component-anh-khanh/Section3";
 import Section4 from "@/components/component-anh-khanh/Section4";
 import Section5 from "@/components/component-anh-khanh/Section5";
 import Section9 from "@/components/component-anh-khanh/Section9";
+import Section7 from "@/components/component-anh-khanh/Section7";
 
 
 
@@ -148,25 +149,24 @@ export default function Page() {
         eventEnd="2025-11-29T12:00:00"
       />
 
-
-
-
-      <section className="bg-[#f2f5f4] py-8 px-6">
-        <div className="w-[90%] mx-auto">
-          <h2 className="text-center font-bold text-[28px] font-great-vibes">Album Hình Cưới</h2>
-          <p className="text-center text-[15px] mb-6 mt-2">Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.</p>
-        </div>
-        <div className="columns-2 gap-3 [&>*:not(:first-child)]:mt-3">
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545310/257A6643_aj4knn.jpg" width={250} height={300} alt="Wedding" />
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505267/257A7196_z6igdl.jpg" width={250} height={500} alt="Wedding" />
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505458/257A7238_rmrz7d.jpg" width={250} height={400} alt="Wedding" />
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740505417/257A7203_bh9p5k.jpg" width={250} height={350} alt="Wedding" />
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545311/257A6705_skzcgj.jpg" width={250} height={600} alt="Wedding" />
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545311/257A6748_p6jdoh.jpg" width={250} height={350} alt="Wedding" />
-          <Image className="rounded-md object-cover w-full" src="https://res.cloudinary.com/dpufemrnq/image/upload/v1740545307/257A6610_senrnb.jpg" width={250} height={450} alt="Wedding" />
-        </div>
-      </section>
+      <Section7
+        title="Kỷ Niệm Ngày Cưới"
+        description="Khoảnh khắc yêu thương của chúng tôi."
+        borderRadius={12}
+        column1={[
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp", height: 270 },
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp", height: 270 },
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp", height: 270 },
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/e489a219-2df3-409e-bb23-304abd03318f.webp", height: 272 },
+        ]}
+        column2={[
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/a619703f-e248-4258-a0e0-77a289ed73fa.webp", height: 180 },
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/21895e2b-b3dd-4e4e-bab6-8980cbc6b131.webp", height: 180 },
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/27bfd4fa-46bf-4a84-8463-eb1f5e8f7563.webp", height: 270 },
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/6e884791-e1cb-4e43-b8b1-f1e37f423199.webp", height: 270 },
+          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/69bf4561-0e51-47ea-bb0f-061eeac87a42.webp", height: 170 },
+        ]}
+      />
 
       <GuestbookWithComments />
 
