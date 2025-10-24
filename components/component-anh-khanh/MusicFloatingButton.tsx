@@ -2,41 +2,64 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { Howl } from "howler";
 
-const MusicFloatingButton = () => {
+interface MusicFloatingButtonProps {
+    url?: string; // Cho phép truyền link nhạc động
+}
+
+const MusicFloatingButton: React.FC<MusicFloatingButtonProps> = ({
+    url = "/audio/baihat.mp3",
+}) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [hasStarted, setHasStarted] = useState(false);
-    const audioRef = useRef<HTMLAudioElement | null>(null);
+    const soundRef = useRef<Howl | null>(null);
 
     useEffect(() => {
-        // Khởi tạo audio
-        audioRef.current = new Audio("/audio/baihat.mp3"); // 👉 thay link nhạc tại đây
-        audioRef.current.loop = true;
+        // Khởi tạo Howl
+        soundRef.current = new Howl({
+            src: [url],
+            loop: true,
+            html5: true, // đảm bảo hoạt động ổn định trên iOS/Safari
+        });
 
-        const handleScroll = () => {
-            if (!hasStarted && audioRef.current) {
-                audioRef.current.play().catch(() => { });
-                setIsPlaying(true);
-                setHasStarted(true);
-                window.removeEventListener("scroll", handleScroll);
+        const startMusic = () => {
+            if (!hasStarted && soundRef.current) {
+                try {
+                    soundRef.current.play();
+                    setIsPlaying(true);
+                    setHasStarted(true);
+                } catch (err) {
+                    console.warn("Autoplay bị chặn:", err);
+                }
+                // Gỡ event sau khi đã kích hoạt
+                window.removeEventListener("scroll", startMusic);
+                window.removeEventListener("click", startMusic);
+                window.removeEventListener("touchstart", startMusic);
             }
         };
 
-        window.addEventListener("scroll", handleScroll);
+        // Gắn event cho mọi hành động người dùng đầu tiên
+        window.addEventListener("scroll", startMusic);
+        window.addEventListener("click", startMusic);
+        window.addEventListener("touchstart", startMusic);
 
         return () => {
-            window.removeEventListener("scroll", handleScroll);
-            audioRef.current?.pause();
+            window.removeEventListener("scroll", startMusic);
+            window.removeEventListener("click", startMusic);
+            window.removeEventListener("touchstart", startMusic);
+            soundRef.current?.stop();
         };
-    }, [hasStarted]);
+    }, [hasStarted, url]);
 
     const toggleMusic = () => {
-        if (!audioRef.current) return;
+        if (!soundRef.current) return;
+
         if (isPlaying) {
-            audioRef.current.pause();
+            soundRef.current.pause();
             setIsPlaying(false);
         } else {
-            audioRef.current.play().catch(() => { });
+            soundRef.current.play();
             setIsPlaying(true);
         }
     };
@@ -49,8 +72,12 @@ const MusicFloatingButton = () => {
                 className="fixed bottom-5 left-5 z-50 w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center shadow-lg transition-all"
             >
                 <Image
-                    src={isPlaying ? "https://mehappy.vn/icons/play.png" : "https://mehappy.vn/icons/pause.jpg"}
-                    alt={isPlaying ? "Music On" : "Music Off"}
+                    src={
+                        isPlaying
+                            ? "https://mehappy.vn/icons/pause.jpg"
+                            : "https://mehappy.vn/icons/play.png"
+                    }
+                    alt={isPlaying ? "Pause" : "Play"}
                     width={28}
                     height={28}
                     className={`w-7 h-7 transition-all duration-300 ${isPlaying ? "animate-spin-slow" : ""
@@ -58,7 +85,7 @@ const MusicFloatingButton = () => {
                 />
             </button>
 
-            {/* Thêm animation quay chậm */}
+            {/* Animation quay chậm */}
             <style jsx global>{`
         @keyframes spin-slow {
           from {
