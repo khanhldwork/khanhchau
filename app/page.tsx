@@ -4,16 +4,16 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import Snowfall from "@/components/Snowfall";
 import GuestbookWithComments from "@/components/GuestbookWithComments";
-
-import EventCalendar from "@/components/EventCalendar";
 import FloatingMenu from "@/components/FloatingMenu";
-
-import { Section1 } from "@/components/component-anh-khanh/Section1";
-import Section2 from "@/components/component-anh-khanh/Section2";
-import Section3 from "@/components/component-anh-khanh/Section3";
 import { useEffect } from "react";
 import DoorOpenSimple from "@/components/DoorOpenSimple";
+
+
+import Section1 from "@/components/component-anh-khanh/Section1";
+import Section2 from "@/components/component-anh-khanh/Section2";
+import Section3 from "@/components/component-anh-khanh/Section3";
 import Section4 from "@/components/component-anh-khanh/Section4";
+import Section5 from "@/components/component-anh-khanh/Section5";
 
 
 
@@ -24,7 +24,6 @@ export default function Page() {
     <div className="max-w-[450px] md:max-w-[400px] overflow-hidden select-none relative">
       <DoorOpenSimple />
       <FloatingMenu />
-      {/* <FallingHearts /> */}
       <Snowfall />
 
       <Section1
@@ -118,10 +117,13 @@ export default function Page() {
       />
 
 
-      <Section4
+      <Section4/>
+
+
+      <Section5
         monthTitle="THÁNG 11 - 2025"
-        primaryDate="2025-11-28"
-        secondaryDate="2025-11-29"
+        primaryDate="2025-11-29"
+        secondaryDate="2025-11-28"
         countdownTarget="2025-11-28T18:00:00"
         eventStart="2025-11-28T18:00:00"
         eventEnd="2025-11-29T12:00:00"

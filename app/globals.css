@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,8 +37,17 @@ html {
   font-family: "PhotographSignature", sans-serif;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
 }
+
 .font-photograph-no-shadown {
   font-family: "PhotographSignature", sans-serif;
+}
+
+.font-sriracha {
+  font-family: "Sriracha", cursive;
+}
+
+.font-rajdhani {
+  font-family: "Rajdhani", sans-serif;
 }
 
 

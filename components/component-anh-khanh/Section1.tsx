@@ -79,3 +79,5 @@ export const Section1: React.FC<Section1Props> = ({
     </div>
   );
 };
+
+export default Section1;
