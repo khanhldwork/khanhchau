@@ -76,7 +76,7 @@ const Section5: React.FC<Section5Props> = ({
 
     return (
         <section className="text-center py-5">
-            <div className="border-[5px] border-gray-200 pb-5 px-5 rounded-3xl max-w-[90%] mx-auto">
+            <div className="border-[5px] border-gray-200 py-5 px-5 rounded-3xl max-w-[90%] mx-auto">
                 <Image src="/images/save_date.webp" alt="Divider Floral" width={240} height={20} className="mx-auto mb-0" />
                 <div className="w-[150px] h-[2px] bg-black rounded mx-auto mb-5"></div>
                 <h2 className="text-[18px] font-philosopher-noshadow  mb-5 font-semibold">

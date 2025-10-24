@@ -80,7 +80,7 @@ const GuestbookWithComments: React.FC = () => {
   const visibleWishes = showAll ? wishes : wishes.slice(0, 3);
 
   return (
-    <section className="py-12 px-7">
+    <section className="pt-5 pb-10 px-7">
       <div>
         <h2 className="text-center font-bold text-[28px] font-great-vibes">Sổ Lưu Bút</h2>
         <p className="text-center text-[15px] mt-2 mb-6">

@@ -47,15 +47,15 @@ const Section3: React.FC<Section3Props> = ({ invitation, events }) => {
     };
 
     return (
-        <section className="text-center px-4 my-5 py-5">
+        <section className="text-center my-5 py-5">
             {/* Thư mời */}
-            <div>
+            <div className="w-[88%] mx-auto ">
                 <div className="w-[150px] h-[2px] bg-black rounded mx-auto mb-4"></div>
                 <h2 className="font-bold text-[28px] text-black font-great-vibes">{invitation.title}</h2>
                 {invitation.subtitle && <p className="mt-1 text-base">{invitation.subtitle}</p>}
                 <p className="text-[16px] mb-5 font-philosopher-noshadow mt-3">{invitation.mainText}</p>
 
-                <div className="grid grid-cols-[auto_36%_auto] items-center gap-2 px-2 rounded">
+                <div className="grid grid-cols-[auto_36%_auto] items-center gap-2 px-1 rounded">
                     {invitation.images.map((url, idx) => (
                         <Image
                             key={idx}
@@ -75,7 +75,7 @@ const Section3: React.FC<Section3Props> = ({ invitation, events }) => {
             {events.map((event, idx) => (
                 <div
                     key={idx}
-                    className="mx-4 flex flex-col gap-1 justify-center items-center mt-6 rounded-2xl py-6 px-5 bg-white shadow-xl border"
+                    className="w-[86%] mx-auto  flex flex-col gap-1 justify-center items-center mt-6 rounded-2xl py-6 px-5 bg-white shadow-xl border"
                 >
                     <h3 className="font-medium text-[18px] font-oswald">{event.title}</h3>
                     <h4 className="font-bold font-dm-serif-display mt-2 text-lg">
