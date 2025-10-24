@@ -68,7 +68,7 @@ export default function Page() {
         bride={{
           role: "Cô Dâu",
           name: "Minh Châu",
-          address: "Đội 8, Thôn Diệt Pháp, Xã Thiện Phiến, Hưng Yên",
+          address: "Đội 8, Rừng Thông, Xã Thiện Phiến, Thanh Hoá",
         }}
       />
 
@@ -77,7 +77,7 @@ export default function Page() {
         invitation={{
           title: "Thư Mời",
           subtitle: "Bạn và Người thương",
-          mainText: "THAM DỰ LỄ CƯỚI DUY KHÁNH & MINH CHÂU",
+          mainText: "THAM DỰ LỄ CƯỚI DUY KHÁNH & MINH CHÂU",
           images: [
             "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/a619703f-e248-4258-a0e0-77a289ed73fa.webp",
             "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp",
