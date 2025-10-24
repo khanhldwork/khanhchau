@@ -63,7 +63,7 @@ export default function Page() {
         groom={{
           role: "Chú Rể",
           name: "Duy Khánh",
-          address: "Đội 8, Thôn Diệt Pháp, Xã Thiện Phiến, Hưng Yên",
+          address: "Số 10 Trần Nhân Tông, Quảng Cư, Sầm Sơn, Thanh Hoá",
         }}
         bride={{
           role: "Cô Dâu",
