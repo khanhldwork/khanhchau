@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 interface Section9Props {
-  backgroundImage: string; 
-  bottomText: string; 
+  backgroundImage: string;
+  bottomText: string;
 }
 
 export const Section9: React.FC<Section9Props> = ({ backgroundImage, bottomText }) => {
@@ -15,7 +15,7 @@ export const Section9: React.FC<Section9Props> = ({ backgroundImage, bottomText 
         className="w-full object-cover"
       />
 
-      <div className="absolute bg-white bg-opacity-80 w-full top-[310px] py-3">
+      <div className="absolute bg-white bg-opacity-80 w-full top-[320px] py-3">
         <div className="w-full h-full flex flex-col items-center justify-center text-center">
           <Image
             src="/images/thankyou.webp"

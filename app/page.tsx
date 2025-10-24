@@ -16,6 +16,7 @@ import Section4 from "@/components/component-anh-khanh/Section4";
 import Section5 from "@/components/component-anh-khanh/Section5";
 import Section9 from "@/components/component-anh-khanh/Section9";
 import Section7 from "@/components/component-anh-khanh/Section7";
+import MusicFloatingButton from "@/components/component-anh-khanh/MusicFloatingButton";
 
 
 
@@ -27,6 +28,7 @@ export default function Page() {
       <DoorOpenSimple />
       <FloatingMenu />
       <Snowfall />
+      <MusicFloatingButton />
 
       <Section1
         slides={[
