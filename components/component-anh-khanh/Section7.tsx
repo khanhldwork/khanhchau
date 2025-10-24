@@ -45,8 +45,8 @@ const Section7: React.FC<Section7Props> = ({
     return (
         <section className="py-5 bg-white">
             <div className="w-[88%] mx-auto text-center">
-                <h2 className="font-bold text-[28px] font-great-vibes text-[#0f3363]">{title}</h2>
-                <p className="text-[14px] mb-6 mt-2 font-philosopher-noshadow text-gray-700">{description}</p>
+                <h2 className="font-bold text-[28px] font-great-vibes">{title}</h2>
+                <p className="text-[14px] mb-6 mt-2 font-philosopher-noshadow ">{description}</p>
             </div>
 
             <div className="w-[88%] mx-auto grid grid-cols-2 gap-2">

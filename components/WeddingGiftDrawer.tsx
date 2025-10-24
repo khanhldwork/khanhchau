@@ -26,7 +26,10 @@ export function WeddingGiftDrawer({ data }: WeddingGiftDrawerProps) {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="outline">Hộp mừng cưới</Button>
+        <Button variant="outline">
+          <Image src="/images/giftbox.png" alt="Google Maps" width={20} height={20} />
+          Hộp mừng cưới
+        </Button>
       </DrawerTrigger>
       <DrawerContent>
         <div className="flex justify-center items-center flex-col px-7 py-8 pb-10">

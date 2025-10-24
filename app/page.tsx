@@ -80,43 +80,50 @@ export default function Page() {
             "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/a619703f-e248-4258-a0e0-77a289ed73fa.webp",
             "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp",
             "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/dd4a782a-cb2a-4d6f-b194-bcf2815bb54c.webp"
-          ]
+          ],
         }}
         events={[
           {
-            title: "TIỆC CƯỚI NHÀ TRAI",
-            dayOfWeek: "THỨ 7",
-            time: "18:00",
-            weddingDate: "05-04-2026",
-            lunarDate: "(Tức ngày 08 Tháng 03 Năm Bính Ngọ)",
-            locationName: "Tại Tư Gia Nhà Trai",
-            address: "Thôn Đạo Tú, Xã Quảng Phú Cầu, Huyện Ứng Hoà, Thành phố Hà Nội",
+            title: "LỄ THÀNH HÔN NHÀ GÁI",
+            dayOfWeek: "Thứ Bảy",
+            time: "08:30 AM",
+            weddingDate: "23-11-2025",
+            lunarDate: "Ngày 23 tháng 10 năm Ất Tỵ",
+            locationName: "Tư Gia Nhà Gái",
+            address: "123 Đường Hoa Hồng, Quận 1, TP. Hồ Chí Minh",
             giftData: {
-              imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736020/2_x36xql.svg",
-              name: "LÊ DUY KHÁNH",
-              accountNumber: "19035514534038",
-              bankInfo: "TechcomBank CN HA DONG - PGD VAN QUAN"
+              imageUrl: "/images/qrcode1.png",
+              name: "Nguyễn Thị Hoa",
+              accountNumber: "0123456789",
+              bankInfo: "MB Bank - Chi nhánh Sài Gòn",
             },
-            mapCoords: { lat: 20.758595, lng: 105.787167 }
+            mapCoords: { lat: 10.7769, lng: 106.7009 },
           },
           {
-            title: "TIỆC CƯỚI NHÀ GÁI",
-            dayOfWeek: "CHỦ NHẬT",
-            time: "11:45",
-            weddingDate: "06-04-2026",
-            lunarDate: "(Tức ngày 09 Tháng 03 Năm Bính Ngọ)",
-            locationName: "Tại Tư Gia Nhà Gái",
-            address: "Thôn Tử Dương, Xã Cao Thành, Huyện Ứng Hoà, Thành phố Hà Nội",
+            title: "TIỆC CƯỚI NHÀ TRAI",
+            dayOfWeek: "Chủ Nhật",
+            time: "11:00 AM",
+            weddingDate: "24-11-2025",
+            lunarDate: "Ngày 23 tháng 10 năm Ất Tỵ",
+            locationName: "Nhà Hàng Diamond Palace",
+            address: "456 Lê Lợi, Quận 3, TP. Hồ Chí Minh",
             giftData: {
-              imageUrl: "https://res.cloudinary.com/dpufemrnq/image/upload/v1740736026/1_wjfncb.svg",
-              name: "NGUYỄN MINH CHÂU",
-              accountNumber: "100870601899",
-              bankInfo: "VietinBank CN DONG DA"
+              imageUrl: "/images/qrcode2.png",
+              name: "Trần Văn Nam",
+              accountNumber: "9876543210",
+              bankInfo: "Vietcombank - CN Bến Thành",
             },
-            mapCoords: { lat: 20.77225, lng: 105.7315278 }
-          }
+            mapCoords: { lat: 10.7845, lng: 106.695 },
+          },
         ]}
+        textSettings={{
+          giftButton: "Hộp quà mừng",
+          giftTitle: "Gửi lời chúc & mừng cưới",
+          giftDescription: "Xin cảm ơn bạn đã gửi lời chúc phúc trong ngày đặc biệt này ❤️",
+          googleMapButton: "Xem vị trí trên bản đồ",
+        }}
       />
+
 
 
       <Section4
