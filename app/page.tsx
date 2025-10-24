@@ -42,8 +42,8 @@ export default function Page() {
     title="💝 Gửi quà mừng hạnh phúc đôi uyên ương"
     description="Quét mã hoặc chuyển khoản để gửi lời chúc tốt đẹp 💌"
     giftIcon="/images/giftbox.png"
-    position="left"   // left | right | center
-    size="large"      // small | medium | large
+    position="right"   // left | right | center
+    size="medium"      // small | medium | large
 />
       <Snowfall />
       <MusicFloatingButton />
