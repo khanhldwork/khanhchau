@@ -17,7 +17,7 @@ import Section5 from "@/components/component-anh-khanh/Section5";
 import Section9 from "@/components/component-anh-khanh/Section9";
 import Section7 from "@/components/component-anh-khanh/Section7";
 import MusicFloatingButton from "@/components/component-anh-khanh/MusicFloatingButton";
-
+import GiftFloatingButtonWithBankQR from "@/components/component-anh-khanh/GiftFloatingButtonWithBankQR";
 
 
 export default function Page() {
@@ -26,7 +26,25 @@ export default function Page() {
   return (
     <div className="max-w-[450px] md:max-w-[400px] overflow-hidden select-none relative">
       <DoorOpenSimple />
-      <FloatingMenu />
+     <GiftFloatingButtonWithBankQR
+    groomInfo={{
+        qrUrl: "https://img.vietqr.io/image/MB-9704222268-compact2.png",
+        bankName: "MB Bank",
+        accountName: "NGUYEN VAN NAM",
+        accountNumber: "9704222268",
+    }}
+    brideInfo={{
+        qrUrl: "https://img.vietqr.io/image/ACB-1234567890-compact2.png",
+        bankName: "ACB Bank",
+        accountName: "TRAN THI THAO",
+        accountNumber: "1234567890",
+    }}
+    title="💝 Gửi quà mừng hạnh phúc đôi uyên ương"
+    description="Quét mã hoặc chuyển khoản để gửi lời chúc tốt đẹp 💌"
+    giftIcon="/images/giftbox.png"
+    position="left"   // left | right | center
+    size="large"      // small | medium | large
+/>
       <Snowfall />
       <MusicFloatingButton />
 
