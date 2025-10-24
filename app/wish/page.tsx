@@ -21,13 +21,13 @@ const WishList: React.FC = () => {
     const fetchWishes = async () => {
         setLoading(true);
         setError("");
-    
+
         try {
             const response = await fetch("https://duykhanhminhchau1.onrender.com/wishes");
             if (!response.ok) {
                 throw new Error("Không thể tải danh sách lời chúc!");
             }
-    
+
             const data = await response.json();
             setWishes(data.reverse()); // Đảo ngược để hiển thị lời chúc mới nhất trước
         } catch (err: any) {

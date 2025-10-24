@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
   openGraph: {
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
-    url: "https://wedding-invitation-card-ctzi.vercel.app",
+    url: "https://khanhchau.site",
     type: "website",
     images: [
       {
