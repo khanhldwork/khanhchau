@@ -2,21 +2,21 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import Snowfall from "@/components/Snowfall";
-import GuestbookWithComments from "@/components/GuestbookWithComments";
-import FloatingMenu from "@/components/FloatingMenu";
+import Snowfall from "@/components/ui-custom/Snowfall";
 import { useState, useEffect } from "react";
-import DoorOpenSimple from "@/components/DoorOpenSimple";
 
-import Section1 from "@/components/component-anh-khanh/Section1";
-import Section2 from "@/components/component-anh-khanh/Section2";
-import Section3 from "@/components/component-anh-khanh/Section3";
-import Section4 from "@/components/component-anh-khanh/Section4";
-import Section5 from "@/components/component-anh-khanh/Section5";
-import Section9 from "@/components/component-anh-khanh/Section9";
-import Section7 from "@/components/component-anh-khanh/Section7";
-import MusicFloatingButton from "@/components/component-anh-khanh/MusicFloatingButton";
-import GiftFloatingButtonWithBankQR from "@/components/component-anh-khanh/GiftFloatingButtonWithBankQR";
+import Section1 from "@/components/ui-custom/Section1";
+import Section2 from "@/components/ui-custom/Section2";
+import Section3 from "@/components/ui-custom/Section3";
+import Section4 from "@/components/ui-custom/Section4";
+import Section5 from "@/components/ui-custom/Section5";
+import Section7 from "@/components/ui-custom/Section7";
+import Section8 from "@/components/ui-custom/Section8";
+import Section9 from "@/components/ui-custom/Section9";
+
+import MusicFloatingButton from "@/components/ui-custom/MusicFloatingButton";
+import GiftFloatingButtonWithBankQR from "@/components/ui-custom/GiftFloatingButtonWithBankQR";
+import DoorOpenSimple from "@/components/ui-custom/DoorOpenSimple";
 
 export default function Page() {
   useEffect(() => {
@@ -192,7 +192,21 @@ export default function Page() {
         ]}
       />
 
-      <GuestbookWithComments />
+      <Section8
+        title="Sổ Lưu Bút Yêu Thương"
+        description="Hãy gửi lời chúc tốt đẹp nhất cho đôi uyên ương nhé!"
+        placeholders={{
+          name: "Tên bạn là gì?",
+          phone: "Nhập số điện thoại",
+          message: "Lời chúc của bạn dành cho cặp đôi",
+        }}
+        buttonText="Gửi ngay"
+        showMoreText="Xem thêm"
+        loadingText="Đang gửi lời chúc..."
+        successMessage="Cảm ơn bạn! Lời chúc của bạn đã được gửi thành công 🎉"
+        errorMessage="Có lỗi xảy ra, vui lòng thử lại!"
+      />
+
 
       <Section9
         backgroundImage="https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/dd4a782a-cb2a-4d6f-b194-bcf2815bb54c.webp"

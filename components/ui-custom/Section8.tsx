@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+import { Button } from "../ui/button";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 
+// Kiểu dữ liệu cho lời chúc
 interface Wish {
   _id: string;
   name: string;
@@ -14,7 +15,38 @@ interface Wish {
   message: string;
 }
 
-const GuestbookWithComments: React.FC = () => {
+// Kiểu props cho component
+interface Section8Props {
+  title?: string;
+  description?: string;
+  placeholders?: {
+    name?: string;
+    phone?: string;
+    message?: string;
+  };
+  buttonText?: string;
+  apiUrl?: string; // Cho phép truyền endpoint API tuỳ ý
+  showMoreText?: string;
+  loadingText?: string;
+  successMessage?: string;
+  errorMessage?: string;
+}
+
+const Section8: React.FC<Section8Props> = ({
+  title = "Sổ Lưu Bút",
+  description = "Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!",
+  placeholders = {
+    name: "Nhập tên của bạn",
+    phone: "Nhập số điện thoại của bạn",
+    message: "Nhập lời chúc của bạn",
+  },
+  buttonText = "Gửi lời chúc",
+  apiUrl = "https://duykhanhminhchau1.onrender.com/wishes",
+  showMoreText = "Xem thêm",
+  loadingText = "Đang gửi...",
+  successMessage = "Chúng tôi vô cùng trân trọng và biết ơn lời chúc phúc của bạn!",
+  errorMessage = "Gửi lời chúc thất bại! Vui lòng thử lại sau.",
+}) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
@@ -26,46 +58,39 @@ const GuestbookWithComments: React.FC = () => {
     fetchWishes();
   }, []);
 
+  // Gửi lời chúc
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const response = await fetch("https://duykhanhminhchau1.onrender.com/wishes", {
+      const response = await fetch(apiUrl, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, phone, message }),
       });
 
-      if (!response.ok) {
-        throw new Error("Gửi lời chúc thất bại, vui lòng thử lại!");
-      }
+      if (!response.ok) throw new Error("Gửi thất bại");
 
-      toast.success(<div>Chúng tôi vô cùng trân trọng và biết ơn lời chúc phúc của bạn dành cho ngày trọng đại của chúng tôi. Cảm ơn bạn đã chia sẻ niềm vui này cùng chúng tôi!</div>);
+      toast.success(<div>{successMessage}</div>);
 
       setName("");
       setPhone("");
       setMessage("");
       fetchWishes();
     } catch (error) {
-      console.error("Đã xảy ra lỗi:", error);
-      toast("Gửi lời chúc thất bại!", {
-        description: "Vui lòng thử lại sau.",
-      });
+      console.error(error);
+      toast.error(errorMessage);
     } finally {
       setLoading(false);
     }
   };
 
+  // Lấy danh sách lời chúc
   const fetchWishes = async () => {
     try {
-      const response = await fetch("https://duykhanhminhchau1.onrender.com/wishes");
-      if (!response.ok) {
-        throw new Error("Không thể tải danh sách lời chúc!");
-      }
-
+      const response = await fetch(apiUrl);
+      if (!response.ok) throw new Error("Không thể tải lời chúc!");
       const data = await response.json();
       setWishes(data.reverse());
     } catch (error) {
@@ -73,28 +98,23 @@ const GuestbookWithComments: React.FC = () => {
     }
   };
 
-  const handleShowMore = () => {
-    setShowAll(true);
-  };
-
   const visibleWishes = showAll ? wishes : wishes.slice(0, 3);
 
   return (
     <section className="pt-5 pb-10 px-7">
       <div>
-        <h2 className="text-center font-bold text-[28px] font-great-vibes">Sổ Lưu Bút</h2>
-        <p className="text-center text-[15px] mt-2 mb-6">
-          Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
-        </p>
+        <h2 className="text-center font-bold text-[28px] font-great-vibes">{title}</h2>
+        <p className="text-center text-[15px] mt-2 mb-6">{description}</p>
       </div>
 
+      {/* Form gửi lời chúc */}
       <div className="p-6 bg-primary shadow-md rounded-md">
         <form onSubmit={handleSubmit} className="grid gap-3">
           <Input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Nhập tên của bạn"
+            placeholder={placeholders.name}
             className="bg-white py-5 text-[15px]"
             required
           />
@@ -102,17 +122,18 @@ const GuestbookWithComments: React.FC = () => {
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="Nhập số điện thoại của bạn"
+            placeholder={placeholders.phone}
             className="bg-white py-5 text-[15px]"
             required
           />
           <Textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Nhập lời chúc của bạn"
+            placeholder={placeholders.message}
             className="bg-white py-2.5 h-[120px] text-[15px]"
             required
           />
+
           <Button
             variant="outline"
             type="submit"
@@ -122,15 +143,16 @@ const GuestbookWithComments: React.FC = () => {
             {loading ? (
               <>
                 <Loader2 className="animate-spin mr-2" />
-                Đang gửi...
+                {loadingText}
               </>
             ) : (
-              "Gửi lời chúc"
+              buttonText
             )}
           </Button>
         </form>
       </div>
 
+      {/* Danh sách lời chúc */}
       <div className="p-6 bg-primary shadow-md mt-2 rounded-md">
         {wishes.length === 0 ? (
           <div className="px-4 py-3 border rounded-lg shadow-sm bg-gray-50 text-center">
@@ -146,8 +168,8 @@ const GuestbookWithComments: React.FC = () => {
             ))}
             {!showAll && wishes.length > 3 && (
               <div className="flex justify-center">
-                <Button variant="outline" onClick={handleShowMore} className="px-6 mt-3">
-                  Xem thêm {wishes.length - visibleWishes.length} lời chúc
+                <Button variant="outline" onClick={() => setShowAll(true)} className="px-6 mt-3">
+                  {showMoreText} {wishes.length - visibleWishes.length} lời chúc
                 </Button>
               </div>
             )}
@@ -158,4 +180,4 @@ const GuestbookWithComments: React.FC = () => {
   );
 };
 
-export default GuestbookWithComments;
+export default Section8;
