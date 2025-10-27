@@ -41,7 +41,7 @@ const Section8: React.FC<Section8Props> = ({
     message: "Nhập lời chúc của bạn",
   },
   buttonText = "Gửi lời chúc",
-  apiUrl = "https://duykhanhminhchau1.onrender.com/wishes",
+  apiUrl = `${process.env.NEXT_PUBLIC_SERVER_DOMAIN}/wishes`,
   showMoreText = "Xem thêm",
   loadingText = "Đang gửi...",
   successMessage = "Chúng tôi vô cùng trân trọng và biết ơn lời chúc phúc của bạn!",

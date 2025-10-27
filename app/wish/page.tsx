@@ -23,7 +23,7 @@ const WishList: React.FC = () => {
         setError("");
 
         try {
-            const response = await fetch("https://duykhanhminhchau1.onrender.com/wishes");
+            const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_DOMAIN}/wishes`);
             if (!response.ok) {
                 throw new Error("Không thể tải danh sách lời chúc!");
             }
@@ -42,7 +42,7 @@ const WishList: React.FC = () => {
         if (!confirmDelete) return;
 
         try {
-            const response = await fetch(`https://weddingserver-1.onrender.com/wishes/${id}`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_DOMAIN}/wishes/${id}`, {
                 method: "DELETE",
             });
 
