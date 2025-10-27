@@ -115,7 +115,7 @@ const Section3: React.FC<Section3Props> = ({
             {events?.map((event, idx) => (
                 <div
                     key={idx}
-                    className="w-[86%] mx-auto flex flex-col gap-1 justify-center items-center mt-6 py-6 px-5 bg-[#fff2f2] rounded-2xl"
+                    className="w-[86%] mx-auto flex flex-col gap-1 justify-center items-center mt-6 py-6 px-5 bg-primary/15 rounded-2xl border-[5px] border-gray-200 shadow"
                 >
                     <h3 className="font-semibold text-[19px] font-philosopher-noshadow">
                         {event.title}

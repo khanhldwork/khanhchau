@@ -50,34 +50,32 @@ const GiftFloatingButtonWithBankQR: React.FC<GiftFloatingButtonWithBankQRProps> 
 
     return (
         <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent className="sm:max-w-[450px] max-w-[90%] text-center p-6 rounded-2xl font-philosopher-noshadow">
-                <DialogHeader>
-                    <DialogTitle className="text-lg font-semibold">{title}</DialogTitle>
-                    <DialogDescription className="text-sm text-gray-500">
-                        {description}
-                    </DialogDescription>
-                </DialogHeader>
+            <DialogContent className="sm:max-w-[400px] max-w-[90%] text-center rounded-2xl p-6 sm:rounded-2xl">
+                <div>
+                    <h3 className="text-md font-semibold uppercase">{title}</h3>
+                    <p className="mt-2 text-sm text-gray-600">{description}</p>
+                </div>
 
-                <Tabs value={tab} onValueChange={(v) => setTab(v as "groom" | "bride")} className="w-full mt-3">
-                    <TabsList className="flex justify-center space-x-2 bg-gray-100 rounded-full p-1 mb-4">
+                <Tabs value={tab} onValueChange={(v) => setTab(v as "groom" | "bride")} className="min-content">
+                    <TabsList className="px-3 rounded-full h-[40px]  mb-4">
                         <TabsTrigger
                             value="groom"
-                            className="px-4 py-1.5 text-sm rounded-full data-[state=active]:bg-white data-[state=active]:shadow"
+                            className="px-4 h-[28px] pt-1 text-[13px] uppercase rounded-full data-[state=active]:bg-white data-[state=active]:shadow"
                         >
-                            🤵 Chú rể
+                            Chú rể
                         </TabsTrigger>
                         <TabsTrigger
                             value="bride"
-                            className="px-4 py-1.5 text-sm rounded-full data-[state=active]:bg-white data-[state=active]:shadow"
+                            className="px-4 h-[28px] pt-1 text-[13px] uppercase rounded-full data-[state=active]:bg-white data-[state=active]:shadow"
                         >
-                            👰 Cô dâu
+                            Cô dâu
                         </TabsTrigger>
                     </TabsList>
 
                     {/* === Chú rể === */}
                     <TabsContent value="groom">
                         <div className="flex flex-col items-center gap-4 mt-2">
-                            <div className="relative w-[300px] h-[300px]">
+                            <div className="relative w-[330px] h-[330px]">
                                 <Image
                                     src={groomInfo.qrUrl}
                                     alt="QR Groom"
@@ -85,18 +83,13 @@ const GiftFloatingButtonWithBankQR: React.FC<GiftFloatingButtonWithBankQRProps> 
                                     className="object-contain rounded-xl border border-gray-200 shadow-sm"
                                 />
                             </div>
-                            <div className="text-sm text-gray-700 mt-3 space-y-1">
-                                <p><strong>Ngân hàng:</strong> {groomInfo.bankName}</p>
-                                <p><strong>Tên:</strong> {groomInfo.accountName}</p>
-                                <p><strong>Số tài khoản:</strong> {groomInfo.accountNumber}</p>
-                            </div>
                         </div>
                     </TabsContent>
 
                     {/* === Cô dâu === */}
                     <TabsContent value="bride">
                         <div className="flex flex-col items-center gap-4 mt-2">
-                            <div className="relative w-[300px] h-[300px]">
+                            <div className="relative w-[330px] h-[330px]">
                                 <Image
                                     src={brideInfo.qrUrl}
                                     alt="QR Bride"
@@ -104,22 +97,10 @@ const GiftFloatingButtonWithBankQR: React.FC<GiftFloatingButtonWithBankQRProps> 
                                     className="object-contain rounded-xl border border-gray-200 shadow-sm"
                                 />
                             </div>
-                            <div className="text-sm text-gray-700 mt-3 space-y-1">
-                                <p><strong>Ngân hàng:</strong> {brideInfo.bankName}</p>
-                                <p><strong>Tên:</strong> {brideInfo.accountName}</p>
-                                <p><strong>Số tài khoản:</strong> {brideInfo.accountNumber}</p>
-                            </div>
                         </div>
                     </TabsContent>
                 </Tabs>
 
-                <DialogFooter className="mt-5">
-                    <DialogClose asChild>
-                        <Button variant="outline" onClick={() => setOpen(false)}>
-                            Đóng
-                        </Button>
-                    </DialogClose>
-                </DialogFooter>
             </DialogContent>
         </Dialog>
     );
