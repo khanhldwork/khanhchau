@@ -69,7 +69,7 @@ export default function Page() {
         title="Duy Khánh & Minh Châu"
         invitation={{
           weddingInviteText: "LỄ NẠP TÀI",
-          saturdayTime: "THỨ NĂM - 09:00",
+          saturdayTime: "THỨ BA - 09:00",
           saturdayDate: "25 . 11 . 2025",
           sundayTime: "THỨ BẢY - 10:30",
           sundayDate: "29 . 11 . 2025",
@@ -86,8 +86,8 @@ export default function Page() {
           </>
         }
         galleryImages={[
-          "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747479/z7168928568544_1b1431ae8078b64e1f1a8ca259406b52_qv5ror.jpg",
           "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747536/XXX08083_uoi25w.jpg",
+          "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747479/z7168928568544_1b1431ae8078b64e1f1a8ca259406b52_qv5ror.jpg",
         ]}
         groom={{
           role: "Chú Rể",
@@ -114,23 +114,23 @@ export default function Page() {
         }}
         events={[
           {
-            title: "LỄ THÀNH HÔN NHÀ GÁI",
-            dayOfWeek: "Thứ Bảy",
-            time: "08:30 AM",
-            weddingDate: "23-11-2025",
-            lunarDate: "Ngày 23 tháng 10 năm Ất Tỵ",
-            locationName: "Tư Gia Nhà Gái",
-            address: "123 Đường Hoa Hồng, Quận 1, TP. Hồ Chí Minh",
+            title: "TIỆC CƯỚI NHÀ GÁI",
+            dayOfWeek: "Thứ Ba",
+            time: "10:30 AM",
+            weddingDate: "25-11-2025",
+            lunarDate: "Ngày 06 tháng 10 năm Ất Tỵ",
+            locationName: "TT Tổ chức sự kiện Anyla Dining",
+            address: "2A Hàng Sứ, Phường Hạc Thành, Thanh Hoá",
             mapCoords: { lat: 10.7769, lng: 106.7009 },
           },
           {
             title: "TIỆC CƯỚI NHÀ TRAI",
-            dayOfWeek: "Chủ Nhật",
+            dayOfWeek: "Thứ Bảy",
             time: "11:00 AM",
-            weddingDate: "24-11-2025",
-            lunarDate: "Ngày 23 tháng 10 năm Ất Tỵ",
-            locationName: "Nhà Hàng Diamond Palace",
-            address: "456 Lê Lợi, Quận 3, TP. Hồ Chí Minh",
+            weddingDate: "29-11-2025",
+            lunarDate: "Ngày 10 tháng 10 năm Ất Tỵ",
+            locationName: "Nhà Hàng Hồng Thanh",
+            address: "Số 13 Trần Nhân Tông, Hồng Thắng, Sầm Sơn, Thanh Hoá",
             mapCoords: { lat: 10.7845, lng: 106.695 },
           },
         ]}
@@ -148,34 +148,34 @@ export default function Page() {
       <Section4
         firstCeremony={{
           title: "LỄ THÀNH HÔN",
-          time: "Vào Chủ Nhật - 11:45",
-          month: "Tháng 4",
-          day: "06",
-          year: "2026",
-          lunarDate: "(Tức ngày 08 Tháng 03 Năm Bính Ngọ)",
+          time: "Vào Thứ Bảy - 10:30",
+          month: "Tháng 11",
+          day: "29",
+          year: "2025",
+          lunarDate: "(Tức ngày 10 Tháng 10 Năm Ất Tỵ)",
         }}
         secondCeremony={{
-          title: "LỄ RƯỚC DÂU",
-          time: "Vào Chủ Nhật - 11:00",
-          month: "Tháng 4",
-          day: "06",
-          year: "2026",
-          lunarDate: "(Tức ngày 08 Tháng 03 Năm Bính Ngọ)",
+          title: "LỄ NẠP TÀI",
+          time: "Vào Thứ Ba - 09:00",
+          month: "Tháng 11",
+          day: "25",
+          year: "2025",
+          lunarDate: "(Tức ngày 06 Tháng 10 Năm Ất Tỵ)",
         }}
       />
 
       <Section5
         monthTitle="THÁNG 11 - 2025"
         primaryDate="2025-11-29"
-        secondaryDate="2025-11-28"
-        countdownTarget="2025-11-28T18:00:00"
-        eventStart="2025-11-28T18:00:00"
-        eventEnd="2025-11-29T12:00:00"
+        secondaryDate="2025-11-25"
+        countdownTarget="2025-11-29T10:30:00"
+        eventStart="2025-11-29T10:30:00"
+        eventEnd="2025-11-29T10:30:00"
       />
 
       <Section7
-        title="Kỷ Niệm Ngày Cưới"
-        description="Khoảnh khắc yêu thương của chúng tôi."
+        title="Album Ảnh Cưới"
+        description="We got married!"
         borderRadius={12}
         column1={[
           { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp", height: 270 },
@@ -193,11 +193,10 @@ export default function Page() {
       />
 
       <Section8
-        title="Sổ Lưu Bút Yêu Thương"
-        description="Hãy gửi lời chúc tốt đẹp nhất cho đôi uyên ương nhé!"
+        title="Lời chúc phúc cho vợ chồng mình"
+        description="Write something you want for us!"
         placeholders={{
           name: "Tên bạn là gì?",
-          phone: "Nhập số điện thoại",
           message: "Lời chúc của bạn dành cho cặp đôi",
         }}
         buttonText="Gửi ngay"
