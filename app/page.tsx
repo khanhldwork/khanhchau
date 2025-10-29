@@ -68,11 +68,11 @@ export default function Page() {
         ]}
         title="Duy Khánh & Minh Châu"
         invitation={{
-          weddingInviteText: "THƯ MỜI TIỆC CƯỚI",
-          saturdayTime: "THỨ BẢY - 18:00",
-          saturdayDate: "05 . 04 . 2026",
-          sundayTime: "CHỦ NHẬT - 11:45",
-          sundayDate: "06 . 04 . 2026",
+          weddingInviteText: "LỄ NẠP TÀI",
+          saturdayTime: "THỨ NĂM - 09:00",
+          saturdayDate: "25 . 11 . 2025",
+          sundayTime: "THỨ BẢY - 10:30",
+          sundayDate: "29 . 11 . 2025",
           ceremonyText: "LỄ THÀNH HÔN",
         }}
         autoplay={3000}
@@ -86,18 +86,18 @@ export default function Page() {
           </>
         }
         galleryImages={[
-          "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/77501014-78c3-4f0e-a2fc-25f01f7b6452.webp",
-          "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/997031a1-7a3b-4e7b-aca0-2115c9917c7c.webp",
+          "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747479/z7168928568544_1b1431ae8078b64e1f1a8ca259406b52_qv5ror.jpg",
+          "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747536/XXX08083_uoi25w.jpg",
         ]}
         groom={{
           role: "Chú Rể",
           name: "Duy Khánh",
-          address: "Số 10 Trần Nhân Tông, Quảng Cư, Sầm Sơn, Thanh Hoá",
+          address: "Số 10 Trần Nhân Tông, Sầm Sơn, Thanh Hoá",
         }}
         bride={{
           role: "Cô Dâu",
           name: "Minh Châu",
-          address: "Đội 8, Rừng Thông, Xã Thiện Phiến, Thanh Hoá",
+          address: "Phố Thống Nhất, Phường Đông Sơn, Thanh Hoá",
         }}
       />
 
