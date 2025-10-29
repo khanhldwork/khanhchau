@@ -62,9 +62,9 @@ export default function Page() {
 
       <Section1
         slides={[
-          { imageUrl: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp" },
-          { imageUrl: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp" },
-          { imageUrl: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/bf5d6cd3-b372-4de3-be9d-0aa50fc1d9f2.webp" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761749554/XXX07855_rtull6.jpg" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761749555/XXX07722_ner6nu.jpg" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761749555/XXX08519_hposvb.jpg" },
         ]}
         title="Duy Khánh & Minh Châu"
         invitation={{
