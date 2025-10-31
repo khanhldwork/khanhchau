@@ -44,15 +44,15 @@ export default function Page() {
         setOpen={setOpen}
         initialTab={initialTab}
         groomInfo={{
-          qrUrl: "https://img.vietqr.io/image/MB-9704222268-compact2.png",
+          qrUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761917679/z7175957995700_21598e4bec7b6790fb3e47b664f39d3b_z3ntg6.jpg",
           bankName: "MB Bank",
-          accountName: "NGUYEN VAN NAM",
-          accountNumber: "9704222268",
+          accountName: "LE DUY KHANH",
+          accountNumber: "0393906184",
         }}
         brideInfo={{
           qrUrl: "https://img.vietqr.io/image/ACB-1234567890-compact2.png",
-          bankName: "ACB Bank",
-          accountName: "TRAN THI THAO",
+          bankName: "MB Bank",
+          accountName: "PHAM THI MINH CHAU",
           accountNumber: "1234567890",
         }}
       />
@@ -121,7 +121,7 @@ export default function Page() {
             lunarDate: "Ngày 06 tháng 10 năm Ất Tỵ",
             locationName: "TT Tổ chức sự kiện Anyla Dining",
             address: "2A Hàng Sứ, Phường Hạc Thành, Thanh Hoá",
-            mapCoords: { lat: 10.7769, lng: 106.7009 },
+            mapCoords: { lat: 19.8023052, lng: 105.7819901 },
           },
           {
             title: "TIỆC CƯỚI NHÀ TRAI",
@@ -131,7 +131,7 @@ export default function Page() {
             lunarDate: "Ngày 10 tháng 10 năm Ất Tỵ",
             locationName: "Nhà Hàng Hồng Thanh",
             address: "Số 13 Trần Nhân Tông, Hồng Thắng, Sầm Sơn, Thanh Hoá",
-            mapCoords: { lat: 10.7845, lng: 106.695 },
+            mapCoords: { lat: 19.7588406, lng: 105.9129768 },
           },
         ]}
         textSettings={{
@@ -193,13 +193,13 @@ export default function Page() {
       />
 
       <Section8
-        title="Lời chúc phúc cho vợ chồng mình"
-        description="Write something you want for us!"
+        title="Lời chúc phúc cho vợ chồng mình nhé"
+        description="Giúp vợ chồng mình lưu giữ 1 chút kỷ niệm nhé!"
         placeholders={{
           name: "Tên bạn là gì?",
-          message: "Lời chúc của bạn dành cho cặp đôi",
+          message: "Lời chúc của bạn dành cho cô dâu chú rể",
         }}
-        buttonText="Gửi ngay"
+        buttonText="Gửi lời chúc"
         showMoreText="Xem thêm"
         loadingText="Đang gửi lời chúc..."
         successMessage="Cảm ơn bạn! Lời chúc của bạn đã được gửi thành công 🎉"
