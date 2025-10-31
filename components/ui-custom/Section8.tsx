@@ -48,7 +48,7 @@ const Section8: React.FC<Section8Props> = ({
   errorMessage = "Gửi lời chúc thất bại! Vui lòng thử lại sau.",
 }) => {
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("0000000000");
   const [message, setMessage] = useState("");
   const [wishes, setWishes] = useState<Wish[]>([]);
   const [showAll, setShowAll] = useState(false);
@@ -75,7 +75,7 @@ const Section8: React.FC<Section8Props> = ({
       toast.success(<div>{successMessage}</div>);
 
       setName("");
-      setPhone("");
+      // setPhone("");
       setMessage("");
       fetchWishes();
     } catch (error) {
@@ -118,14 +118,14 @@ const Section8: React.FC<Section8Props> = ({
             className="bg-white py-5 text-[15px]"
             required
           />
-          <Input
+          {/* <Input
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder={placeholders.phone}
             className="bg-white py-5 text-[15px]"
             required
-          />
+          /> */}
           <Textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
