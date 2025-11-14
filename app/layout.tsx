@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dpufemrnq/image/upload/v1761127461/demo/1.jpg.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "THƯ MỜI CƯỚI DUY KHÁNH & MINH CHÂU",
-    images: ["https://res.cloudinary.com/dpufemrnq/image/upload/v1761127461/demo/1.jpg.jpg"],
+    images: ["/og-image.jpg"],
   },
 
   alternates: {
-    canonical: "https://wedding-invitation-card-ctzi.vercel.app",
+    canonical: "https://khanhchau.site",
   },
 
-  metadataBase: new URL("https://wedding-invitation-card-ctzi.vercel.app"),
+  metadataBase: new URL("https://khanhchau.site"),
 };
 
 export const viewport: Viewport = {
