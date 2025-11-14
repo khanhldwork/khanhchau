@@ -62,10 +62,10 @@ export default function Page() {
 
       <Section1
         slides={[
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/13_grycqg.png" },
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/19_szgbmk.png" },
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/17_gaevhg.png" },
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/20_ox1xbr.png" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109480/Untitled_design_1_mbaa2v.jpg" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109290/Untitled_design_jdxvsk.jpg" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109605/Untitled_design_2_nk21xh.jpg" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109665/Untitled_design_3_jns2ff.jpg" },
         ]}
         title="Duy Khánh & Minh Châu"
         invitation={{
@@ -108,9 +108,9 @@ export default function Page() {
           subtitle: "Bạn và Người thương",
           mainText: "THAM DỰ LỄ CƯỚI DUY KHÁNH & MINH CHÂU",
           images: [
-            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/20_ox1xbr.png",
-            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106043/5_u2ehhg.png",
-            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/12_pnhv2d.png",
+            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111098/1_1_fzfru3.jpg",
+            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763110619/Untitled_design_4_jifwml.jpg",
+            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763110710/Untitled_design_5_ulfgcs.jpg",
           ],
         }}
         events={[
@@ -179,17 +179,17 @@ export default function Page() {
         description="We got married!"
         borderRadius={12}
         column1={[
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/1_cyfrso.png", height: 270 },
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/10_l1i3kw.png", height: 270 },
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106043/15_jiqfhl.png", height: 270 },
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/11_bkdulv.png", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111098/1_1_fzfru3.jpg", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111233/Untitled_design_6_p794w6.jpg", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111411/Untitled_design_7_xo4vfw.jpg", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111463/Untitled_design_8_zd5lmf.jpg", height: 270 },
         ]}
         column2={[
           { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/12_pnhv2d.png", height: 180 },
           { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/16_jco99x.png", height: 180 },
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106043/4_yeqgbx.png", height: 270 },
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/6_pwupzo.png", height: 270 },
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/9_hegrwr.png", height: 170 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111622/Untitled_design_10_jpmmeo.jpg", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111554/Untitled_design_9_ecw5hj.jpg", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763112552/z7223688244621_51d40a42aa030f32e7033bc521d0a5cd_enlst5.jpg", height: 170 },
         ]}
       />
 
