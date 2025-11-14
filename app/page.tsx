@@ -44,7 +44,7 @@ export default function Page() {
         setOpen={setOpen}
         initialTab={initialTab}
         groomInfo={{
-          qrUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761917679/z7175957995700_21598e4bec7b6790fb3e47b664f39d3b_z3ntg6.jpg",
+          qrUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763107160/z7223328265834_e88e4846d01f637aa9c539bbb6e3e7c8_qhsmav.jpg",
           bankName: "MB Bank",
           accountName: "LE DUY KHANH",
           accountNumber: "0393906184",
@@ -62,9 +62,10 @@ export default function Page() {
 
       <Section1
         slides={[
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761749554/XXX07855_rtull6.jpg" },
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761749555/XXX07722_ner6nu.jpg" },
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1761749555/XXX08519_hposvb.jpg" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/13_grycqg.png" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/19_szgbmk.png" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/17_gaevhg.png" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/20_ox1xbr.png" },
         ]}
         title="Duy Khánh & Minh Châu"
         invitation={{
@@ -86,7 +87,7 @@ export default function Page() {
           </>
         }
         galleryImages={[
-          "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747536/XXX08083_uoi25w.jpg",
+          "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/8_qipzcj.png",
           "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747479/z7168928568544_1b1431ae8078b64e1f1a8ca259406b52_qv5ror.jpg",
         ]}
         groom={{
@@ -107,9 +108,9 @@ export default function Page() {
           subtitle: "Bạn và Người thương",
           mainText: "THAM DỰ LỄ CƯỚI DUY KHÁNH & MINH CHÂU",
           images: [
-            "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/a619703f-e248-4258-a0e0-77a289ed73fa.webp",
-            "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp",
-            "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/dd4a782a-cb2a-4d6f-b194-bcf2815bb54c.webp",
+            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/20_ox1xbr.png",
+            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106043/5_u2ehhg.png",
+            "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/12_pnhv2d.png",
           ],
         }}
         events={[
@@ -178,17 +179,17 @@ export default function Page() {
         description="We got married!"
         borderRadius={12}
         column1={[
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp", height: 270 },
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/26af4d86-620c-4fe5-8817-3b0daa1bc239.webp", height: 270 },
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/4225f5f8-932a-4c8a-99b5-d00d61308c8a.webp", height: 270 },
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/e489a219-2df3-409e-bb23-304abd03318f.webp", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/1_cyfrso.png", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/10_l1i3kw.png", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106043/15_jiqfhl.png", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/11_bkdulv.png", height: 270 },
         ]}
         column2={[
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/a619703f-e248-4258-a0e0-77a289ed73fa.webp", height: 180 },
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/21895e2b-b3dd-4e4e-bab6-8980cbc6b131.webp", height: 180 },
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/27bfd4fa-46bf-4a84-8463-eb1f5e8f7563.webp", height: 270 },
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/6e884791-e1cb-4e43-b8b1-f1e37f423199.webp", height: 270 },
-          { src: "https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/69bf4561-0e51-47ea-bb0f-061eeac87a42.webp", height: 170 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106044/12_pnhv2d.png", height: 180 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/16_jco99x.png", height: 180 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106043/4_yeqgbx.png", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106042/6_pwupzo.png", height: 270 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/9_hegrwr.png", height: 170 },
         ]}
       />
 
@@ -208,7 +209,7 @@ export default function Page() {
 
 
       <Section9
-        backgroundImage="https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/admin/assets/dd4a782a-cb2a-4d6f-b194-bcf2815bb54c.webp"
+        backgroundImage="https://res.cloudinary.com/dww4orwkv/image/upload/v1763108034/Untitled_design_ffdw02.png"
         bottomText="Rất hân hạnh được đón tiếp!"
       />
     </div>
