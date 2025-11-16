@@ -44,7 +44,7 @@ export default function Page() {
         setOpen={setOpen}
         initialTab={initialTab}
         groomInfo={{
-          qrUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763107160/z7223328265834_e88e4846d01f637aa9c539bbb6e3e7c8_qhsmav.jpg",
+          qrUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763266923/z7229225060859_615d7574aed79c9acce50e04f31cc1c2_lula1l.jpg",
           bankName: "MB Bank",
           accountName: "LE DUY KHANH",
           accountNumber: "0393906184",
@@ -87,7 +87,7 @@ export default function Page() {
           </>
         }
         galleryImages={[
-          "https://res.cloudinary.com/dww4orwkv/image/upload/v1763260612/z7228839304897_e9dbd1b5b0e109085ca3ba596dc1165f_lxbxdh.jpg",
+          "https://res.cloudinary.com/dww4orwkv/image/upload/v1763266705/z7229027545439_6b4d903e9cb6d828c888884b602dd102_e7so99.jpg",
           "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747479/z7168928568544_1b1431ae8078b64e1f1a8ca259406b52_qv5ror.jpg",
         ]}
         groom={{
