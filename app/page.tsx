@@ -50,10 +50,10 @@ export default function Page() {
           accountNumber: "0393906184",
         }}
         brideInfo={{
-          qrUrl: "https://img.vietqr.io/image/ACB-1234567890-compact2.png",
+          qrUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763260686/z7228906051458_df71f80ee8d688a91d1859712bd31ae4_dtjfde.jpg",
           bankName: "MB Bank",
           accountName: "PHAM THI MINH CHAU",
-          accountNumber: "1234567890",
+          accountNumber: "5261020036868",
         }}
       />
 
@@ -65,7 +65,7 @@ export default function Page() {
           { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109480/Untitled_design_1_mbaa2v.jpg" },
           { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109290/Untitled_design_jdxvsk.jpg" },
           { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109605/Untitled_design_2_nk21xh.jpg" },
-          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763109665/Untitled_design_3_jns2ff.jpg" },
+          { imageUrl: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763260792/z7228839311173_9ae311e39416652d292888145352a2ed_v1soma.jpg" },
         ]}
         title="Duy Khánh & Minh Châu"
         invitation={{
@@ -87,7 +87,7 @@ export default function Page() {
           </>
         }
         galleryImages={[
-          "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/8_qipzcj.png",
+          "https://res.cloudinary.com/dww4orwkv/image/upload/v1763260612/z7228839304897_e9dbd1b5b0e109085ca3ba596dc1165f_lxbxdh.jpg",
           "https://res.cloudinary.com/dww4orwkv/image/upload/v1761747479/z7168928568544_1b1431ae8078b64e1f1a8ca259406b52_qv5ror.jpg",
         ]}
         groom={{
@@ -189,13 +189,13 @@ export default function Page() {
           { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763106045/16_jco99x.png", height: 180 },
           { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111622/Untitled_design_10_jpmmeo.jpg", height: 270 },
           { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763111554/Untitled_design_9_ecw5hj.jpg", height: 270 },
-          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763112552/z7223688244621_51d40a42aa030f32e7033bc521d0a5cd_enlst5.jpg", height: 170 },
+          { src: "https://res.cloudinary.com/dww4orwkv/image/upload/v1763260896/z7228839315916_1a6ccc7097a08afc19c03eccf519a50a_xxbdyl.jpg", height: 170 },
         ]}
       />
 
       <Section8
-        title="Lời chúc phúc cho vợ chồng mình nhé"
-        description="Giúp vợ chồng mình lưu giữ 1 chút kỷ niệm nhé!"
+        title="Lời chúc phúc cho vợ chồng mình"
+        description="Cùng chúng mình lưu giữ 1 chút kỷ niệm nhé!"
         placeholders={{
           name: "Tên bạn là gì?",
           message: "Lời chúc của bạn dành cho cô dâu chú rể",
